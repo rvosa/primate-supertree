@@ -1,0 +1,20 @@
+#NEXUS
+begin data;
+dimensions ntax=5 nchar=2;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2: Schultz (1986). Presented without evidence.]
+
+matrix
+Outgroup            0 0 
+Pygathrix_avunculus 1 1 
+Pygathrix_brelichi  1 ? 
+Pygathrix_nemaeus   1 0 
+Pygathrix_roxellana 1 1 
+;
+end;
+
+[Look again at: Schultz (1986), in Swindler and Erwin (1986) Comparative Primate Biology vol 1.]      +---------------- 1 MAN
+|                               +---------------1
+|                               |         

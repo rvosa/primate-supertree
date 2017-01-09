@@ -1,0 +1,17 @@
+#NEXUS
+begin data;
+dimensions ntax=8 nchar=1;
+format missing=? symbols = "0~2";
+[First 'character' is just to line up the columns and define the outgroup.]
+
+matrix
+Outgroup            0 
+Microcebus_murinus  1 
+Microcebus_rufus    1 
+Mirza_coquereli     1 
+Cheirogaleus_major  1 
+Cheirogaleus_medius 1 
+Allocebus_trichotis 1 
+Phaner_furcifer     1 
+;
+end;

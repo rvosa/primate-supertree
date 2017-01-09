@@ -1,0 +1,18 @@
+#NEXUS
+begin data;
+dimensions ntax=7 nchar=5;
+format missing=? symbols = "0~2";
+
+[1: just to define the outgroup]
+[2-5: Ishak et al. (1988, 1992). Cladistic karyotypic.]
+
+matrix
+Outgroup                  0 0000
+Lepilemur_mustelinus      1 0000
+Lepilemur_septentrionalis 1 1000
+Lepilemur_ruficaudatus    1 1100
+Lepilemur_leucopus        1 1110
+Lepilemur_dorsalis        1 1111
+Lepilemur_edwardsi        1 1111
+;
+end;

@@ -1,0 +1,23 @@
+#NEXUS
+begin data;
+dimensions ntax=6 nchar=2;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2: Hershkovitz (1984). Splits genus into two groups but no polarity - hence unrooted tree.]
+
+matrix
+Outgroup            0 ? 
+Saimiri_boliviensis 1 0 
+Saimiri_oerstedii   1 1 
+Saimiri_sciureus    1 1 
+Saimiri_ustus       1 1 
+Saimiri_vanzolinii  1 ? 
+;
+end;sides top&back,
+		5	quadriped bipedal,
+		6	white orange gray blue  black,
+		7	three four five,
+		8	absent present,
+		9	arms/legs wings,
+		10	absent pre

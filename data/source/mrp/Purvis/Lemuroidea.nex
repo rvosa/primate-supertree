@@ -1,0 +1,60 @@
+#NEXUS
+begin data;
+dimensions ntax=21 nchar=93;
+format missing=? symbols = "0~2";
+
+[1: just to define the outgroup]
+[2-3: Dahl (1981). Taxonomy.]
+[4-5: Absher (1993 Snowbird talk). Molecular cladistic. 400b mtDNA -> 7 informative characters.]
+[6-14: Yoder (1993 Snowbird talk). 92 morphological characters, equal weighting, unordered, cladistic.]
+[15-20: Yoder (1993 Snowbird talk). 720b of cyt b gene, cladistic, bootstrap. 94% for 18.]
+[21-22: Porter (1993 Snowbird talk). 1.8kb segment of gene expressed in embryo. MP and bootstrap.]
+[23-26: Eaglen (1982). 60 morphological characters, cladism and phenetics give same result. Evidence for 25 is slight.]
+[27-28: Rumpler et al. (1988). Cladistic, R-banded karyotypes. Homoplasy - some characters leave Propithecus monophyletic.]
+[29: Rumpler et al. (1988 Fol. Primat.). Cladistic karyological.]
+[30: Yoder (1991). A single homology, but of a complex character: the branching pattern of the internal carotid.]
+[31-40: Dutrillaux (1988). Cladistic karyological.]
+[41-43: Coppenhaver et al. (). Cladistic analysis of beta-globin gene sequences.]
+[44: Miyamoto and Goodman (1990). Semistrict consensus of cladistic analyses of 6 globin gene sequences.]
+[45: Pettigrew and Jamieson (1987?). Part of their cladistic analysis of brain traits and morphological features.]
+[46-50: Crovella et al. (1993). Cladistic analysis of migration patterns from highly-repeated DNA fragments.]
+[51-54: Jung et al. (1993). Cladistic, DNA restriction sites.]
+[55-62: Dene et al. (1980). Immunodiffusion - phenetic molecular. Two trees differ in whether L. catta is nearer than Varecia to Petterus, so I left it unresolved. They also have Lorisidae paraphyletic.]
+[63-67: Groves and Eaglen (1988). Cladistic, 32 morphological characters.]
+[68: Koop et al. (1989). Cladistic analysis of globin gene sequences.]
+[69-76: Eaglen (1983). Cladistic morphological, 30 characters.]
+[77-83: Schwartz (1986?). Taxonomic, aimed at phylogenetic. Strange in places.]
+[84-93: Szalay and Delson (1979). Palaeontological, taxonomic aimed at phylogenetic.]
+
+matrix
+Outgroup                     0 00 00 000000000 000000 ?? 0000 00 0 0 0000000000 000 0 0 00000 0000 00000000 00000 0 00000000 0000000 0000000000 
+Lemur_catta                  1 00 11 000011000 111110 ?? 0100 00 1 0 0010111001 101 ? ? 10000 1000 00101110 01010 ? 00001101 0000110 0011011100 
+Petterus_coronatus           1 10 0? 001101000 111110 ?? 0100 00 1 0 0001111001 ??? 1 ? 01111 0111 ???????0 00110 ? 01011101 0000110 0011011100 
+Petterus_fulvus              1 01 01 111101000 111110 11 0100 00 1 0 0001111001 011 1 ? 00111 0111 01101110 00110 1 10111101 0000110 0011011100 
+Petterus_macaco              1 01 0? 011101000 111110 ?? 0100 00 1 0 0001111001 ??? 1 ? 00001 0011 11101110 00110 ? 10111101 0000110 0011011100 
+Petterus_mongoz              1 10 0? 111101000 111110 ?? 0100 00 1 0 0001111001 ??? 1 ? 00011 ???? 11101110 00110 ? 01011101 0000110 0011011100 
+Petterus_rubriventer         1 00 0? 000101000 111110 ?? 0100 00 1 0 0001111001 ??? 1 ? 01111 0001 ???????0 00110 ? 00111101 0000110 0011011100 
+Hapalemur_aureus             1 00 0? 000000001 111110 ?? 0100 00 1 0 0??0111001 ??? ? ? ????? ???? ???????0 ?1010 ? ???????? 0000110 0000111100 
+Hapalemur_griseus            1 00 0? 000000001 111110 ?? 0100 00 1 0 0110111001 011 ? ? 10000 1000 ???????0 11010 ? 00000011 0000110 0000111100 
+Hapalemur_simus              1 00 0? 000000001 111110 ?? 0100 00 1 0 0110111001 ??? ? ? ????? ???? ???????0 11010 ? 00000011 0000110 0000111100 
+Varecia_variegatus           1 00 11 000011000 011110 ?? 0100 00 1 0 0000011001 101 ? ? 00000 ???? 00101110 00110 ? 00000101 0000110 0001011100 
+Lepilemur                    1 00 0? 000000000 ?????0 ?? 0100 00 1 0 0000000001 ??? ? ? ????? ???? 00011110 00001 ? 00000000 0000101 0000001100 
+Daubentonia_madagascariensis 1 00 00 000000011 000010 00 0100 00 1 0 0000000000 ??? ? ? ????? ???? 00000010 00000 ? ???????? 0001101 0100000100 
+Avahi_laniger                1 00 00 000000111 001110 ?? 0101 00 1 0 0000000011 ??? ? ? ????? ???? ???????0 00001 ? ???????? 0011101 1100000100 
+Propithecus_verreauxi        1 00 00 000000111 001110 11 0101 11 1 0 0000000111 ??? ? ? ????? ???? 00011110 00001 ? ???????? 0011101 1100000100 
+Propithecus_diadema          1 00 00 000000111 001110 11 0101 10 1 0 0000000111 ??? ? ? ????? ???? 00011110 00001 ? ???????? 0011101 1100000100 
+Propithecus_tattersalli      1 00 00 000000111 001110 11 0101 1? 1 0 0000000??1 ??? ? ? ????? ???? 00011110 00001 ? ???????? 0011101 1100000100 
+Indri_indri                  1 00 00 000000111 001110 ?? 0101 11 1 0 0000000111 ??? ? ? ????? ???? ???????0 00001 ? ???????? 0011101 1100000100 
+Galagidae                    1 00 00 000000000 000001 01 1010 00 0 1 1000000000 ??? 0 0 ????? ???? 00000001 00000 ? ???????? 1100000 0000000011 
+Lorisidae                    1 00 00 000000000 000001 ?? 1010 00 0 1 1000000000 000 ? 1 ????? ???? 00000001 00000 0 ???????? 1100000 0000000011 
+Cheirogaleidae               1 00 00 000000000 000110 ?? 0010 00 1 1 0000001001 ??? 1 1 ????? ???? 00000110 00000 1 ???????? 0100000 0000000001 
+;
+end;
+
+begin assumptions;
+[Taxonomic, Mol Clad, Morph Clad, Karyo, Mol Phen, Morph Phen]
+wtset cladomasochism=1:2-3, 1:4-5 15-20 21-22 41-43 44 46-50 51-54 68, 1: 6-14 23-26 30 45 63-67, 1: 27-28 29 31-40, 0: 55-62 
+;
+end;
+[Look at: Schwartz and Tattersall ()]
+[Look at: Simons and Rumplier (1988)]

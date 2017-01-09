@@ -1,0 +1,29 @@
+#NEXUS
+begin data;
+dimensions ntax=14 nchar=11;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2: Zimmermann et al. (1988). Taxonomy: these two were long regarded as the same species.]
+[3: Dene et al. (1976) in Fleagle (1988) page 99. Immunodiffusion.]
+[4: Honacki et al (1982) say these two were synonymous until recently.]
+[5-10: Olson (1979, in Nash et al 1989, Int J Primat 10, 57-80). Taxonomy but intended to reflect phylogeny so I have rooted it.]
+[11: Szalay and Delson (1979). Palaeontological, taxonomic, aimed at phylogenetic.]
+
+matrix
+Outgroup                0 0 0 0 000000 0 
+Galagoides_alleni       1 0 ? 0 000010 0 
+Galago_granti           1 0 ? 1 000000 0 
+Galago_moholi           1 1 ? 0 101000 0 
+Galago_senegalensis     1 1 1 1 101000 0 
+Otolemur_crassicaudatus 1 0 1 0 000001 ? 
+Otolemur_garnettii      1 0 ? 0 000001 ? 
+Euoticus_elegantulus    1 0 ? 0 011000 1 
+Euoticus_inustus        1 0 ? 0 000000 1 
+Galagoides_demidoff     1 0 0 0 000110 1 
+Galagoides_zanzibaricus 1 0 0 0 000110 1 
+Galago_gallarum         1 ? ? ? 101000 0 
+Galago_matschiei        1 ? ? ? 011000 0 
+Galagoides_thomasi      1 ? ? ? 000110 1 
+;
+end;

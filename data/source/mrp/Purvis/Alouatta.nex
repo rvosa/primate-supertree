@@ -1,0 +1,17 @@
+#NEXUS
+begin data;
+dimensions ntax=7 nchar=1;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+
+matrix
+Outgroup           0 
+Alouatta_belzebul  1 
+Alouatta_caraya    1 
+Alouatta_fusca     1 
+Alouatta_palliata  1 
+Alouatta_seniculus 1 
+Alouatta_villosa   1 
+;
+end;

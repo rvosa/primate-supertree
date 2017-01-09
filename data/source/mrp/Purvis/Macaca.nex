@@ -1,0 +1,38 @@
+#NEXUS
+begin data;
+dimensions ntax=17 nchar=34;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2-10: Fooden and Lanyon (1989). Jacknife strict-consensus trees of Fitch-Margoliash analyses of blood-proteins. Fig 5b is invalid due to use of an outgroup that may be an ingroup.]
+[11-13: Melnick and Kidd (1985), given in Fa (1989). Phenetic analysis of plood protein data, no assumption of rate constancy.]
+[14-24: Delson (1980), given in Fa (1989). "Phylogram" - based on body shape, penis shape and a model of evolution. So it's a taxonomy. Delson has a taxon named "sulawesi" - I've put in the names of the four Sulawesi species.]
+[25-26: Hayasaka et al. (1988a). mtDNA restriction sites, NJ and UPGMA analyses: 25 is weak.]
+[27-28: Hayasaka et al. (1988b; pp626-644). NJ tree of mtDNA.]
+[29: Nakamura et al. (1985). Cladistic analysis of amino acid sequence of fibrinopeptides.]
+[30-34: Nozawa et al (1977, Jpn J Genet 52,15-30). Phenetic analysis of 26-27 blood proteins.]
+
+matrix
+Outgroup            0 000000000 000 00000000000 00 00 0 00000 
+Macaca_arctoides    1 000000111 001 00000110001 ?? ?? ? 00111 
+Macaca_assamensis   1 000001111 ??? 00001110001 ?? ?? ? ????? 
+Macaca_cyclopis     1 001100011 110 00000000111 01 ?? ? 11011 
+Macaca_fascicularis 1 000100011 010 00000000011 00 01 ? 01011 
+Macaca_fuscata      1 000000011 110 00000001111 11 11 1 00001 
+Macaca_maurus       1 100000000 ??? 01110000001 ?? ?? ? ????? 
+Macaca_mulatta      1 001100011 110 00000001111 11 11 1 11011 
+Macaca_nemestrina   1 000000001 000 00110000001 ?? ?? 0 00000 
+Macaca_nigra        1 010000000 ??? 01110000001 ?? ?? ? ????? 
+Macaca_ochreata     1 010000000 ??? 01110000001 ?? ?? ? ????? 
+Macaca_radiata      1 000011111 001 10000010001 ?? ?? ? 00111 
+Macaca_silenus      1 ????????? ??? 00010000001 ?? ?? ? ????? 
+Macaca_sinica       1 000011111 ??? 10000010001 ?? ?? ? ????? 
+Macaca_sylvanus     1 ????????? ??? 00000000000 ?? 00 ? ????? 
+Macaca_thibetana    1 ????????? ??? 00001110001 ?? ?? ? ????? 
+Macaca_tonkeanna    1 100000000 ??? 01110000001 ?? ?? ? ????? 
+;
+end;
+
+[N.B. Nozawa et al suggest dates: cyc-mul 67000yrs; -fas 350000yrs; spec-rad 550000yrs; those two clades 650000yrs; -fusc 800000yrs; -nem 1200000yrs.]
+[N.B. Hayasaka et al. suggest dates for (fus, mul, cyc) splitting at 0.9-1.8MYBP, having separated from fascicularis at 1.5-3MYPB.]
+[N.B. Dates from Nakamura et al. (1983): fus-mul at 0.54MYBP, -nemestrina at 1.4MYBP.]

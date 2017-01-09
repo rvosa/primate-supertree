@@ -1,0 +1,26 @@
+#NEXUS
+begin data;
+dimensions ntax=14 nchar=7;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2-4: Hershkovitz (1990). Species groups in his taxonomy of the genus, hence unrooted tree.]
+[5-7: Groves (1992, Int. J. Primat. 13, 111-112). A review of the above, looking at likely synonymy of taxa.]
+
+matrix
+Outgroup                0 ??? 000
+Callicebus_brunneus     1 010 001
+Callicebus_calligatus   1 010 010
+Callicebus_cinerascens  1 010 101
+Callicebus_cupreus      1 010 010
+Callicbeus_donacophilus 1 100 000
+Callicebus_dubius       1 010 010
+Callicebus_hoffmannsi   1 010 001
+Callicebus_modestus     1 010 000
+Callicebus_moloch       1 010 101
+Callicebus_oenanthe     1 100 000
+Callicebus_olallae      1 100 000
+Callicebus_personatus   1 010 000
+Callicebus_torquatus    1 001 000
+;
+end;

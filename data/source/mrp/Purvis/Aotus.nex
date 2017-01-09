@@ -1,0 +1,22 @@
+#NEXUS
+begin data;
+dimensions ntax=10 nchar=9;
+format missing=? symbols = "0~2";
+
+[1: just to indicate outgroup. Also Galbreath (1983) gives 2 synapomorphies.]
+[2-7 : Galbreath (1983). Cladistic karyological, 8 characters (one of them a synapomorphy for the genus).]
+[8-9 : Hershkovitz (1983). Cladistic pelage, karyology. Few characters.]
+
+matrix
+Outgroup           0 000000 00
+Aotus_lemurinus    1 100000 00
+Aotus_griseimembra 1 100000 00
+Aotus_brumbacki    1 011000 00
+Aotus_vociferans   1 011000 00
+Aotus_nancymai     1 010100 01
+Aotus_infulatus    1 010110 11
+Aotus_nigriceps    1 010111 01
+Aotus_azarae       1 010111 11
+Aotus_miconax      1 ?????? 01
+;
+end;

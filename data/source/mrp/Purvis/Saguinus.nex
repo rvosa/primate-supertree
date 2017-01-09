@@ -1,0 +1,31 @@
+#NEXUS
+begin data;
+dimensions ntax=13 nchar=26;
+format missing=? symbols = "0~2";
+
+[1: just to define the outgroup.]
+[2-7: Natori (1988) Cladistic, 11 cranial and dental characters. Note - Reanalysis from full data matrix: he doesn't have 7.]
+[8-13: Jacobs (1993 Snowbird poster). 550 bases of mtDNA. Bootstrap. 10-11 not strong - 48% and 57%.]
+[14: Moore and Cheverud (1992). Phenetic multivariate approach to facial morphology.]
+[15-23: Natori and Hanihara (1992). Phenetic multivariate analysis of dental characters.]
+[24-25: Cronin and Sarich (1978), given in Sarich and Cronin (1980). Immunological distance.]
+[26: Cheverud and Moore (1990, Am J Primat 21,1-15, have these as conspecific.]
+
+matrix
+Outgroup             0 000000 000000 0 000000000 00 0 
+Saguinus_bicolor     1 001100 ?????? 0 011000000 ?? 0 
+Saguinus_fuscicollis 1 001001 100000 0 000011001 11 1 
+Saguinus_imperator   1 001010 011000 0 000101001 ?? 0 
+Saguinus_inustus     1 001001 ?????? 0 000000011 ?? 0 
+Saguinus_labiatus    1 001010 011100 0 000000111 ?? 0 
+Saguinus_leucopus    1 010000 ?????? 1 000101001 00 0 
+Saguinus_midas       1 001100 010001 0 011000000 ?? 0 
+Saguinus_mystax      1 001010 011100 0 000000111 01 0 
+Saguinus_nigricollis 1 001001 100000 0 000011001 11 0 
+Saguinus_oedipus     1 110000 010011 1 101000000 00 0 
+Saguinus_tripartitus 1 ?????? ?????? 0 ????????? ?? 1 
+Saguinus_geoffroyi   1 110000 010011 0 101000000 ?? 0 
+;
+end;               ################1
+|                               |               +---------------- 1 KANGAROO
+|        

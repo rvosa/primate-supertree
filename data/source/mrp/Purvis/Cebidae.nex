@@ -1,0 +1,44 @@
+#NEXUS
+begin data;
+dimensions ntax=17 nchar=71;
+format missing=? symbols = "0~2";
+
+[1: just to identify outgroup. Also Dutrillaux (1988) gives karyological synapomorphies.]
+[2-7: Kaufman (1987). Phenetic morphological, 177 measurements.]
+[8: Hershkovitz (1987). Taxonomy. He has these two as the same species.]
+[9-16: Porter et al. (1993 talk at Snowbird). Molecular cladistic, 1.8kb fragment of a gene active in embryos. MP and bootstrap for reliability.]
+[17-19: Kinzey (1992). Cladistic dental characters. Nodes supported by 5, 14 and 3(6?) respectively.]
+[20: Schmitt et al (1990). Genetic distance from 43 electrophoretic loci.]
+[21-25: Dutrillaux (1988). Cladistic karyological.]
+[26-32: Ford (1986). Cladistic cranial, dental and postcranial traits. I have respected Ford's uncertainty about the placements of Ateles and Saimiri.]
+[33-41: Kay (1990), given in Ford and Davis (1992). Dental, cranial and postcranial. Cladistic.]
+[42: Dickinson et al. (1989). Cladistic analysis of 89 electrophoretic loci. Papio was the outgroup.]
+[43-45: Rosenberger and Strier (1989). Cladistic, morphological, behavioural and ecological data.]
+[46-47: Baba et al. (1980). Cladistic, amino acid sequences.]
+[48-50: Cronin and Sarich (1978), given in Sarich and Cronin (1980). Immunological distances.]
+[51-58: Chiarelli (1980?). Karyology, semi-cladistic but rather speculative and informal.]
+[59-63: Schwartz (1986?). Classification, intended to be phylogenetic. Strange in places!]
+[64-71: Szalay and Delson (1979). Palaeontological, taxonomic aimed at phylogenetic.]
+
+matrix
+Outgroup                0 000000 0 00000000 000 0 00000 0000000 000000000 0 000 00 000 00000000 00000 00000000 
+Callithricinae          1 001000 0 10000000 000 ? 00000 0000010 000110011 1 000 00 000 00000000 00010 01000000 
+Cebus                   1 100000 0 10000000 000 1 00000 0000000 000000001 ? 000 11 000 10000000 00001 11000000 
+Aotus                   1 011000 0 10000000 001 0 00000 0000001 000010011 ? 000 ?? 000 01000100 00001 000000?1 
+Callicebus              1 011000 0 01000100 001 ? ????? 0000001 000000000 ? 000 ?? ??? 01000100 00001 00000011 
+Saimiri                 1 100000 0 10000000 000 1 01001 0000000 000110011 1 000 11 000 10000000 00001 11000000 
+Pithecia                1 000101 0 01000110 011 ? 11001 0001110 000000111 ? 000 ?? 001 00111100 01110 00000111 
+Cacajao_calvus          1 000101 1 01000111 111 ? 11001 0011110 000001111 ? 000 ?? 001 00111100 01110 00000111 
+Cacajao_melanocephalus  1 000101 0 01000111 111 ? 11001 0011110 000001111 ? 000 ?? 001 00111100 01110 00000111 
+Cacajao_rubicundus      1 000101 1 01000111 111 ? 11001 0011110 000001111 ? 000 ?? 001 00111100 01110 00000111 
+Chiropotes_albinasus    1 000101 0 01000111 111 ? ????? 0011110 000001111 ? 000 ?? ??? 00011100 01110 00000111 
+Chiropotes_satanas      1 000101 0 01000111 111 ? ????? 0011110 000001111 ? 000 ?? ??? 00011100 01110 00000111 
+Alouatta                1 000011 0 01100000 000 ? ????? 0100110 011010011 ? 001 01 010 00001100 10110 00001001 
+Ateles                  1 000011 0 01110000 000 ? 00111 1100110 101010011 0 111 01 110 00000011 10110 00111001 
+Brachyteles_arachnoides 1 000011 0 01111000 000 ? 00011 1100110 011010011 ? 111 01 ??? 00000011 10110 00111001 
+Lagothrix_flavicauda    1 000011 0 01111000 000 ? 00111 1100110 101010011 ? 011 01 110 00000001 10110 00011001 
+Lagothrix_lagothricha   1 000011 0 01111000 000 ? 00111 1100110 101010011 ? 011 01 110 00000001 10110 00011001 
+;
+end;
+
+[Hayasaka et al. (1992) analyse 7.1kb of globin gene nucleotide sequence in Ateles, Aotus and Cebus. NJ method gives one result, MP another. In any case there's little in it. They suggest a firm polytomy, and date it at 16-22Myrs BP.]

@@ -1,0 +1,16 @@
+#NEXUS
+begin data;
+dimensions ntax=5 nchar=3;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2-3: Froehlich et al. (1991). Phenetic analysis of 50 cranial and dental characters.]
+
+matrix
+Outgroup         0 00
+Ateles_belzebuth 1 01
+Ateles_fusciceps 1 11
+Ateles_geoffroyi 1 11
+Ateles_paniscus  1 00
+;
+end;

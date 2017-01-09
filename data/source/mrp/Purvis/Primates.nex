@@ -1,0 +1,32 @@
+#NEXUS
+begin data;
+dimensions ntax=8 nchar=39;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2-3: Winkler (1984). Cladistic, morphological (placentation characters).]
+[4-6: Saitou (1991). DNA sequences analysed as a distance matrix by neighbour joining. 4 is mtDNA, 5 is nu-globin and 6 is beta-globin.]
+[7-12: Koop et al. (1989). Delta- and beta-globin sequences (I've counted them separately), cladistically analysed.]
+[13-14: Dutrillaux (1988). Cladistic karyological.]
+[15-18 :Miyamoto and Goodman (1990). Semistrict consensus of cladistic analyses of 6 globin gene sequences.]
+[19: Wayne et al. (1991). DNA-DNA hybridization.]
+[20: Strasser and Delson (1987). Cladistic morphology.]
+[21-25: Baba et al. (1980). Cladistic analysis of amino acid sequences.]
+[26-27: Sarich and Cronin (1980). Immunological distance.]
+[28: Clemente et al. (1990). Cladistic karyology. Review article: all other nodes they give are already supported by Dutrillaux's work.]
+[29: Hasegawa (1990). ML analysis of DNA sequence data from globin genes.]
+[30-33: Hayasaka et al. (1988b). Phenetic (NJ) analysis of mtDNA distances.]
+[34-37: Schwartz (1986?). Taxonomic, intended to be phylogenetic. Contain many bizarre placements. Also, he has Tarsiers within Strepsirhines, and paraphyletic Colobinae - which I can't fit into these files.]
+[38-39: Szalay and Delson (1979). Palaeontological, phylogenetic maybe cladistic, maybe taxonomic.]
+
+matrix
+Outgroup                     0 00 000 000000 00 0000 0 0 00000 00 0 0 0000 0000 00 
+Strepsirhini                 0 00 000 000000 00 0000 ? ? 00000 00 0 0 1000 1000 00 
+Tarsius                      1 01 000 100100 ?? 1000 ? ? 00001 00 0 1 1000 1000 10 
+Cebidae                      1 11 000 110110 01 1100 ? ? 00011 01 0 1 0100 0001 10 
+Cercopthecinae               1 11 000 111111 11 1110 0 1 01111 11 1 1 0110 0101 11 
+Colobinae                    1 11 000 111111 11 ???? ? 1 01111 11 1 ? ???? 0101 11 
+Hylobates                    1 11 111 111111 ?? 1111 1 0 10111 11 0 ? 0111 0111 11 
+Pongidae                     1 11 111 111111 11 1111 1 0 10111 11 0 1 0111 0111 11 
+;
+end;

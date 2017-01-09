@@ -1,0 +1,17 @@
+#NEXUS
+begin data;
+dimensions ntax=5 nchar=5;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup. Also Dutrillaux (1988) gives karyological synapomorphies.]
+[2-3: Dutrillaux (1988). Cladistic karyological. He uses C. nigrivittatus, not C. olivaceus, but the former is listed in brackets under the latter by Corbet and Hill (1991).]
+[4-5: Dickinson et al. (1990). Phenetic analysis of red blood cell protein electrophoresis. 4 is also supported by synapomorphies.]
+
+matrix
+Outgroup        0 00 00 
+Cebus_albifrons 1 11 10 
+Cebus_apella    1 00 01 
+Cebus_capucinus 1 11 10 
+Cebus_olivaceus 1 01 01 
+;
+end;

@@ -1,0 +1,31 @@
+#NEXUS
+begin data;
+dimensions ntax=16 nchar=8;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup.]
+[2-8: Schultz (1986). Presented without evidence. Also, Schultz has senex not vetulus, and aygula not comata. I have based the substitutions on Corbet and Hill (1991).]
+
+
+matrix
+Outgroup             0 0000000
+Presbytis_aurata     1 ???????
+Presbytis_comata     1 0000011
+Presbytis_cristata   1 0110101
+Presbytis_entellus   1 0000000
+Presbytis_francoisi  1 0010101
+Presbytis_frontata   1 0000011
+Presbytis_geei       1 ???????
+Presbytis_johnii     1 0001101
+Presbytis_melalophos 1 0000011
+Presbytis_obscura    1 1110101
+Presbytis_phayrei    1 1110101
+Presbytis_pileata    1 0110101
+Presbytis_potenziani 1 0010101
+Presbytis_rubicunda  1 0000011
+Presbytis_vetulus    1 0001101
+;
+end;
+
+[Look again at: Aimi et al (1992). Primates, 33:191-206.]
+[Look again at: Schultz (1986), in Swindler and Erwin (1986) Comparative Primate Biology vol 1.]

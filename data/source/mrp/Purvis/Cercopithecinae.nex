@@ -1,0 +1,34 @@
+#NEXUS
+begin data;
+dimensions ntax=11 nchar=25;
+format missing=? symbols = "0~2";
+
+[1: just to define outgroup. Strasser and Delson (1987) give synapomorphies.]
+[2-3: Stanyon et al (1986). Karyotypic characters: only two characters, with ancestral polymorphism being an alternative explanation for their distribution.]
+[4: Dutrillaux (1988). Cladistic karyotypic.]
+[5: Cronin and Meikle (1989). Immunological phenetic comparison. Also gives ages of lineages.]
+[6-9: Strasser and Delson (1987). Morphological cladistic.]
+[10-17: Dutrillaux et al. (1982). Cladistic karyological.]
+[18-19: Disotell et al. (1992). Cladistic and ML analysis of mtDNA COII sequence. Only significant nodes are coded here.]
+[20: Nakamura et al. (1983). Cladistic analysis of amino acid sequences of fibrinopeptides. Note - it seems that they've not understood parsimony properly, as it would appear that Macaca is basal because of autapomorphies.]
+[21: Horn (1987, Am J Primat 12:181-187). He uses socioecological information to suggest they're the same species - taxonomic, then.]
+[22-25: Szalay and Delson (1979). Palaeontological, taxonomic aimed at phylogenetic.]
+
+matrix
+Outgroup               0 00 0 0 0000 00000000 00 0 0 0000 
+Macaca                 1 10 0 ? 0001 00000001 00 0 0 0001 
+Cercocebus_albigena    1 01 1 ? 1011 00001111 ?? ? 1 1111 
+Cercocebus_aterrimus   1 01 1 ? 1011 00001111 ?? ? 1 1111 
+Cercocebus_galeritus   1 01 1 ? 1011 01110011 10 ? 0 1111 
+Cercocebus_torquatus   1 01 1 ? 1011 01110011 ?? ? 0 1111 
+Papio                  1 00 0 1 1111 00000111 01 1 0 0111 
+Mandrillus_leucophaeus 1 01 1 0 1111 10110011 10 ? 0 ???? 
+Mandrillus_sphinx      1 01 1 0 1111 10110011 ?? ? 0 ???? 
+Theropithecus_gelada   1 10 0 1 0011 ???????? 01 1 0 0011 
+Cercopithecini         1 00 0 ? 0000 00000000 00 1 0 0000 
+;
+end;
+
+[Look again at: Cronin and Meikle (1989) for ages of lineages.]
+[N.B. Date from Lucotte (1982), from electrophoretic distance. Theropithecus and Papio split at 7MYBP.]
+[N.B. Date from Nakamura et al. (1983). Ther-Pap at 3MYBP.]
