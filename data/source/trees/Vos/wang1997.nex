@@ -1,0 +1,34 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+removed T._leucocephalus (synonymous to T._francoisi, its sisterspecies in this article).
+Rhinopithecus_roxellana -> Pygathrix_roxellana (preferred genus)
+Rhinopithecus_bieti -> Pygathrix_bieti (preferred genus)
+collapsed haplotypes.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Homo_sapiens
+		Colobus_guereza
+		Trachypithecus_phayrei
+		Trachypithecus_francoisi
+		Pygathrix_nemaeus
+		Pygathrix_roxellana
+		Pygathrix_bieti
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Colobus_guereza,
+		3	Trachypithecus_phayrei,
+		4	Trachypithecus_francoisi,
+		5	Pygathrix_nemaeus,
+		6	Pygathrix_roxellana,
+		7	Pygathrix_bieti
+		;
+	TREE * wang_etal_1997fig2 = (1,(2,((3,4),(5,(6,7)))));
+ENDBLOCK;

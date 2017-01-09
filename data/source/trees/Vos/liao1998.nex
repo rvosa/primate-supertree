@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changed Papio_anubis to the preferred Papio_hamadryas.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Papio_hamadryas
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Pan_troglodytes
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Liao et al. (1998) fig 3. MP analysis of LTR13 elements.]
+	TRANSLATE
+		1	Papio_hamadryas,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Pan_troglodytes,
+		5	Homo_sapiens
+		;
+	TREE * liao_etal_1998fig3 = (1,(2,(3,(4,5))));
+ENDBLOCK;

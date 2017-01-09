@@ -1,0 +1,53 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 17;
+	TAXLABELS
+		Macaca_mulatta
+		Papio_hamadryas
+		Colobus_guereza
+		Nasalis_larvatus
+		Pongo_pygmaeus
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Hylobates_lar
+		Saimiri_sciureus
+		Microcebus_murinus
+		Cheirogaleus_major
+		Microcebus_coquereli
+		Lemur_catta
+		Nycticebus_coucang
+		Daubentonia_madagascariensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Arnason, Gullberg & Janke (1998). Maximum likelihood analysis
+of Cytochrome b. The article shows an additional tree (Fig 1)
+which is described in arnason1998b.nex.]
+	TRANSLATE
+		1	Macaca_mulatta,
+		2	Papio_hamadryas,
+		3	Colobus_guereza,
+		4	Nasalis_larvatus,
+		5	Pongo_pygmaeus,
+		6	Pan_paniscus,
+		7	Pan_troglodytes,
+		8	Homo_sapiens,
+		9	Gorilla_gorilla,
+		10	Hylobates_lar,
+		11	Saimiri_sciureus,
+		12	Microcebus_murinus,
+		13	Cheirogaleus_major,
+		14	Microcebus_coquereli,
+		15	Lemur_catta,
+		16	Nycticebus_coucang,
+		17	Daubentonia_madagascariensis
+		;
+	TREE * arnason_etal_1998fig2 = (17,(11,(((1,2),(3,4)),(10,(5,(9,(8,(6,7))))))),(15,16,(14,(12,13))));
+ENDBLOCK;

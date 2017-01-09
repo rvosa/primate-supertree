@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article refers to the ambiguous "spider monkey", which is assumed to be Brachyteles_arachnoides.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Brachyteles_arachnoides
+		Macaca_mulatta
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Grossman et al. (2001) fig 3. MP tree from cytochrome c.]
+	TRANSLATE
+		1	Brachyteles_arachnoides,
+		2	Macaca_mulatta,
+		3	Homo_sapiens,
+		4	Pan_troglodytes
+		;
+	TREE * grossman_etal_2001fig3 = (1,(2,(3,4)));
+ENDBLOCK;

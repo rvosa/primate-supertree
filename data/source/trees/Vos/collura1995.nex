@@ -1,0 +1,39 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Lemur_catta
+		Saimiri_sciureus
+		Hylobates_agilis
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Colobus_guereza
+		Macaca_mulatta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Collura & Stewart (1995) fig 2. MP analysis of cytb. The tree includes
+a 'clade' of nuclear insertions of a cytb-like pseudogene that has been pruned here. The
+article also shows a tree based on the same data but with other mammal taxa included in
+the analysis. As source data, type of analysis and topology are the same for within the
+primates that tree has been excluded.]
+	TRANSLATE
+		1	Lemur_catta,
+		2	Saimiri_sciureus,
+		3	Hylobates_agilis,
+		4	Pongo_pygmaeus,
+		5	Gorilla_gorilla,
+		6	Homo_sapiens,
+		7	Pan_troglodytes,
+		8	Colobus_guereza,
+		9	Macaca_mulatta
+		;
+	TREE * collura_stewart_1995fig2 = (1,(2,((3,(4,(5,(6,7)))),(8,9))));
+ENDBLOCK;

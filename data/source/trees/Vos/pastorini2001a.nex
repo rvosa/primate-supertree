@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Avahi_laniger
+		Propithecus_diadema
+		Propithecus_verreauxi
+		Propithecus_tattersalli
+		Eulemur_macaco
+		Eulemur_fulvus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Pastorini et al. (2001a, Am. J. Primatol.) fig 2c. ML tree based on concatenated COIII, ND3, ND4L and
+ND4; and the tRNAs: GLY, ARG, HIS, SER and LEU.]
+	TRANSLATE
+		1	Avahi_laniger,
+		2	Propithecus_diadema,
+		3	Propithecus_verreauxi,
+		4	Propithecus_tattersalli,
+		5	Eulemur_macaco,
+		6	Eulemur_fulvus
+		;
+	TREE * pastorini_etal_2001afig2c = ((1,(2,(3,4))),(5,6));
+ENDBLOCK;

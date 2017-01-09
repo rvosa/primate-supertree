@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kitano & Saitou (1999) fig 2. ML tree from Rh gene sequences.]
+	TRANSLATE
+		1	Gorilla_gorilla,
+		2	Homo_sapiens,
+		3	Pan_troglodytes
+		;
+	TREE * kitano_saitou_1999fig2 = (1,(2,3));
+ENDBLOCK;

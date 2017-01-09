@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Callithrix_jacchus
+		Macaca_mulatta
+		Pan_troglodytes
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Klonisch et al. (2001) fig 5b. Quartet puzzling tree of Relaxin sequences.]
+	TRANSLATE
+		1	Callithrix_jacchus,
+		2	Macaca_mulatta,
+		3	Pan_troglodytes,
+		4	Homo_sapiens
+		;
+	TREE * klonisch_etal_2001fig5b = (1,2,(3,4));
+ENDBLOCK;

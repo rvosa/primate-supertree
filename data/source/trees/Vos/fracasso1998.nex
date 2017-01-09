@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Cercopithecus aethiops was changed to the preferred Chlorocebus aethiops;
+Ateles geoffroy was rewritten as Ateles geoffroyi]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Ateles_geoffroyi
+		Chlorocebus_aethiops
+		Hylobates_syndactylus
+		Homo_sapiens
+		Pan_troglodytes
+		Gorilla_gorilla
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Fracasso & Patarnello (1998), fig 3a. MP tree of the Dystrophin muscular promoter
+and 5' flanking region. The article also shows and NJ tree, which was excluded here.]
+	TRANSLATE
+		1	Ateles_geoffroyi,
+		2	Chlorocebus_aethiops,
+		3	Hylobates_syndactylus,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Gorilla_gorilla
+		;
+	TREE * fracasso_patarnello_1998fig3a = (1,(2,(3,(4,5,6))));
+ENDBLOCK;

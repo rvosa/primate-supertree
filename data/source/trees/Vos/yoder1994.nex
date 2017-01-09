@@ -1,0 +1,86 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Mirza_coquereli -> Microcebus_coquereli (preferred genus)
+Galago_crassicaudatus -> Otolemur_crassicaudatus (preferred genus)
+Galago_demidovii -> Galagoides_demidoff (preferred genus)
+Cercopithecus_aethiops -> Chlorocebus_aethiops (preferred genus)]
+	DIMENSIONS NTAX = 32;
+	TAXLABELS
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_mongoz
+		Eulemur_coronatus
+		Eulemur_rubriventer
+		Lemur_catta
+		Varecia_variegata
+		Hapalemur_griseus
+		Hapalemur_simus
+		Avahi_laniger
+		Propithecus_verreauxi
+		Indri_indri
+		Daubentonia_madagascariensis
+		Lepilemur_mustelinus
+		Phaner_furcifer
+		Cheirogaleus_major
+		Microcebus_coquereli
+		Microcebus_murinus
+		Allocebus_trichotis
+		Galago_senegalensis
+		Galago_alleni
+		Otolemur_crassicaudatus
+		Galagoides_demidoff
+		Perodicticus_potto
+		Arctocebus_calabarensis
+		Nycticebus_coucang
+		Loris_tardigradus
+		Tarsius_bancanus
+		Saimiri_sciureus
+		Cebus_apella
+		Colobus_polykomos
+		Chlorocebus_aethiops
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder (1994) fig 1a. MP tree from morphological characters. Fig 1b and 1c 
+were excluded as they are the result of constrained searches.]
+	TRANSLATE
+		1	Eulemur_fulvus,
+		2	Eulemur_macaco,
+		3	Eulemur_mongoz,
+		4	Eulemur_coronatus,
+		5	Eulemur_rubriventer,
+		6	Lemur_catta,
+		7	Varecia_variegata,
+		8	Hapalemur_griseus,
+		9	Hapalemur_simus,
+		10	Avahi_laniger,
+		11	Propithecus_verreauxi,
+		12	Indri_indri,
+		13	Daubentonia_madagascariensis,
+		14	Lepilemur_mustelinus,
+		15	Phaner_furcifer,
+		16	Cheirogaleus_major,
+		17	Microcebus_coquereli,
+		18	Microcebus_murinus,
+		19	Allocebus_trichotis,
+		20	Galago_senegalensis,
+		21	Galago_alleni,
+		22	Otolemur_crassicaudatus,
+		23	Galagoides_demidoff,
+		24	Perodicticus_potto,
+		25	Arctocebus_calabarensis,
+		26	Nycticebus_coucang,
+		27	Loris_tardigradus,
+		28	Tarsius_bancanus,
+		29	Saimiri_sciureus,
+		30	Cebus_apella,
+		31	Colobus_polykomos,
+		32	Chlorocebus_aethiops
+		;
+	TREE * yoder_1994fig1a = (((14,(((5,(4,(3,(1,2)))),(6,7)),((8,9),(13,(12,(10,11)))))),(15,(16,(17,18,19)))),((23,(20,21,22)),((24,(25,(26,27))),(28,((29,30),(31,32))))));
+ENDBLOCK;

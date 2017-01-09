@@ -1,0 +1,99 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Cebus_nigrivittatus -> Cebus_olivaceus (preferred genus)
+Lemur_fulvus -> Eulemur_fulvus (preferred genus)
+Lagothrix_lagothricha -> Lagothrix_lagotricha (preferred spelling)
+Aotus_azarae -> Aotus_azarai (preferred spelling)
+Pruned non-primate outgroups. Pruned Cebus kaapori.]
+	DIMENSIONS NTAX = 38;
+	TAXLABELS
+		Tarsius_syrichta
+		Macaca_mulatta
+		Pongo_pygmaeus
+		Homo_sapiens
+		Gorilla_gorilla
+		Pan_paniscus
+		Pan_troglodytes
+		Hylobates_lar
+		Hylobates_syndactylus
+		Aotus_azarai
+		Callimico_goeldii
+		Callithrix_pygmaea
+		Callithrix_jacchus
+		Leontopithecus_rosalia
+		Saguinus_midas
+		Cebus_albifrons
+		Cebus_olivaceus
+		Saimiri_boliviensis
+		Saimiri_sciureus
+		Alouatta_belzebul
+		Alouatta_seniculus
+		Ateles_geoffroyi
+		Ateles_belzebuth
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Pithecia_irrorata
+		Cacajao_calvus
+		Chiropotes_satanas
+		Callicebus_torquatus
+		Callicebus_moloch
+		Perodicticus_potto
+		Nycticebus_coucang
+		Otolemur_crassicaudatus
+		Daubentonia_madagascariensis
+		Propithecus_verreauxi
+		Eulemur_fulvus
+		Cheirogaleus_medius
+		Microcebus_murinus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Porter et al. (1997, Int. J. Primatol.) fig4. MP tree from epsilon-globin sequences.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Macaca_mulatta,
+		3	Pongo_pygmaeus,
+		4	Homo_sapiens,
+		5	Gorilla_gorilla,
+		6	Pan_paniscus,
+		7	Pan_troglodytes,
+		8	Hylobates_lar,
+		9	Hylobates_syndactylus,
+		10	Aotus_azarai,
+		11	Callimico_goeldii,
+		12	Callithrix_pygmaea,
+		13	Callithrix_jacchus,
+		14	Leontopithecus_rosalia,
+		15	Saguinus_midas,
+		16	Cebus_albifrons,
+		17	Cebus_olivaceus,
+		18	Saimiri_boliviensis,
+		19	Saimiri_sciureus,
+		20	Alouatta_belzebul,
+		21	Alouatta_seniculus,
+		22	Ateles_geoffroyi,
+		23	Ateles_belzebuth,
+		24	Lagothrix_lagotricha,
+		25	Brachyteles_arachnoides,
+		26	Pithecia_irrorata,
+		27	Cacajao_calvus,
+		28	Chiropotes_satanas,
+		29	Callicebus_torquatus,
+		30	Callicebus_moloch,
+		31	Perodicticus_potto,
+		32	Nycticebus_coucang,
+		33	Otolemur_crassicaudatus,
+		34	Daubentonia_madagascariensis,
+		35	Propithecus_verreauxi,
+		36	Eulemur_fulvus,
+		37	Cheirogaleus_medius,
+		38	Microcebus_murinus
+		;
+	TREE * porter_etal_1997fig4 = ((1,((2,((3,(4,5,(6,7))),(8,9))),(((10,((11,(12,13)),(14,15))),((16,17),(18,19))),(((20,21),((22,23),(24,25))),((26,(27,28)),(29,30)))))),((31,(32,33)),(34,(35,36,(37,38)))));
+ENDBLOCK;

@@ -1,0 +1,41 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Galago_crassicaudatus -> Otolemur_crassicaudatus (preferred genus)
+Lemur_fulvus -> Eulemur_fulvus (preferred genus)]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_lar
+		Macaca_mulatta
+		Cebus_albifrons
+		Tarsius_syrichta
+		Otolemur_crassicaudatus
+		Eulemur_fulvus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Goodman et al. (1994) fig 4. MP tree from epsilon-globin sequences.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus,
+		6	Hylobates_lar,
+		7	Macaca_mulatta,
+		8	Cebus_albifrons,
+		9	Tarsius_syrichta,
+		10	Otolemur_crassicaudatus,
+		11	Eulemur_fulvus
+		;
+	TREE * goodman_etal_1994fig4 = ((9,(8,(7,(6,(5,(4,(3,(1,2)))))))),(10,11));
+ENDBLOCK;

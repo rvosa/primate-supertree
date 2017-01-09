@@ -1,0 +1,32 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Gorilla_gorilla
+		Pan_troglodytes
+		Pan_paniscus
+		Homo_sapiens
+		Pongo_pygmaeus
+		Hylobates_lar
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Barriel (1997). The article describes a third tree (fig 1a) which is 
+excluded here as it is based on a subset of the data. Trees described here are the
+two equally parsimonious solutions on a morphological data set.]
+	TRANSLATE
+		1	Gorilla_gorilla,
+		2	Pan_troglodytes,
+		3	Pan_paniscus,
+		4	Homo_sapiens,
+		5	Pongo_pygmaeus,
+		6	Hylobates_lar
+		;
+	TREE * barriel_1997fig1b1 = (6,(5,(1,(2,(3,4)))));
+	TREE barriel_1997fig1b2 = (6,(5,((1,2),(3,4))));
+ENDBLOCK;

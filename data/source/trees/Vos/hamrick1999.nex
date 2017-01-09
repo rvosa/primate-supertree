@@ -1,0 +1,66 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Several ambiguous taxa, assumed to be:
+Hylobates_sp. -> Hylobates_lar
+Lagothrix_sp. -> Lagothrix_lagotricha
+Leontopithecus_sp. -> Leontopithecus_rosalia
+Tarsius_sp. -> Tarsius_bancanus.
+Renamed taxa:
+Papio_anubis -> Papio_hamadryas (preferred synonym)
+Cercopithecus_aethiops -> Chlorocebus_aethiops (preferred genus)]
+	DIMENSIONS NTAX = 21;
+	TAXLABELS
+		Tarsius_bancanus
+		Homo_sapiens
+		Hylobates_lar
+		Trachypithecus_obscurus
+		Chlorocebus_aethiops
+		Cercopithecus_cephus
+		Papio_hamadryas
+		Macaca_mulatta
+		Lagothrix_lagotricha
+		Cebus_albifrons
+		Callimico_goeldii
+		Saguinus_oedipus
+		Leontopithecus_rosalia
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Daubentonia_madagascariensis
+		Lemur_catta
+		Microcebus_murinus
+		Galago_senegalensis
+		Loris_tardigradus
+		Nycticebus_coucang
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hamrick (1999) fig 1b. MP tree from morphological data.]
+	TRANSLATE
+		1	Tarsius_bancanus,
+		2	Homo_sapiens,
+		3	Hylobates_lar,
+		4	Trachypithecus_obscurus,
+		5	Chlorocebus_aethiops,
+		6	Cercopithecus_cephus,
+		7	Papio_hamadryas,
+		8	Macaca_mulatta,
+		9	Lagothrix_lagotricha,
+		10	Cebus_albifrons,
+		11	Callimico_goeldii,
+		12	Saguinus_oedipus,
+		13	Leontopithecus_rosalia,
+		14	Callithrix_jacchus,
+		15	Callithrix_pygmaea,
+		16	Daubentonia_madagascariensis,
+		17	Lemur_catta,
+		18	Microcebus_murinus,
+		19	Galago_senegalensis,
+		20	Loris_tardigradus,
+		21	Nycticebus_coucang
+		;
+	TREE * hamrick_1999fig1b = ((1,(((2,3),(4,((5,6),(7,8)))),(9,(10,(11,(12,(13,(14,15)))))))),((16,(17,18)),(19,(20,21))));
+ENDBLOCK;

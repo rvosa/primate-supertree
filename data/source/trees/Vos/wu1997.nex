@@ -1,0 +1,50 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Presbytis_cristata -> Trachypithecus_cristatus (preferred genus)
+Aotus_azarac -> Aotus_azarai (preferred spelling)
+Collapsed haplotypes.]
+	DIMENSIONS NTAX = 15;
+	TAXLABELS
+		Homo_sapiens
+		Pan_troglodytes
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_agilis
+		Theropithecus_gelada
+		Mandrillus_sphinx
+		Macaca_nemestrina
+		Trachypithecus_cristatus
+		Cebus_apella
+		Saimiri_ustus
+		Saimiri_sciureus
+		Aotus_azarai
+		Pithecia_pithecia
+		Perodicticus_potto
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wu et al. (1997) fig 4. MP tree from COIV sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_troglodytes,
+		3	Gorilla_gorilla,
+		4	Pongo_pygmaeus,
+		5	Hylobates_agilis,
+		6	Theropithecus_gelada,
+		7	Mandrillus_sphinx,
+		8	Macaca_nemestrina,
+		9	Trachypithecus_cristatus,
+		10	Cebus_apella,
+		11	Saimiri_ustus,
+		12	Saimiri_sciureus,
+		13	Aotus_azarai,
+		14	Pithecia_pithecia,
+		15	Perodicticus_potto
+		;
+	TREE * wu_etal_1997fig4 = (15,(((5,(4,(1,2,3))),(8,9,(6,7))),((10,(11,12)),(13,14))));
+ENDBLOCK;

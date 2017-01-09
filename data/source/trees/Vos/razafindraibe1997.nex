@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Pruned Avahi_occidentalis (unknown to MSW).]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Microcebus_rufus
+		Eulemur_macaco
+		Avahi_laniger
+		Indri_indri
+		Propithecus_tattersalli
+		Propithecus_verreauxi
+		Propithecus_diadema
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Razafindraibe et al. (1997) fig 3. MP tree from PDISAT2 probe data (blotting banding patterns).]
+	TRANSLATE
+		1	Microcebus_rufus,
+		2	Eulemur_macaco,
+		3	Avahi_laniger,
+		4	Indri_indri,
+		5	Propithecus_tattersalli,
+		6	Propithecus_verreauxi,
+		7	Propithecus_diadema
+		;
+	TREE * razafindraibe_etal_1997fig3 = (1,(2,(3,(4,(5,(6,7))))));
+ENDBLOCK;

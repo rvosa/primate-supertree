@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues. Haplotypes collapsed.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Homo_sapiens
+		Pan_troglodytes
+		Macaca_mulatta
+		Macaca_fascicularis
+		Papio_hamadryas
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kermarrec et al (1999) fig 4. NJ tree from ABO genes.]
+	TRANSLATE
+		1	Gorilla_gorilla,
+		2	Pongo_pygmaeus,
+		3	Homo_sapiens,
+		4	Pan_troglodytes,
+		5	Macaca_mulatta,
+		6	Macaca_fascicularis,
+		7	Papio_hamadryas
+		;
+	TREE * kermarrec_etal_1999fig4 = ((1,(2,(3,4))),(5,6,7));
+ENDBLOCK;

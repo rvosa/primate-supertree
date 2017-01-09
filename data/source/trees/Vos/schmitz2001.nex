@@ -1,0 +1,55 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Spelling changes:
+Aotus_azarae -> Aotus_azarai
+Lagothrix_lagothricha -> Lagothrix_lagotricha
+Expanded "Strepsirhini", "Platyrrhini" and "Cercopithecoidea" to mean the taxa 
+sequenced in this study. Changed Presbytis entellus to Semnopithecus entellus
+(preferred genus.)]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Eulemur_macaco
+		Cheirogaleus_medius
+		Varecia_variegata
+		Otolemur_crassicaudatus
+		Nycticebus_coucang
+		Tarsius_bancanus
+		Aotus_azarai
+		Saguinus_oedipus
+		Saimiri_sciureus
+		Callithrix_jacchus
+		Lagothrix_lagotricha
+		Homo_sapiens
+		Macaca_fascicularis
+		Pygathrix_nemaeus
+		Colobus_guereza
+		Semnopithecus_entellus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Schmitz et al. (2001), fig 3. ML tree from concatenated intron and exon sequences
+from C7, C9 and C12.]
+	TRANSLATE
+		1	Eulemur_macaco,
+		2	Cheirogaleus_medius,
+		3	Varecia_variegata,
+		4	Otolemur_crassicaudatus,
+		5	Nycticebus_coucang,
+		6	Tarsius_bancanus,
+		7	Aotus_azarai,
+		8	Saguinus_oedipus,
+		9	Saimiri_sciureus,
+		10	Callithrix_jacchus,
+		11	Lagothrix_lagotricha,
+		12	Homo_sapiens,
+		13	Macaca_fascicularis,
+		14	Pygathrix_nemaeus,
+		15	Colobus_guereza,
+		16	Semnopithecus_entellus
+		;
+	TREE * schmitz_etal_2001fig3 = ((1,2,3,4,5),(6,((7,8,9,10,11),(12,(13,14,15,16)))));
+ENDBLOCK;

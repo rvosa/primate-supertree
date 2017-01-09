@@ -1,0 +1,76 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Symphalangus_syndactylus -> Hylobates_syndactylus
+Papio_hamadryas_cynocephalus -> Papio_hamadryas
+Papio_atterimus -> Lophocebus_albigena
+"Aotus" assumed to be Aotus_azarai, "Colobus" pruned (ambiguous).]
+	DIMENSIONS NTAX = 26;
+	TAXLABELS
+		Aotus_azarai
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Hylobates_lar
+		Hylobates_syndactylus
+		Lophocebus_albigena
+		Papio_hamadryas
+		Theropithecus_gelada
+		Cercocebus_galeritus
+		Mandrillus_sphinx
+		Mandrillus_leucophaeus
+		Macaca_nigra
+		Macaca_sylvanus
+		Macaca_arctoides
+		Erythrocebus_patas
+		Cercopithecus_cephus
+		Chlorocebus_aethiops
+		Colobus_guereza
+		Nasalis_larvatus
+		Trachypithecus_francoisi
+		Trachypithecus_obscurus
+		Brachyteles_arachnoides
+		Lagothrix_lagotricha
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Page & Goodman (2001) fig 1 and fig 3:
+1. MP tree from albumin intron sequences;
+2. ML tree from tandem albumin / gamma sequence data;]
+	TRANSLATE
+		1	Aotus_azarai,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Pan_paniscus,
+		7	Hylobates_lar,
+		8	Hylobates_syndactylus,
+		9	Lophocebus_albigena,
+		10	Papio_hamadryas,
+		11	Theropithecus_gelada,
+		12	Cercocebus_galeritus,
+		13	Mandrillus_sphinx,
+		14	Mandrillus_leucophaeus,
+		15	Macaca_nigra,
+		16	Macaca_sylvanus,
+		17	Macaca_arctoides,
+		18	Erythrocebus_patas,
+		19	Cercopithecus_cephus,
+		20	Chlorocebus_aethiops,
+		21	Colobus_guereza,
+		22	Nasalis_larvatus,
+		23	Trachypithecus_francoisi,
+		24	Trachypithecus_obscurus,
+		25	Brachyteles_arachnoides,
+		26	Lagothrix_lagotricha
+		;
+	TREE * page_goodman_2001fig1 = (1,(((2,(3,(4,(5,6)))),(7,8)),(((((9,(10,11)),(12,(13,14))),(15,(16,17))),(18,(19,20))),(21,(22,(23,24))))),(25,26));
+	TREE page_goodman_2001fig3 = (1,(((2,(3,(4,(5,6)))),(7,8)),(((((9,(10,11)),(12,(13,14))),(15,(16,17))),(19,(18,20))),(21,(22,(23,24))))),(25,26));
+ENDBLOCK;

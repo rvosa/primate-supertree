@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Macaca_mulatta
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Westhoff & Wylie (1996) fig 6. UPGMA tree from Rh sequences.]
+	TRANSLATE
+		1	Macaca_mulatta,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla
+		;
+	TREE * westhoff_wylie_1996fig6 = (1,(2,3,4));
+ENDBLOCK;

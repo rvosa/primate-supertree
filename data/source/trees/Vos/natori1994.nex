@@ -1,0 +1,37 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cebuella_pygmaea changed to Callithrix_pygmaea (preferred genus).
+Callithrix_humeralifer spelled as Callithrix_humeralifera (preferred spelling).]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Callithrix_jacchus
+		Callithrix_penicillata
+		Callithrix_kuhlii
+		Callithrix_geoffroyi
+		Callithrix_flaviceps
+		Callithrix_aurita
+		Callithrix_pygmaea
+		Callithrix_humeralifera
+		Callithrix_argentata
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Natori (1994) fig 2. Dendrogram from craniometrical data.]
+	TRANSLATE
+		1	Callithrix_jacchus,
+		2	Callithrix_penicillata,
+		3	Callithrix_kuhlii,
+		4	Callithrix_geoffroyi,
+		5	Callithrix_flaviceps,
+		6	Callithrix_aurita,
+		7	Callithrix_pygmaea,
+		8	Callithrix_humeralifera,
+		9	Callithrix_argentata
+		;
+	TREE * natori_1994fig2 = ((((1,2),(3,4)),(5,6)),(7,(8,9)));
+ENDBLOCK;

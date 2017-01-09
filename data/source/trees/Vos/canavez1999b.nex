@@ -1,0 +1,56 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[MSW considers C. emiliae synonymous with C. argentata. These sistertaxa were therefore collapsed.
+A number of subspecies of S. bicolor and S. midas formed a monophyletic group. These were collapsed
+to form S. bicolor and S. midas. Cebuella pygmaea was renamed to the preferred Callithrix_pygmaea.]
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		Saguinus_bicolor
+		Saguinus_fuscicollis
+		Saguinus_imperator
+		Saguinus_midas
+		Saguinus_mystax
+		Saguinus_oedipus
+		Leontopithecus_chrysopygus
+		Callithrix_argentata
+		Callithrix_humeralifera
+		Callithrix_aurita
+		Callithrix_geoffroyi
+		Callithrix_kuhlii
+		Callithrix_penicillata
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Callimico_goeldii
+		Cebus_apella
+		Ateles_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Canavez et al. (1999, Am. J. Primatol.) fig 2. beta-2-microglobulin analysed
+under maximum parsimony.]
+	TRANSLATE
+		1	Saguinus_bicolor,
+		2	Saguinus_fuscicollis,
+		3	Saguinus_imperator,
+		4	Saguinus_midas,
+		5	Saguinus_mystax,
+		6	Saguinus_oedipus,
+		7	Leontopithecus_chrysopygus,
+		8	Callithrix_argentata,
+		9	Callithrix_humeralifera,
+		10	Callithrix_aurita,
+		11	Callithrix_geoffroyi,
+		12	Callithrix_kuhlii,
+		13	Callithrix_penicillata,
+		14	Callithrix_jacchus,
+		15	Callithrix_pygmaea,
+		16	Callimico_goeldii,
+		17	Cebus_apella,
+		18	Ateles_paniscus
+		;
+	TREE * canavez_etal1999Fig2 = (18,(17,((2,(6,(1,4),(3,5))),(7,(16,((15,(8,9)),(10,11,14,(12,13))))))));
+ENDBLOCK;

@@ -1,0 +1,26 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Hylobates_lar
+		Pongo_pygmaeus
+		Homo_sapiens
+		Gorilla_gorilla
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Stanhope et al. (1998) fig 1. NJ tree from concatenated 12s rRNA, tRNA-VAL and 
+16s rRNA sequences.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Pongo_pygmaeus,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla
+		;
+	TREE * stanhope_etal_1998 = (1,(2,(3,4)));
+ENDBLOCK;

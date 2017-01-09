@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article analysis multiple haplotypes of multiple subspecies of the following taxa. In the
+analysis all subspecies come out in monophyletic clades, so they have been collapsed and elevated
+to species level following MSW.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Ateles_belzebuth
+		Ateles_paniscus
+		Ateles_marginatus
+		Ateles_chamek
+		Ateles_geoffroyi
+		Ateles_fusciceps
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Collins & Dubach (2000), fig 4a. Parsimony analysis of D-loop sequences. Fig 4b,
+an NJ analysis of the same data was excluded since NJ is considered inferior to MP. The article
+also describes trees based on COII, one of which is coded in collins2000.nex]
+	TRANSLATE
+		1	Ateles_belzebuth,
+		2	Ateles_paniscus,
+		3	Ateles_marginatus,
+		4	Ateles_chamek,
+		5	Ateles_geoffroyi,
+		6	Ateles_fusciceps
+		;
+	TREE * collins_dubach_2000fig4a = (1,((2,3,4),(5,6)));
+ENDBLOCK;

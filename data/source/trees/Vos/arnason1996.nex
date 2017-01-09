@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article recognizes the two subspecies (Bornean and Sumatran) of the Orangutan.
+Here, these were collapsed into Pongo_pygmaeus.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Arnason, Gullberg, Janke and Xu (1996). NJ tree from complete
+mtDNA genomes.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Pan_paniscus,
+		5	Pan_troglodytes,
+		6	Homo_sapiens
+		;
+	TREE * arnason_etal1996Fig2 = (1,(2,(3,(6,(5,4)))));
+ENDBLOCK;

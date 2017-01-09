@@ -1,0 +1,64 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Papio_hamadryas_cynocephalus -> Papio_hamadryas
+Lophocebus_aterrimus -> Lophocebus_albigena]
+	DIMENSIONS NTAX = 21;
+	TAXLABELS
+		Otolemur_crassicaudatus
+		Homo_sapiens
+		Lophocebus_albigena
+		Theropithecus_gelada
+		Papio_hamadryas
+		Cercocebus_galeritus
+		Mandrillus_sphinx
+		Mandrillus_leucophaeus
+		Macaca_mulatta
+		Macaca_nemestrina
+		Macaca_nigra
+		Cercopithecus_cephus
+		Erythrocebus_patas
+		Chlorocebus_aethiops
+		Colobus_guereza
+		Nasalis_larvatus
+		Trachypithecus_obscurus
+		Cebus_albifrons
+		Ateles_geoffroyi
+		Tarsius_bancanus
+		Tarsius_syrichta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Page et al. (1999), fig 2 (inset) and fig 3a. 
+1. MP tree from unrestricted gamma-globin data set.
+2. unconstrained ML tree from gamma-globin.]
+	TRANSLATE
+		1	Otolemur_crassicaudatus,
+		2	Homo_sapiens,
+		3	Lophocebus_albigena,
+		4	Theropithecus_gelada,
+		5	Papio_hamadryas,
+		6	Cercocebus_galeritus,
+		7	Mandrillus_sphinx,
+		8	Mandrillus_leucophaeus,
+		9	Macaca_mulatta,
+		10	Macaca_nemestrina,
+		11	Macaca_nigra,
+		12	Cercopithecus_cephus,
+		13	Erythrocebus_patas,
+		14	Chlorocebus_aethiops,
+		15	Colobus_guereza,
+		16	Nasalis_larvatus,
+		17	Trachypithecus_obscurus,
+		18	Cebus_albifrons,
+		19	Ateles_geoffroyi,
+		20	Tarsius_bancanus,
+		21	Tarsius_syrichta
+		;
+	TREE page_etal_1999fig2 = (1,(((2,(((((3,(4,5)),(6,(7,8))),(9,(10,11))),(13,(12,14))),(15,(16,17)))),(18,19)),(20,21)));
+	TREE page_etal_1999fig3a = (1,(((2,((((3,(4,5)),((6,(7,8)),(9,(10,11)))),(12,(13,14))),(15,(16,17)))),(18,19)),(20,21)));
+ENDBLOCK;

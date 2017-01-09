@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Article distinguishes the two sister subspecies of Pongo pygmaeus. These have been collapsed here.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Cao et al. (1998), Fig 1, ProtML tree of concatenated mtDNA sequences. Other trees 
+in this article are described in cao1998{a-b, and d-e}.nex.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Pan_paniscus
+		;
+	TREE * cao_etal1998Fig1 = (1,(2,(3,(4,(5,6)))));
+ENDBLOCK;

@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes for H._lar.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Homo_sapiens
+		Hylobates_syndactylus
+		Hylobates_lar
+		Hylobates_hoolock
+		Hylobates_gabriellae
+		Hylobates_leucogenys
+		Pan_paniscus
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Roos & Geissmann (2001) fig 2c. ML tree from mtDNA control region and tRNA-PHE.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Hylobates_syndactylus,
+		3	Hylobates_lar,
+		4	Hylobates_hoolock,
+		5	Hylobates_gabriellae,
+		6	Hylobates_leucogenys,
+		7	Pan_paniscus,
+		8	Pan_troglodytes
+		;
+	TREE * roos_geissmann_2001fig2c = (1,((2,(3,4)),(5,6)),(7,8));
+ENDBLOCK;

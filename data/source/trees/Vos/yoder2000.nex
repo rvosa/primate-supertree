@@ -1,0 +1,32 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed Pongo subspecies.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Papio_hamadryas
+		Hylobates_lar
+		Gorilla_gorilla
+		Homo_sapiens
+		Pongo_pygmaeus
+		Pan_troglodytes
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder & Yang (2000) fig 2a. Figs 2b-2d were excluded as they were either
+the result of constrained searches or based on amino acid sequences from the same data.]
+	TRANSLATE
+		1	Papio_hamadryas,
+		2	Hylobates_lar,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pongo_pygmaeus,
+		6	Pan_troglodytes,
+		7	Pan_paniscus
+		;
+	TREE * yoder_yang_2000fig2a = (1,(2,(5,(3,(4,(6,7))))));
+ENDBLOCK;

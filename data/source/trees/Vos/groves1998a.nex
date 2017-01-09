@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Two taxa unknown to MSW, "Salayar" and "sangirensi" were pruned from the tree.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Tarsius_syrichta
+		Tarsius_bancanus
+		Tarsius_pumilus
+		Tarsius_spectrum
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Groves (1998). MP tree from morphological characters.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Tarsius_bancanus,
+		3	Tarsius_pumilus,
+		4	Tarsius_spectrum
+		;
+	TREE * groves_1998fig6a = ((1,2),(3,4));
+ENDBLOCK;

@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Homo_sapiens
+		Miopithecus_talapoin
+		Callithrix_jacchus
+		Saimiri_boliviensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Shimmin et al. (1997) fig 3. NJ tree from blue opsin amino acid sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Miopithecus_talapoin,
+		3	Callithrix_jacchus,
+		4	Saimiri_boliviensis
+		;
+	TREE * shimmin_etal_1997fig3 = ((1,2),(3,4));
+ENDBLOCK;

@@ -1,0 +1,62 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Semnopithecus_vetulus -> Trachypithecus_vetulus
+Cercocebus_atys -> Cercocebus_torquatus
+Cercopithecus_aethiops -> Chlorocebus_aethiops]
+	DIMENSIONS NTAX = 21;
+	TAXLABELS
+		Nasalis_larvatus
+		Pygathrix_nemaeus
+		Semnopithecus_entellus
+		Trachypithecus_vetulus
+		Trachypithecus_obscurus
+		Trachypithecus_francoisi
+		Colobus_guereza
+		Colobus_angolensis
+		Allenopithecus_nigroviridis
+		Miopithecus_talapoin
+		Erythrocebus_patas
+		Chlorocebus_aethiops
+		Macaca_mulatta
+		Papio_hamadryas
+		Cercocebus_torquatus
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Messier & Stewart (1997) fig 1. MP tree from mtDNA.]
+	TRANSLATE
+		1	Nasalis_larvatus,
+		2	Pygathrix_nemaeus,
+		3	Semnopithecus_entellus,
+		4	Trachypithecus_vetulus,
+		5	Trachypithecus_obscurus,
+		6	Trachypithecus_francoisi,
+		7	Colobus_guereza,
+		8	Colobus_angolensis,
+		9	Allenopithecus_nigroviridis,
+		10	Miopithecus_talapoin,
+		11	Erythrocebus_patas,
+		12	Chlorocebus_aethiops,
+		13	Macaca_mulatta,
+		14	Papio_hamadryas,
+		15	Cercocebus_torquatus,
+		16	Hylobates_lar,
+		17	Pongo_pygmaeus,
+		18	Gorilla_gorilla,
+		19	Homo_sapiens,
+		20	Pan_troglodytes,
+		21	Pan_paniscus
+		;
+	TREE * messier_stewart_1997fig1 = ((((1,(2,(3,4),(5,6))),(7,8)),(9,(10,(11,12)),(13,(14,15)))),(16,(17,(18,(19,(20,21))))));
+ENDBLOCK;

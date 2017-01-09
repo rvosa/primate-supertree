@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_syndactylus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Adachi & Hasegawa (1995). ML tree from mtDNA-encoded proteins.
+I.e. an amino acid tree, built using PROTML.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus,
+		6	Hylobates_syndactylus
+		;
+	TREE * adachi1995_fig1= (6,(5,(4,(3,(1,2)))));
+ENDBLOCK;

@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article references a number of haplotypes from different subspecies that
+come out monophyletic, hence they were collapsed here and elevated to species
+level.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Cebus_apella
+		Saimiri_sciureus
+		Saimiri_oerstedii
+		Saimiri_boliviensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Boinski (1999). Maximum parsimony analysis of combined morphological
+and D-loop data. This data set includes data described in Boinski & Cropp (1999), the
+tree that were described there have been excluded from the data here.]
+	TRANSLATE
+		1	Cebus_apella,
+		2	Saimiri_sciureus,
+		3	Saimiri_oerstedii,
+		4	Saimiri_boliviensis
+		;
+	TREE * boinski_1999Fig3 = (1,(4,(2,3)));
+ENDBLOCK;

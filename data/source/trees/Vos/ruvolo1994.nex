@@ -1,0 +1,39 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changed Cercopithecus_aethiops to Chlorocebus_aethiops (preferred genus).]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Homo_sapiens
+		Pan_paniscus
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_lar
+		Macaca_mulatta
+		Macaca_fascicularis
+		Chlorocebus_aethiops
+		Cercopithecus_hamlyni
+		Aotus_trivirgatus
+		Cebus_albifrons
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Ruvolo (1994) fig 2. MP tree from involucrin sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_paniscus,
+		3	Gorilla_gorilla,
+		4	Pongo_pygmaeus,
+		5	Hylobates_lar,
+		6	Macaca_mulatta,
+		7	Macaca_fascicularis,
+		8	Chlorocebus_aethiops,
+		9	Cercopithecus_hamlyni,
+		10	Aotus_trivirgatus,
+		11	Cebus_albifrons
+		;
+	TREE * ruvolo_1994_fig2 = (((5,(4,(1,2,3))),(6,7,8,9)),(10,11));
+ENDBLOCK;

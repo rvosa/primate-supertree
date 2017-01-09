@@ -1,0 +1,34 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_lar
+		Papio_hamadryas
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Arnason, Gullberg & Janke (1998). Maximum
+likelihood analysis of 11 protein-coding mtDNA sequences. The
+article shows an additional tree based on Cytochrome b (and a
+different set of taxa) which is described in arnason1998a.nex.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus,
+		6	Hylobates_lar,
+		7	Papio_hamadryas
+		;
+	TREE * arnason_etal1998Fig1 = (7,(6,(5,(4,(3,(1,2))))));
+ENDBLOCK;

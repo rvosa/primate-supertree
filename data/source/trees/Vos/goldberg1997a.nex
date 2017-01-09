@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Goldberg & Ruvolo (1997). MP tree from hypervariable 
+region 1 of mtDNA control region. Originally a haplotype tree collapsed 
+to species level.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_paniscus,
+		3	Pan_troglodytes
+		;
+	TREE * goldberg_ruvolo_1997 = (1,(2,3));
+ENDBLOCK;

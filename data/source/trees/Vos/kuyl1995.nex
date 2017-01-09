@@ -1,0 +1,69 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Subspecies of Cercopithecus_aethiops collapsed to Chlorocebus_aethiops.
+Renamed:
+Cercopithecus_mona_pogonias -> Cercopithecus_pogonias
+Papio_cynocephalus/hamadryas_spp. -> Papio_hamadryas
+Papio_cynocephalus_ursinus -> Papio_hamadryas
+Cercocebus_aterrimus -> Lophocebus_albigena
+Cercocebus_torquatus_atys -> Cercocebus_torquatus
+Presbytis_cristatus_pyrrhus -> Trachypithecus_cristatus
+Gorilla_gorilla_gorilla -> Gorilla_gorilla]
+	DIMENSIONS NTAX = 22;
+	TAXLABELS
+		Miopithecus_talapoin
+		Cercopithecus_neglectus
+		Chlorocebus_aethiops
+		Cercopithecus_pogonias
+		Erythrocebus_patas
+		Cercopithecus_diana
+		Cercopithecus_nictitans
+		Cercopithecus_mitis
+		Cercopithecus_cephus
+		Cercopithecus_ascanius
+		Papio_hamadryas
+		Lophocebus_albigena
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Mandrillus_sphinx
+		Macaca_sylvanus
+		Macaca_mulatta
+		Colobus_guereza
+		Trachypithecus_cristatus
+		Gorilla_gorilla
+		Pan_troglodytes
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kuyl et al. (1995) fig 2. NJ tree based on 12s rRNA.]
+	TRANSLATE
+		1	Miopithecus_talapoin,
+		2	Cercopithecus_neglectus,
+		3	Chlorocebus_aethiops,
+		4	Cercopithecus_pogonias,
+		5	Erythrocebus_patas,
+		6	Cercopithecus_diana,
+		7	Cercopithecus_nictitans,
+		8	Cercopithecus_mitis,
+		9	Cercopithecus_cephus,
+		10	Cercopithecus_ascanius,
+		11	Papio_hamadryas,
+		12	Lophocebus_albigena,
+		13	Cercocebus_galeritus,
+		14	Cercocebus_torquatus,
+		15	Mandrillus_sphinx,
+		16	Macaca_sylvanus,
+		17	Macaca_mulatta,
+		18	Colobus_guereza,
+		19	Trachypithecus_cristatus,
+		20	Gorilla_gorilla,
+		21	Pan_troglodytes,
+		22	Pan_paniscus
+		;
+	TREE * kuyl_etal_1995fig2 = (((1,((2,(3,(4,(5,(6,((7,8),(9,10))))))),(((11,12),(13,(14,15))),(16,17)))),(18,19)),(20,(21,22)));
+ENDBLOCK;

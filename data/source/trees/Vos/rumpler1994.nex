@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Renamed Mirza_coquereli Microcebus_coquereli following MSW.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Cheirogaleus_major
+		Microcebus_murinus
+		Microcebus_coquereli
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Rumpler et al. (1994) fig 2. MP tree from HRDNA fragments.]
+	TRANSLATE
+		1	Cheirogaleus_major,
+		2	Microcebus_murinus,
+		3	Microcebus_coquereli
+		;
+	TREE * rumpler_etal_1994fig2 = (1,(2,3));
+ENDBLOCK;

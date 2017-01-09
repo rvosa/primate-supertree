@@ -1,0 +1,43 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Macaca_fuscata
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Hylobates_concolor
+		Hylobates_syndactylus
+		Hylobates_pileatus
+		Hylobates_lar
+		Hylobates_klossii
+		Hylobates_agilis
+		Hylobates_moloch
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hayashi et al. (1995). ML tree from 896 bp of concatenated mtDNA: ND4,
+ND5, tRNA-his, tRNA-ser, tRNA-leu. Other trees were excluded because they are either NJ trees
+or MP trees.]
+	TRANSLATE
+		1	Macaca_fuscata,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Hylobates_concolor,
+		7	Hylobates_syndactylus,
+		8	Hylobates_pileatus,
+		9	Hylobates_lar,
+		10	Hylobates_klossii,
+		11	Hylobates_agilis,
+		12	Hylobates_moloch
+		;
+	TREE * hayashi_etal_1995fig2 = (1,((2,(3,(4,5))),(6,(7,(8,((9,10),(11,12)))))));
+ENDBLOCK;

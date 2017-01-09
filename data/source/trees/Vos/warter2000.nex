@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Avahi_laniger
+		Indri_indri
+		Propithecus_verreauxi
+		Propithecus_diadema
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Warter et al. (2000) fig 3. MP tree based on chromosomal painting with human probes.]
+	TRANSLATE
+		1	Avahi_laniger,
+		2	Indri_indri,
+		3	Propithecus_verreauxi,
+		4	Propithecus_diadema
+		;
+	TREE * warter_etal_2000fig3 = (1,(2,3,4));
+ENDBLOCK;

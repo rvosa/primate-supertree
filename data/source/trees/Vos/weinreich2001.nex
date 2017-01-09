@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Elevated Eulemur_fulvus_collaris to Eulemur_fulvus.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Daubentonia_madagascariensis
+		Eulemur_fulvus
+		Hapalemur_griseus
+		Lemur_catta
+		Saimiri_sciureus
+		Hylobates_syndactylus
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Weinreich (2001) fig 2. NJ tree from concatenated cytochrome b and COII sequences.]
+	TRANSLATE
+		1	Daubentonia_madagascariensis,
+		2	Eulemur_fulvus,
+		3	Hapalemur_griseus,
+		4	Lemur_catta,
+		5	Saimiri_sciureus,
+		6	Hylobates_syndactylus,
+		7	Pan_paniscus
+		;
+	TREE * weinreich_2001fig2 = ((1,(2,(3,4))),(5,(6,7)));
+ENDBLOCK;

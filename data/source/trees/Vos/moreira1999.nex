@@ -1,0 +1,44 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes: 
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Callithrix_emiliae -> Callithrix_argentata (preferred synonym)
+Leontopithecus_chrysomelas -> Leontopithecus_chrysomela (preferred spelling)]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Saguinus_oedipus
+		Cebus_apella
+		Saimiri_sciureus
+		Callithrix_pygmaea
+		Callithrix_argentata
+		Callithrix_jacchus
+		Callimico_goeldii
+		Leontopithecus_rosalia
+		Leontopithecus_chrysomela
+		Homo_sapiens
+		Gorilla_gorilla
+		Pan_paniscus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Moreira & Seuanez (1999) fig 2. MP tree from cytochrome b.]
+	TRANSLATE
+		1	Saguinus_oedipus,
+		2	Cebus_apella,
+		3	Saimiri_sciureus,
+		4	Callithrix_pygmaea,
+		5	Callithrix_argentata,
+		6	Callithrix_jacchus,
+		7	Callimico_goeldii,
+		8	Leontopithecus_rosalia,
+		9	Leontopithecus_chrysomela,
+		10	Homo_sapiens,
+		11	Gorilla_gorilla,
+		12	Pan_paniscus
+		;
+	TREE * moreira_seuanez_1999fig2 = ((1,2,3,(4,5,6,(7,(8,9)))),(10,11,12));
+ENDBLOCK;

@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Cebus_apella
+		Pongo_pygmaeus
+		Hylobates_lar
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Macaca_mulatta
+		Papio_hamadryas
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Huang et al. (2000) fig 7a. NJ tree from Rh50 cDNAs.]
+	TRANSLATE
+		1	Cebus_apella,
+		2	Pongo_pygmaeus,
+		3	Hylobates_lar,
+		4	Pan_troglodytes,
+		5	Homo_sapiens,
+		6	Gorilla_gorilla,
+		7	Macaca_mulatta,
+		8	Papio_hamadryas
+		;
+	TREE * huang_etal_2000fig7a = (1,((2,(3,(4,(5,6)))),(7,8)));
+ENDBLOCK;

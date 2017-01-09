@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on O'hUigin et al. (1997) fig 3. UPGMA tree from ABO sequences.] 
+	TRANSLATE
+		1	Gorilla_gorilla,
+		2	Homo_sapiens,
+		3	Pan_troglodytes
+		;
+	TREE * ohuigin_etal_1997fig3 = (1,(2,3));
+ENDBLOCK;

@@ -1,0 +1,28 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[All taxa in this tree other than Pygathrix_nemaeus were referred to as belonging to
+Rhinopithecus. MSW prefers Pygathrix. Subspecies were collapsed to species level.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Pygathrix_nemaeus
+		Pygathrix_avunculus
+		Pygathrix_roxellana
+		Pygathrix_bieti
+		Pygathrix_brelichi
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Jablonski (1995) fig 2. MP tree from morphological data.]
+	TRANSLATE
+		1	Pygathrix_nemaeus,
+		2	Pygathrix_avunculus,
+		3	Pygathrix_roxellana,
+		4	Pygathrix_bieti,
+		5	Pygathrix_brelichi
+		;
+	TREE * jablonski_1995fig2 = (1,(2,(3,(4,5))));
+ENDBLOCK;

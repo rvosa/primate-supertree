@@ -1,0 +1,59 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Several changes were made following MSW:
+Cacajo_calvus -> Cacajao_calvus (preferred spelling)
+Aotus_azarae -> Aotus_azarai (preferred spelling)
+Callithrix_humeralifer -> Callithrix_humeralifera (preferred spelling)
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Callithrix_mauesi is unknown to MSW (discovered post 1992), so was pruned from the data.]
+	DIMENSIONS NTAX = 18;
+	TAXLABELS
+		Pongo_pygmaeus
+		Colobus_polykomos
+		Leontopithecus_rosalia
+		Callimico_goeldii
+		Callithrix_pygmaea
+		Callithrix_argentata
+		Callithrix_humeralifera
+		Callithrix_jacchus
+		Callithrix_geoffroyi
+		Saguinus_bicolor
+		Saguinus_fuscicollis
+		Cebus_olivaceus
+		Aotus_azarai
+		Alouatta_seniculus
+		Ateles_chamek
+		Lagothrix_lagotricha
+		Callicebus_torquatus
+		Cacajao_calvus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Chaves et al. (1999) fig 2. Consensus of MP and ML analysis
+of vWF nucleotide sequences.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Colobus_polykomos,
+		3	Leontopithecus_rosalia,
+		4	Callimico_goeldii,
+		5	Callithrix_pygmaea,
+		6	Callithrix_argentata,
+		7	Callithrix_humeralifera,
+		8	Callithrix_jacchus,
+		9	Callithrix_geoffroyi,
+		10	Saguinus_bicolor,
+		11	Saguinus_fuscicollis,
+		12	Cebus_olivaceus,
+		13	Aotus_azarai,
+		14	Alouatta_seniculus,
+		15	Ateles_chamek,
+		16	Lagothrix_lagotricha,
+		17	Callicebus_torquatus,
+		18	Cacajao_calvus
+		;
+	TREE * chaves_etal1999Fig2 = (1,2,(((((3,(4,((5,(6,7)),(8,9)))),(10,11)),(12,13)),(14,(15,16))),(17,18)));
+ENDBLOCK;

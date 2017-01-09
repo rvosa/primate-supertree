@@ -1,0 +1,37 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Propithecus_sp. assumed to be Propithecus_tattersalli]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Cebus_albifrons
+		Leontopithecus_rosalia
+		Macaca_mulatta
+		Colobus_guereza
+		Homo_sapiens
+		Pan_troglodytes
+		Tarsius_syrichta
+		Otolemur_crassicaudatus
+		Propithecus_tattersalli
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Jaworski (1995) fig 4c. MP tree from exon 3 from 
+alphaA-crystallin. Fig 4b was excluded (an NJ tree) since 4c is an MP tree from the
+same data.]
+	TRANSLATE
+		1	Cebus_albifrons,
+		2	Leontopithecus_rosalia,
+		3	Macaca_mulatta,
+		4	Colobus_guereza,
+		5	Homo_sapiens,
+		6	Pan_troglodytes,
+		7	Tarsius_syrichta,
+		8	Otolemur_crassicaudatus,
+		9	Propithecus_tattersalli
+		;
+	TREE * jaworski_1995fig4c = (((1,2),(3,4),(5,6)),(9,(7,8)));
+ENDBLOCK;

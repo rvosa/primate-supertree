@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Galago_senegalensis
+		Otolemur_garnettii
+		Homo_sapiens
+		Saimiri_sciureus
+		Callithrix_jacchus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Zhou et al. (1997) fig 3. NJ tree from X-linked color pigment sequences.]
+	TRANSLATE
+		1	Galago_senegalensis,
+		2	Otolemur_garnettii,
+		3	Homo_sapiens,
+		4	Saimiri_sciureus,
+		5	Callithrix_jacchus
+		;
+	TREE * zhou_etal_1997fig3 = ((1,2),(3,(4,5)));
+ENDBLOCK;

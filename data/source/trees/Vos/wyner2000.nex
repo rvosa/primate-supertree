@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed subspecies and haplotypes.]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Propithecus_tattersalli
+		Daubentonia_madagascariensis
+		Varecia_variegata
+		Eulemur_mongoz
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_rubriventer
+		Eulemur_coronatus
+		Lemur_catta
+		Hapalemur_simus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wyner et al. (2000) fig 2a. MP tree from concatenated cytb, 12s rRNA, D-loop, casein
+kinase II intron, morphological and IRBP data.]
+	TRANSLATE
+		1	Propithecus_tattersalli,
+		2	Daubentonia_madagascariensis,
+		3	Varecia_variegata,
+		4	Eulemur_mongoz,
+		5	Eulemur_fulvus,
+		6	Eulemur_macaco,
+		7	Eulemur_rubriventer,
+		8	Eulemur_coronatus,
+		9	Lemur_catta,
+		10	Hapalemur_simus
+		;
+	TREE * wyner_etal_2000fig2a = (1,(2,(3,((4,((5,7),(6,8))),(9,10)))));
+ENDBLOCK;

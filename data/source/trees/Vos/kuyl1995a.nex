@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Subspecies of Cercopithecus_aethiops collapsed to Chlorocebus_aethiops.
+Renamed:
+Cercocebus_torquatus_atys -> Cercocebus_torquatus]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Chlorocebus_aethiops
+		Erythrocebus_patas
+		Macaca_mulatta
+		Cercocebus_torquatus
+		Pan_troglodytes
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kuyl et al. (1995) fig 2. ML tree based on CD4.]
+	TRANSLATE
+		1	Chlorocebus_aethiops,
+		2	Erythrocebus_patas,
+		3	Macaca_mulatta,
+		4	Cercocebus_torquatus,
+		5	Pan_troglodytes,
+		6	Homo_sapiens
+		;
+	TREE * kuyl_etal_1995fig3 = (((1,2),(3,4)),(5,6));
+ENDBLOCK;

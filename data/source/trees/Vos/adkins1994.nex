@@ -1,0 +1,71 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Original tree includes Papio anubis as the sister species to P. hamadryas, but
+MSW considers the two synonymous, so they were collapsed. The authors refer to
+Cercopithecus aethiops, but Chlorocebus aethiops is preferred, so this was changed.
+Also, Eulemur macaco was referred to Lemur macaco in the article.]
+	DIMENSIONS NTAX = 24;
+	TAXLABELS
+		Homo_sapiens
+		Pan_paniscus
+		Gorilla_gorilla
+		Hylobates_syndactylus
+		Papio_hamadryas
+		Theropithecus_gelada
+		Macaca_fascicularis
+		Macaca_mulatta
+		Chlorocebus_aethiops
+		Cercocebus_galeritus
+		Mandrillus_leucophaeus
+		Lagothrix_lagotricha
+		Alouatta_palliata
+		Tarsius_syrichta
+		Tarsius_bancanus
+		Daubentonia_madagascariensis
+		Hapalemur_griseus
+		Lemur_catta
+		Eulemur_macaco
+		Propithecus_tattersalli
+		Varecia_variegata
+		Cheirogaleus_medius
+		Nycticebus_coucang
+		Galago_senegalensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Adkins & Honeycutt (1994). MP tree from COII nucleotide sequences.
+The paper shows a second tree in Fig 3b based on a subset (transversions) of the data
+from this tree. I have decided to exclude trees like that and to go with the tree based
+on the whole data set, hence it's not shown here.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_paniscus,
+		3	Gorilla_gorilla,
+		4	Hylobates_syndactylus,
+		5	Papio_hamadryas,
+		6	Theropithecus_gelada,
+		7	Macaca_fascicularis,
+		8	Macaca_mulatta,
+		9	Chlorocebus_aethiops,
+		10	Cercocebus_galeritus,
+		11	Mandrillus_leucophaeus,
+		12	Lagothrix_lagotricha,
+		13	Alouatta_palliata,
+		14	Tarsius_syrichta,
+		15	Tarsius_bancanus,
+		16	Daubentonia_madagascariensis,
+		17	Hapalemur_griseus,
+		18	Lemur_catta,
+		19	Eulemur_macaco,
+		20	Propithecus_tattersalli,
+		21	Varecia_variegata,
+		22	Cheirogaleus_medius,
+		23	Nycticebus_coucang,
+		24	Galago_senegalensis
+		;
+	TREE * Adkins_Honeycutt1994_fig3A = ((((4,(3,(1,2))),((9,(((5,6),(10,11)),(7,8))),(12,13))),(14,15)),(16,((22,(20,(21,(19,(17,18))))),(23,24))));
+ENDBLOCK;

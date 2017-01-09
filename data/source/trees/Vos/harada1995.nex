@@ -1,0 +1,83 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Synonym changes:
+Cebus_nigrivittatus -> Cebus_olivaceus
+Spelling changes:
+Lagothrix_lagothricha -> Lagothrix_lagotricha
+Aotus_azarae -> Aotus_azarai
+Genus change:
+Cebuella_pygmaea -> Callithrix_pygmaea
+Pruned Cebus kaapori.]
+	DIMENSIONS NTAX = 29;
+	TAXLABELS
+		Tarsius_syrichta
+		Macaca_mulatta
+		Pongo_pygmaeus
+		Hylobates_lar
+		Homo_sapiens
+		Gorilla_gorilla
+		Pan_paniscus
+		Pan_troglodytes
+		Alouatta_belzebul
+		Alouatta_seniculus
+		Ateles_geoffroyi
+		Ateles_belzebuth
+		Brachyteles_arachnoides
+		Lagothrix_lagotricha
+		Callicebus_moloch
+		Callicebus_torquatus
+		Pithecia_irrorata
+		Chiropotes_satanas
+		Cacajao_calvus
+		Cebus_albifrons
+		Cebus_olivaceus
+		Saimiri_boliviensis
+		Saimiri_sciureus
+		Aotus_azarai
+		Saguinus_midas
+		Leontopithecus_rosalia
+		Callimico_goeldii
+		Callithrix_pygmaea
+		Callithrix_jacchus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Harada et al. (1995) fig 3. MP tree from epsilon-globin sequences. NJ and combined data trees
+were excluded.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Macaca_mulatta,
+		3	Pongo_pygmaeus,
+		4	Hylobates_lar,
+		5	Homo_sapiens,
+		6	Gorilla_gorilla,
+		7	Pan_paniscus,
+		8	Pan_troglodytes,
+		9	Alouatta_belzebul,
+		10	Alouatta_seniculus,
+		11	Ateles_geoffroyi,
+		12	Ateles_belzebuth,
+		13	Brachyteles_arachnoides,
+		14	Lagothrix_lagotricha,
+		15	Callicebus_moloch,
+		16	Callicebus_torquatus,
+		17	Pithecia_irrorata,
+		18	Chiropotes_satanas,
+		19	Cacajao_calvus,
+		20	Cebus_albifrons,
+		21	Cebus_olivaceus,
+		22	Saimiri_boliviensis,
+		23	Saimiri_sciureus,
+		24	Aotus_azarai,
+		25	Saguinus_midas,
+		26	Leontopithecus_rosalia,
+		27	Callimico_goeldii,
+		28	Callithrix_pygmaea,
+		29	Callithrix_jacchus
+		;
+	TREE * harada_etal_1995fig3 = (1,((2,(3,(4,(5,6,(7,8))))),((((9,10),((11,12),(13,14))),((15,16),(17,(18,19)))),(((20,21),(22,23)),(24,((25,26),(27,(28,29))))))));
+ENDBLOCK;

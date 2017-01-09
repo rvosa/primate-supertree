@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Cebuella_pygmaea changed to Callithrix_pygmaea (preferred genus).]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Saguinus_midas
+		Cebus_apella
+		Leontopithecus_rosalia
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Callithrix_argentata
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Nagamachi et al. (1999) fig 5c. MP tree from karyotypes. Fig 5d excluded as a NJ tree.]
+	TRANSLATE
+		1	Saguinus_midas,
+		2	Cebus_apella,
+		3	Leontopithecus_rosalia,
+		4	Callithrix_jacchus,
+		5	Callithrix_pygmaea,
+		6	Callithrix_argentata
+		;
+	TREE * nagamachi_etal_1999fig5c = (1,2,(3,(4,(5,6))));
+ENDBLOCK;

@@ -1,0 +1,36 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Tarsius_syrichta
+		Cebus_albifrons
+		Ateles_geoffroyi
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Alouatta_belzebul
+		Alouatta_seniculus
+		Macaca_mulatta
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Meireles et al. (1999) fig 6. ML tree from concatenated gamma-globin,
+epsilon-globin and IRBP intron 1 sequences.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Cebus_albifrons,
+		3	Ateles_geoffroyi,
+		4	Lagothrix_lagotricha,
+		5	Brachyteles_arachnoides,
+		6	Alouatta_belzebul,
+		7	Alouatta_seniculus,
+		8	Macaca_mulatta,
+		9	Homo_sapiens
+		;
+	TREE * meireles_etal_1999fig6 = (1,(2,((3,(4,5)),(6,7))),(8,9));
+ENDBLOCK;

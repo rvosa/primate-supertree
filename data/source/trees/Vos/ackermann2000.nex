@@ -1,0 +1,34 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Saguinus_nigricollis
+		Saguinus_fuscicollis
+		Saguinus_midas
+		Saguinus_oedipus
+		Saguinus_mystax
+		Saguinus_geoffroyi
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Ackermann & Cheverud (2000):
+1. Tree derived from matrix correlation analysis.
+2. Tree based on the correlations between the first PCI components.
+3. Tree based on morphological distances between group means.]
+	TRANSLATE
+		1	Saguinus_nigricollis,
+		2	Saguinus_fuscicollis,
+		3	Saguinus_midas,
+		4	Saguinus_oedipus,
+		5	Saguinus_mystax,
+		6	Saguinus_geoffroyi
+		;
+	TREE * ackermann_cheverud2000fig3a= ((3,(1,2)),(4,(5,6)));
+	TREE ackermann_cheverud2000fig3c= (6,(5,(4,(1,(2,3)))));
+	TREE ackermann_cheverud2000fig3d= ((5,(3,(1,2))),(4,6));
+ENDBLOCK;

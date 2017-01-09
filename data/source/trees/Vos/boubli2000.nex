@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Saimiri_sciureus
+		Cacajao_calvus
+		Cacajao_melanocephalus
+		Chiropotes_albinasus
+		Pithecia_monachus
+		Pithecia_albicans
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Boubli & Ditchfield (2000), Fig 1.
+Cytochrome b analysed under maximum parsimony.]
+	TRANSLATE
+		1	Saimiri_sciureus,
+		2	Cacajao_calvus,
+		3	Cacajao_melanocephalus,
+		4	Chiropotes_albinasus,
+		5	Pithecia_monachus,
+		6	Pithecia_albicans
+		;
+	TREE * boubli_2000Fig1 = (1,((4,(2,3)),(5,6)));
+ENDBLOCK;

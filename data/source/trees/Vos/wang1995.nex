@@ -1,0 +1,39 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Collapsed subspecies
+Rhinopithecus_bieti -> Pygathrix_bieti (preferred genus)
+Rhinopithecus_roxellana -> Pygathrix_roxellana (preferred genus)
+Presbytis_phayrei -> Trachypithecus_phayrei (preferred genus)
+Presbytis_francoisi -> Trachypithecus_francoisi (preferred genus)
+Macaca_irus -> Macaca_fascicularis]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Hylobates_leucogenys
+		Pygathrix_nemaeus
+		Pygathrix_bieti
+		Pygathrix_roxellana
+		Trachypithecus_phayrei
+		Trachypithecus_francoisi
+		Macaca_mulatta
+		Macaca_fascicularis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wang et al. (1995) fig 2. MP tree based on informative sites of restriction maps.] 
+	TRANSLATE
+		1	Hylobates_leucogenys,
+		2	Pygathrix_nemaeus,
+		3	Pygathrix_bieti,
+		4	Pygathrix_roxellana,
+		5	Trachypithecus_phayrei,
+		6	Trachypithecus_francoisi,
+		7	Macaca_mulatta,
+		8	Macaca_fascicularis
+		;
+	TREE * wang_etal_1995fig2 = (1,(2,((3,4),(5,6))),(7,8));
+ENDBLOCK;

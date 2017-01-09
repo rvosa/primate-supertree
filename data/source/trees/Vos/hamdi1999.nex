@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Papio_cynocephalus was renamed to the preferred Papio_hamadryas.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Papio_hamadryas
+		Macaca_mulatta
+		Macaca_silenus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hamdi et al. (1999). MP tree from DNA repeats.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Gorilla_gorilla,
+		3	Homo_sapiens,
+		4	Pan_paniscus,
+		5	Pan_troglodytes,
+		6	Papio_hamadryas,
+		7	Macaca_mulatta,
+		8	Macaca_silenus
+		;
+	TREE * hamdi_etal_1999fig5 = ((1,(2,(3,(4,5)))),(6,(7,8)));
+ENDBLOCK;

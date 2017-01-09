@@ -1,0 +1,42 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Galago_crassicaudatus -> Otolemur_crassicaudatus
+Galago_garnettii -> Otolemur_garnettii
+Mirza_coquereli -> Microcebus_coquereli]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Perodicticus_potto
+		Nycticebus_coucang
+		Microcebus_coquereli
+		Galago_alleni
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Galago_senegalensis
+		Galago_moholi
+		Eulemur_macaco
+		Lemur_catta
+		Varecia_variegata
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Masters et al. (1994) fig 2a. MP tree from allozyme data.]
+	TRANSLATE
+		1	Perodicticus_potto,
+		2	Nycticebus_coucang,
+		3	Microcebus_coquereli,
+		4	Galago_alleni,
+		5	Otolemur_crassicaudatus,
+		6	Otolemur_garnettii,
+		7	Galago_senegalensis,
+		8	Galago_moholi,
+		9	Eulemur_macaco,
+		10	Lemur_catta,
+		11	Varecia_variegata
+		;
+	TREE * masters_etal_1994fig2a = (1,2,3,(4,(5,6)),(7,8),(9,10,11));
+ENDBLOCK;

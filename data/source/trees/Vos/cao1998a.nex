@@ -1,0 +1,52 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article refers to Cercopithecus aethiops, this has been changed to the
+preferred Chlorocebus aethiops. MSW considers Papio anubis synonymous with 
+Papio hamadryas, so this taxon was renamed.]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Chlorocebus_aethiops
+		Papio_hamadryas
+		Macaca_mulatta
+		Cercocebus_galeritus
+		Alouatta_palliata
+		Lagothrix_lagotricha
+		Cheirogaleus_medius
+		Eulemur_macaco
+		Lemur_catta
+		Nycticebus_coucang
+		Galago_senegalensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Cao et al. (1998), Fig 5, ProtML tree of COII. Other trees in this article
+are described in cao1998{b-e}.nex.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Chlorocebus_aethiops,
+		7	Papio_hamadryas,
+		8	Macaca_mulatta,
+		9	Cercocebus_galeritus,
+		10	Alouatta_palliata,
+		11	Lagothrix_lagotricha,
+		12	Cheirogaleus_medius,
+		13	Eulemur_macaco,
+		14	Lemur_catta,
+		15	Nycticebus_coucang,
+		16	Galago_senegalensis
+		;
+	TREE * cao_etal1998fig5 = ((((1,(2,(3,(4,5)))),(6,(7,(8,9)))),(10,11)),((12,(13,14)),(15,16)));
+ENDBLOCK;

@@ -1,0 +1,28 @@
+#NEXUS
+
+
+BEGIN TAXA;
+["Lemur", "Galago" and "Propithecus" assumed to be Lemur_catta, Galago_senegalensis and
+Propithecus_tattersalli respectively.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Tarsius_syrichta
+		Homo_sapiens
+		Lemur_catta
+		Galago_senegalensis
+		Propithecus_tattersalli
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Zietkiewicz et al. (1998) fig 3. ML tree from Alu sequences.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Homo_sapiens,
+		3	Lemur_catta,
+		4	Galago_senegalensis,
+		5	Propithecus_tattersalli
+		;
+	TREE * zietkiewicz_etal_1999fig3 = ((1,2),(4,(3,5)));
+ENDBLOCK;

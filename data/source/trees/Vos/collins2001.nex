@@ -1,0 +1,36 @@
+#NEXUS
+
+
+BEGIN TAXA;
+["Ateles hybridus" is unknown to MSW, so has been removed. The article references Ateles belzebuth 
+chamek and A.b. marginatus. These taxa have been elevated to A. chamek and A. marginatus. Subspecies
+of Ateles_geoffroyi that are not recognized by MSW have been collapsed to Ateles_geoffroyi]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Alouatta_palliata
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Ateles_paniscus
+		Ateles_marginatus
+		Ateles_chamek
+		Ateles_belzebuth
+		Ateles_geoffroyi
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Collins & Dubach (2001) fig 2a. MP analysis of aldolase A intron V. The article
+also describes an NJ tree on the same data, which has been excluded here.]
+	TRANSLATE
+		1	Alouatta_palliata,
+		2	Lagothrix_lagotricha,
+		3	Brachyteles_arachnoides,
+		4	Ateles_paniscus,
+		5	Ateles_marginatus,
+		6	Ateles_chamek,
+		7	Ateles_belzebuth,
+		8	Ateles_geoffroyi
+		;
+	TREE * collins_dubach_2001fig2a = (1,(2,(3,(4,(5,6,7,8)))));
+ENDBLOCK;

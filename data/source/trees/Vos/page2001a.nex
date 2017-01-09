@@ -1,0 +1,62 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+pruned branch "Platyrrhini" (ambiguous).
+Papio_hamadryas_cynocephalus -> Papio_hamadryas (elevated to species)
+Papio_atterimus -> Lophocebus_albigena (preferred synonym).]
+	DIMENSIONS NTAX = 21;
+	TAXLABELS
+		Otolemur_crassicaudatus
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Lophocebus_albigena
+		Papio_hamadryas
+		Theropithecus_gelada
+		Mandrillus_leucophaeus
+		Cercocebus_galeritus
+		Macaca_mulatta
+		Macaca_nemestrina
+		Chlorocebus_aethiops
+		Cercopithecus_cephus
+		Colobus_guereza
+		Trachypithecus_obscurus
+		Nasalis_larvatus
+		Tarsius_syrichta
+		Tarsius_bancanus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Page & Goodman (2001) fig 4. ML tree from gamma1-gamma2 noncoding sequences.]
+	TRANSLATE
+		1	Otolemur_crassicaudatus,
+		2	Hylobates_lar,
+		3	Pongo_pygmaeus,
+		4	Gorilla_gorilla,
+		5	Homo_sapiens,
+		6	Pan_troglodytes,
+		7	Pan_paniscus,
+		8	Lophocebus_albigena,
+		9	Papio_hamadryas,
+		10	Theropithecus_gelada,
+		11	Mandrillus_leucophaeus,
+		12	Cercocebus_galeritus,
+		13	Macaca_mulatta,
+		14	Macaca_nemestrina,
+		15	Chlorocebus_aethiops,
+		16	Cercopithecus_cephus,
+		17	Colobus_guereza,
+		18	Trachypithecus_obscurus,
+		19	Nasalis_larvatus,
+		20	Tarsius_syrichta,
+		21	Tarsius_bancanus
+		;
+	TREE * page_goodman_2001fig4 = (1,(((2,(3,(4,(5,(6,7))))),(((((8,(9,10)),(11,12)),(13,14)),(15,16)),(17,(18,19)))),(20,21)));
+ENDBLOCK;

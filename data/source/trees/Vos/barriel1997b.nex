@@ -1,0 +1,42 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article includes Galago crassicaudatus and Lemur fulvus as outgroups
+in the analysis. These were pruned here as they convey no phylogenetic 
+information.]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Hylobates_lar
+		Pongo_pygmaeus
+		Macaca_mulatta
+		Ateles_geoffroyi
+		Cebus_albifrons
+		Aotus_trivirgatus
+		Tarsius_syrichta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Barriel (1997), fig 2b. Combined morphological and molecular
+(pseudo-eta globin) data analysed under maximum parsimony.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Hylobates_lar,
+		6	Pongo_pygmaeus,
+		7	Macaca_mulatta,
+		8	Ateles_geoffroyi,
+		9	Cebus_albifrons,
+		10	Aotus_trivirgatus,
+		11	Tarsius_syrichta
+		;
+	TREE * barriel_1997fig2b = (11,((7,(6,(5,(4,(3,(1,2)))))),(8,(9,10))));
+ENDBLOCK;

@@ -1,0 +1,45 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed Pongo subspecies.]
+	DIMENSIONS NTAX = 13;
+	TAXLABELS
+		Tarsius_bancanus
+		Perodicticus_potto
+		Propithecus_verreauxi
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Theropithecus_gelada
+		Chlorocebus_aethiops
+		Saimiri_ustus
+		Saimiri_sciureus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wu et al. (2000) fig 3a. MP tree from COI sequences. Fig 3b was excluded since it
+only uses transversions (i.e. a subset of the data), fig 4 was excluded since it uses the data 
+translated into amino acid sequences.]
+	TRANSLATE
+		1	Tarsius_bancanus,
+		2	Perodicticus_potto,
+		3	Propithecus_verreauxi,
+		4	Hylobates_lar,
+		5	Pongo_pygmaeus,
+		6	Gorilla_gorilla,
+		7	Homo_sapiens,
+		8	Pan_troglodytes,
+		9	Pan_paniscus,
+		10	Theropithecus_gelada,
+		11	Chlorocebus_aethiops,
+		12	Saimiri_ustus,
+		13	Saimiri_sciureus
+		;
+	TREE * wu_etal_2000fig3a = (1,2,3,(((4,5,(6,7,(8,9))),(10,11)),(12,13)));
+ENDBLOCK;

@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Article references a number of haplotype of subspecies that form into monophyletic groups.
+These have been collapsed and elevated to species level.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Cebus_apella
+		Saimiri_boliviensis
+		Saimiri_oerstedii
+		Saimiri_sciureus
+		Saimiri_ustus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Cropp & Boinski 2000:
+1. ML analysis of cytb (fig 2f)
+2. ML analysis of D-loop (fig 3d)
+3. MP analysis of ZFX last intron (fig 4a)
+4. MP analysis of IRBP intron 1 (fig 4b)
+Other trees in the article are excluded because they were MP when ML was also
+available; because they were a consensus over trees shown here or because they
+were based on analysis of combined data separate results of which are shown here.]
+	TRANSLATE
+		1	Cebus_apella,
+		2	Saimiri_boliviensis,
+		3	Saimiri_oerstedii,
+		4	Saimiri_sciureus,
+		5	Saimiri_ustus
+		;
+	TREE * cropp_boinski_2000fig2f = (1,(2,3),(4,5));
+	TREE cropp_boinski_2000fig3d = (1,(2,(4,(3,5))));
+	TREE cropp_boinski_2000fig4a = (1,(2,(3,4,5)));
+	TREE cropp_boinski_2000fig4b = (1,(2,3,4,5));
+ENDBLOCK;

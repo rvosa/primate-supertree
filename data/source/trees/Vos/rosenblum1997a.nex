@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Presbytis_comata
+		Trachypithecus_auratus
+		Trachypithecus_cristatus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Rosenblum et al. (1997) fig 2. MP tree from ND3, ND4, tRNA-GLY and tRNA-LEU.]
+	TRANSLATE
+		1	Presbytis_comata,
+		2	Trachypithecus_auratus,
+		3	Trachypithecus_cristatus
+		;
+	TREE * rosenblum_etal_1997fig2 = (1,(2,3));
+ENDBLOCK;

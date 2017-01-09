@@ -1,0 +1,39 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Otolemur_crassicaudatus -> Galago_crassicaudatus (preferred genus)]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Lemur_catta
+		Hapalemur_griseus
+		Eulemur_fulvus
+		Varecia_variegata
+		Cheirogaleus_major
+		Propithecus_tattersalli
+		Daubentonia_madagascariensis
+		Nycticebus_coucang
+		Otolemur_crassicaudatus
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder et al. (1996, Mol. Biol. Evol.) fig 4. MP tree from concatenated 
+cytb and COII sequences. Other trees excluded as they are based on subsets of the data.]
+	TRANSLATE
+		1	Lemur_catta,
+		2	Hapalemur_griseus,
+		3	Eulemur_fulvus,
+		4	Varecia_variegata,
+		5	Cheirogaleus_major,
+		6	Propithecus_tattersalli,
+		7	Daubentonia_madagascariensis,
+		8	Nycticebus_coucang,
+		9	Otolemur_crassicaudatus,
+		10	Homo_sapiens
+		;
+	TREE * yoder_etal_1996fig4 = (10,((7,(5,6,(4,(3,(1,2))))),(8,9)));
+ENDBLOCK;

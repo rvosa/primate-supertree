@@ -1,0 +1,453 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 218;
+	TAXLABELS
+		Callimico_goeldii
+		Callithrix_argentata
+		Callithrix_aurita
+		Callithrix_flaviceps
+		Callithrix_geoffroyi
+		Callithrix_humeralifera
+		Callithrix_jacchus
+		Callithrix_kuhlii
+		Callithrix_penicillata
+		Callithrix_pygmaea
+		Leontopithecus_chrysomela
+		Leontopithecus_chrysopygus
+		Leontopithecus_rosalia
+		Saguinus_bicolor
+		Saguinus_fuscicollis
+		Saguinus_geoffroyi
+		Saguinus_imperator
+		Saguinus_inustus
+		Saguinus_labiatus
+		Saguinus_leucopus
+		Saguinus_midas
+		Saguinus_mystax
+		Saguinus_nigricollis
+		Saguinus_oedipus
+		Saguinus_tripartitus
+		Alouatta_belzebul
+		Alouatta_caraya
+		Alouatta_fusca
+		Alouatta_palliata
+		Alouatta_pigra
+		Alouatta_seniculus
+		Aotus_azarai
+		Aotus_brumbacki
+		Aotus_infulatus
+		Aotus_lemurinus
+		Aotus_miconax
+		Aotus_nancymaae
+		Aotus_nigriceps
+		Aotus_trivirgatus
+		Aotus_vociferans
+		Ateles_belzebuth
+		Ateles_chamek
+		Ateles_fusciceps
+		Ateles_geoffroyi
+		Ateles_marginatus
+		Ateles_paniscus
+		Brachyteles_arachnoides
+		Lagothrix_flavicauda
+		Lagothrix_lagotricha
+		Callicebus_brunneus
+		Callicebus_caligatus
+		Callicebus_cinerascens
+		Callicebus_cupreus
+		Callicebus_donacophilus
+		Callicebus_dubius
+		Callicebus_hoffmannsi
+		Callicebus_modestus
+		Callicebus_moloch
+		Callicebus_oenanthe
+		Callicebus_olallae
+		Callicebus_personatus
+		Callicebus_torquatus
+		Cebus_albifrons
+		Cebus_apella
+		Cebus_capucinus
+		Cebus_olivaceus
+		Saimiri_boliviensis
+		Saimiri_oerstedii
+		Saimiri_sciureus
+		Saimiri_ustus
+		Saimiri_vanzolinii
+		Cacajao_calvus
+		Cacajao_melanocephalus
+		Chiropotes_albinasus
+		Chiropotes_satanas
+		Pithecia_aequatorialis
+		Pithecia_albicans
+		Pithecia_irrorata
+		Pithecia_monachus
+		Pithecia_pithecia
+		Allenopithecus_nigroviridis
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Cercopithecus_ascanius
+		Cercopithecus_campbelli
+		Cercopithecus_cephus
+		Cercopithecus_diana
+		Cercopithecus_dryas
+		Cercopithecus_erythrogaster
+		Cercopithecus_erythrotis
+		Cercopithecus_hamlyni
+		Cercopithecus_lhoesti
+		Cercopithecus_mitis
+		Cercopithecus_mona
+		Cercopithecus_neglectus
+		Cercopithecus_nictitans
+		Cercopithecus_petaurista
+		Cercopithecus_pogonias
+		Cercopithecus_preussi
+		Cercopithecus_solatus
+		Cercopithecus_wolfi
+		Chlorocebus_aethiops
+		Erythrocebus_patas
+		Lophocebus_albigena
+		Macaca_arctoides
+		Macaca_assamensis
+		Macaca_cyclopis
+		Macaca_fascicularis
+		Macaca_fuscata
+		Macaca_maura
+		Macaca_mulatta
+		Macaca_nemestrina
+		Macaca_nigra
+		Macaca_ochreata
+		Macaca_radiata
+		Macaca_silenus
+		Macaca_sinica
+		Macaca_sylvanus
+		Macaca_thibetana
+		Macaca_tonkeana
+		Mandrillus_leucophaeus
+		Mandrillus_sphinx
+		Miopithecus_talapoin
+		Papio_hamadryas
+		Theropithecus_gelada
+		Colobus_angolensis
+		Colobus_guereza
+		Colobus_polykomos
+		Colobus_satanas
+		Nasalis_concolor
+		Nasalis_larvatus
+		Presbytis_comata
+		Presbytis_frontata
+		Presbytis_melalophos
+		Presbytis_potenziani
+		Presbytis_rubicunda
+		Procolobus_badius
+		Procolobus_pennantii
+		Procolobus_verus
+		Pygathrix_avunculus
+		Pygathrix_bieti
+		Pygathrix_brelichi
+		Pygathrix_nemaeus
+		Pygathrix_roxellana
+		Semnopithecus_entellus
+		Trachypithecus_auratus
+		Trachypithecus_cristatus
+		Trachypithecus_francoisi
+		Trachypithecus_geei
+		Trachypithecus_johnii
+		Trachypithecus_obscurus
+		Trachypithecus_phayrei
+		Trachypithecus_pileatus
+		Trachypithecus_vetulus
+		Allocebus_trichotis
+		Cheirogaleus_major
+		Cheirogaleus_medius
+		Microcebus_coquereli
+		Microcebus_murinus
+		Microcebus_rufus
+		Phaner_furcifer
+		Daubentonia_madagascariensis
+		Euoticus_elegantulus
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Pongo_pygmaeus
+		Hylobates_agilis
+		Hylobates_concolor
+		Hylobates_gabriellae
+		Hylobates_hoolock
+		Hylobates_klossii
+		Hylobates_lar
+		Hylobates_leucogenys
+		Hylobates_moloch
+		Hylobates_muelleri
+		Hylobates_pileatus
+		Hylobates_syndactylus
+		Avahi_laniger
+		Indri_indri
+		Propithecus_diadema
+		Propithecus_tattersalli
+		Propithecus_verreauxi
+		Eulemur_coronatus
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_mongoz
+		Eulemur_rubriventer
+		Hapalemur_aureus
+		Hapalemur_griseus
+		Hapalemur_simus
+		Lemur_catta
+		Varecia_variegata
+		Arctocebus_calabarensis
+		Loris_tardigradus
+		Nycticebus_coucang
+		Nycticebus_pygmaeus
+		Perodicticus_potto
+		Lepilemur_dorsalis
+		Lepilemur_edwardsi
+		Lepilemur_leucopus
+		Lepilemur_mustelinus
+		Lepilemur_ruficaudatus
+		Lepilemur_septentrionalis
+		Tarsius_bancanus
+		Tarsius_pumilus
+		Tarsius_spectrum
+		Tarsius_syrichta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wilson & Reeder (1993). Taxonomic.]
+	TRANSLATE
+		1	Callimico_goeldii,
+		2	Callithrix_argentata,
+		3	Callithrix_aurita,
+		4	Callithrix_flaviceps,
+		5	Callithrix_geoffroyi,
+		6	Callithrix_humeralifera,
+		7	Callithrix_jacchus,
+		8	Callithrix_kuhlii,
+		9	Callithrix_penicillata,
+		10	Callithrix_pygmaea,
+		11	Leontopithecus_chrysomela,
+		12	Leontopithecus_chrysopygus,
+		13	Leontopithecus_rosalia,
+		14	Saguinus_bicolor,
+		15	Saguinus_fuscicollis,
+		16	Saguinus_geoffroyi,
+		17	Saguinus_imperator,
+		18	Saguinus_inustus,
+		19	Saguinus_labiatus,
+		20	Saguinus_leucopus,
+		21	Saguinus_midas,
+		22	Saguinus_mystax,
+		23	Saguinus_nigricollis,
+		24	Saguinus_oedipus,
+		25	Saguinus_tripartitus,
+		26	Alouatta_belzebul,
+		27	Alouatta_caraya,
+		28	Alouatta_fusca,
+		29	Alouatta_palliata,
+		30	Alouatta_pigra,
+		31	Alouatta_seniculus,
+		32	Aotus_azarai,
+		33	Aotus_brumbacki,
+		34	Aotus_infulatus,
+		35	Aotus_lemurinus,
+		36	Aotus_miconax,
+		37	Aotus_nancymaae,
+		38	Aotus_nigriceps,
+		39	Aotus_trivirgatus,
+		40	Aotus_vociferans,
+		41	Ateles_belzebuth,
+		42	Ateles_chamek,
+		43	Ateles_fusciceps,
+		44	Ateles_geoffroyi,
+		45	Ateles_marginatus,
+		46	Ateles_paniscus,
+		47	Brachyteles_arachnoides,
+		48	Lagothrix_flavicauda,
+		49	Lagothrix_lagotricha,
+		50	Callicebus_brunneus,
+		51	Callicebus_caligatus,
+		52	Callicebus_cinerascens,
+		53	Callicebus_cupreus,
+		54	Callicebus_donacophilus,
+		55	Callicebus_dubius,
+		56	Callicebus_hoffmannsi,
+		57	Callicebus_modestus,
+		58	Callicebus_moloch,
+		59	Callicebus_oenanthe,
+		60	Callicebus_olallae,
+		61	Callicebus_personatus,
+		62	Callicebus_torquatus,
+		63	Cebus_albifrons,
+		64	Cebus_apella,
+		65	Cebus_capucinus,
+		66	Cebus_olivaceus,
+		67	Saimiri_boliviensis,
+		68	Saimiri_oerstedii,
+		69	Saimiri_sciureus,
+		70	Saimiri_ustus,
+		71	Saimiri_vanzolinii,
+		72	Cacajao_calvus,
+		73	Cacajao_melanocephalus,
+		74	Chiropotes_albinasus,
+		75	Chiropotes_satanas,
+		76	Pithecia_aequatorialis,
+		77	Pithecia_albicans,
+		78	Pithecia_irrorata,
+		79	Pithecia_monachus,
+		80	Pithecia_pithecia,
+		81	Allenopithecus_nigroviridis,
+		82	Cercocebus_galeritus,
+		83	Cercocebus_torquatus,
+		84	Cercopithecus_ascanius,
+		85	Cercopithecus_campbelli,
+		86	Cercopithecus_cephus,
+		87	Cercopithecus_diana,
+		88	Cercopithecus_dryas,
+		89	Cercopithecus_erythrogaster,
+		90	Cercopithecus_erythrotis,
+		91	Cercopithecus_hamlyni,
+		92	Cercopithecus_lhoesti,
+		93	Cercopithecus_mitis,
+		94	Cercopithecus_mona,
+		95	Cercopithecus_neglectus,
+		96	Cercopithecus_nictitans,
+		97	Cercopithecus_petaurista,
+		98	Cercopithecus_pogonias,
+		99	Cercopithecus_preussi,
+		100	Cercopithecus_solatus,
+		101	Cercopithecus_wolfi,
+		102	Chlorocebus_aethiops,
+		103	Erythrocebus_patas,
+		104	Lophocebus_albigena,
+		105	Macaca_arctoides,
+		106	Macaca_assamensis,
+		107	Macaca_cyclopis,
+		108	Macaca_fascicularis,
+		109	Macaca_fuscata,
+		110	Macaca_maura,
+		111	Macaca_mulatta,
+		112	Macaca_nemestrina,
+		113	Macaca_nigra,
+		114	Macaca_ochreata,
+		115	Macaca_radiata,
+		116	Macaca_silenus,
+		117	Macaca_sinica,
+		118	Macaca_sylvanus,
+		119	Macaca_thibetana,
+		120	Macaca_tonkeana,
+		121	Mandrillus_leucophaeus,
+		122	Mandrillus_sphinx,
+		123	Miopithecus_talapoin,
+		124	Papio_hamadryas,
+		125	Theropithecus_gelada,
+		126	Colobus_angolensis,
+		127	Colobus_guereza,
+		128	Colobus_polykomos,
+		129	Colobus_satanas,
+		130	Nasalis_concolor,
+		131	Nasalis_larvatus,
+		132	Presbytis_comata,
+		133	Presbytis_frontata,
+		134	Presbytis_melalophos,
+		135	Presbytis_potenziani,
+		136	Presbytis_rubicunda,
+		137	Procolobus_badius,
+		138	Procolobus_pennantii,
+		139	Procolobus_verus,
+		140	Pygathrix_avunculus,
+		141	Pygathrix_bieti,
+		142	Pygathrix_brelichi,
+		143	Pygathrix_nemaeus,
+		144	Pygathrix_roxellana,
+		145	Semnopithecus_entellus,
+		146	Trachypithecus_auratus,
+		147	Trachypithecus_cristatus,
+		148	Trachypithecus_francoisi,
+		149	Trachypithecus_geei,
+		150	Trachypithecus_johnii,
+		151	Trachypithecus_obscurus,
+		152	Trachypithecus_phayrei,
+		153	Trachypithecus_pileatus,
+		154	Trachypithecus_vetulus,
+		155	Allocebus_trichotis,
+		156	Cheirogaleus_major,
+		157	Cheirogaleus_medius,
+		158	Microcebus_coquereli,
+		159	Microcebus_murinus,
+		160	Microcebus_rufus,
+		161	Phaner_furcifer,
+		162	Daubentonia_madagascariensis,
+		163	Euoticus_elegantulus,
+		164	Galago_alleni,
+		165	Galago_gallarum,
+		166	Galago_matschiei,
+		167	Galago_moholi,
+		168	Galago_senegalensis,
+		169	Galagoides_demidoff,
+		170	Galagoides_zanzibaricus,
+		171	Otolemur_crassicaudatus,
+		172	Otolemur_garnettii,
+		173	Gorilla_gorilla,
+		174	Homo_sapiens,
+		175	Pan_paniscus,
+		176	Pan_troglodytes,
+		177	Pongo_pygmaeus,
+		178	Hylobates_agilis,
+		179	Hylobates_concolor,
+		180	Hylobates_gabriellae,
+		181	Hylobates_hoolock,
+		182	Hylobates_klossii,
+		183	Hylobates_lar,
+		184	Hylobates_leucogenys,
+		185	Hylobates_moloch,
+		186	Hylobates_muelleri,
+		187	Hylobates_pileatus,
+		188	Hylobates_syndactylus,
+		189	Avahi_laniger,
+		190	Indri_indri,
+		191	Propithecus_diadema,
+		192	Propithecus_tattersalli,
+		193	Propithecus_verreauxi,
+		194	Eulemur_coronatus,
+		195	Eulemur_fulvus,
+		196	Eulemur_macaco,
+		197	Eulemur_mongoz,
+		198	Eulemur_rubriventer,
+		199	Hapalemur_aureus,
+		200	Hapalemur_griseus,
+		201	Hapalemur_simus,
+		202	Lemur_catta,
+		203	Varecia_variegata,
+		204	Arctocebus_calabarensis,
+		205	Loris_tardigradus,
+		206	Nycticebus_coucang,
+		207	Nycticebus_pygmaeus,
+		208	Perodicticus_potto,
+		209	Lepilemur_dorsalis,
+		210	Lepilemur_edwardsi,
+		211	Lepilemur_leucopus,
+		212	Lepilemur_mustelinus,
+		213	Lepilemur_ruficaudatus,
+		214	Lepilemur_septentrionalis,
+		215	Tarsius_bancanus,
+		216	Tarsius_pumilus,
+		217	Tarsius_spectrum,
+		218	Tarsius_syrichta
+		;
+	TREE * wilson1993 = (162,(1,(2,3,4,5,6,7,8,9,10),(11,12,13),(14,15,16,17,18,19,20,21,22,23,24,25)),((26,27,28,29,30,31),(32,33,34,35,36,37,38,39,40),(47,(41,42,43,44,45,46),(48,49)),(50,51,52,53,54,55,56,57,58,59,60,61,62),((63,64,65,66),(67,68,69,70,71)),((72,73),(74,75),(76,77,78,79,80))),((81,102,103,104,123,124,125,(82,83),(84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101),(105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120),(121,122)),(145,(126,127,128,129),(130,131),(132,133,134,135,136),(137,138,139),(140,141,142,143,144),(146,147,148,149,150,151,152,153,154))),(155,161,(156,157),(158,159,160)),(163,(164,165,166,167,168),(169,170),(171,172)),(173,174,177,(175,176)),(178,179,180,181,182,183,184,185,186,187,188),(189,190,(191,192,193)),(202,203,(194,195,196,197,198),(199,200,201)),(204,205,208,(206,207)),(209,210,211,212,213,214),(215,216,217,218));
+ENDBLOCK;

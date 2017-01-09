@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Pruned Callithrix_mauesi (unknown to MSW).
+Changed Cebuella_pygmaea to Callithrix_pygmaea (preferred genus)
+Callithrix_humeralifer -> Callithrix_humeralifera (preferred spelling)]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Leontopithecus_chrysomela
+		Callithrix_pygmaea
+		Callithrix_humeralifera
+		Callithrix_argentata
+		Callithrix_aurita
+		Callithrix_kuhlii
+		Callithrix_jacchus
+		Callithrix_penicillata
+		Callithrix_geoffroyi
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Tagliaro et al. (1997) fig 4. ML tree from control region sequences.]
+	TRANSLATE
+		1	Leontopithecus_chrysomela,
+		2	Callithrix_pygmaea,
+		3	Callithrix_humeralifera,
+		4	Callithrix_argentata,
+		5	Callithrix_aurita,
+		6	Callithrix_kuhlii,
+		7	Callithrix_jacchus,
+		8	Callithrix_penicillata,
+		9	Callithrix_geoffroyi
+		;
+	TREE * tagliaro_etal_1997fig4 = (1,((2,(3,4)),(5,(6,7,8,9))));
+ENDBLOCK;

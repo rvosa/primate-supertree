@@ -1,0 +1,37 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article refers to Galago crassicaudatus, but MSW 
+prefers Otolemur crassicaudatus, so this was changed.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Homo_sapiens
+		Colobus_guereza
+		Saimiri_sciureus
+		Lemur_catta
+		Nycticebus_coucang
+		Otolemur_crassicaudatus
+		Tarsius_bancanus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[The article shows three trees in Fig 3. Tree 3B is a consensus
+over 3A plus all trees that aren't significantly worse, while 3C
+was constrained to the received wisdom on mammalian phylogenetic
+relationships. All three trees are based on the same data - 3A
+has the best score, so that tree is used here. Based on Cytochrome
+b, analysed under maximum likelihood.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Colobus_guereza,
+		3	Saimiri_sciureus,
+		4	Lemur_catta,
+		5	Nycticebus_coucang,
+		6	Otolemur_crassicaudatus,
+		7	Tarsius_bancanus
+		;
+	TREE * andrews_etal_1998fig3A= (7,((3,(1,2)),(4,(5,6))));
+ENDBLOCK;

@@ -1,0 +1,53 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 17;
+	TAXLABELS
+		Homo_sapiens
+		Erythrocebus_patas
+		Papio_hamadryas
+		Macaca_sylvanus
+		Macaca_arctoides
+		Macaca_fascicularis
+		Macaca_fuscata
+		Macaca_mulatta
+		Macaca_cyclopis
+		Macaca_assamensis
+		Macaca_radiata
+		Macaca_silenus
+		Macaca_nemestrina
+		Macaca_thibetana
+		Macaca_sinica
+		Macaca_nigra
+		Macaca_tonkeana
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hayasaka et al. (1996) fig 2b. MP tree from 896 bp of concatenated mtDNA: ND4,
+ND5, tRNA-his, tRNA-ser, tRNA-leu. Other trees were excluded because they are either NJ trees
+or tree based on a subset of the data (or both).]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Erythrocebus_patas,
+		3	Papio_hamadryas,
+		4	Macaca_sylvanus,
+		5	Macaca_arctoides,
+		6	Macaca_fascicularis,
+		7	Macaca_fuscata,
+		8	Macaca_mulatta,
+		9	Macaca_cyclopis,
+		10	Macaca_assamensis,
+		11	Macaca_radiata,
+		12	Macaca_silenus,
+		13	Macaca_nemestrina,
+		14	Macaca_thibetana,
+		15	Macaca_sinica,
+		16	Macaca_nigra,
+		17	Macaca_tonkeana
+		;
+	TREE * hayasaka_etal_1996fig2b = (1,(2,(3,(4,(((5,(6,(7,8,9))),(10,11)),((12,(13,(14,15))),(16,17)))))));
+ENDBLOCK;

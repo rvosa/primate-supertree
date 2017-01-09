@@ -1,0 +1,45 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Galagoides_alleni was changed to Galago_alleni following MSW]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Galago_moholi
+		Galago_senegalensis
+		Galago_gallarum
+		Galago_alleni
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Nycticebus_coucang
+		Loris_tardigradus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Del Pero et al. (2000):
+1. ML analysis of 16S rRNA
+2. ML analysis of 12S rRNA
+3. ML analysis of cytb
+Other trees in this study were excluded because they were MP or NJ of the
+same data, or because they were based on concatenated sequences separate
+results of which are shown here.]
+	TRANSLATE
+		1	Galagoides_demidoff,
+		2	Galagoides_zanzibaricus,
+		3	Galago_moholi,
+		4	Galago_senegalensis,
+		5	Galago_gallarum,
+		6	Galago_alleni,
+		7	Otolemur_crassicaudatus,
+		8	Otolemur_garnettii,
+		9	Nycticebus_coucang,
+		10	Loris_tardigradus
+		;
+	TREE delpero_etal_2000fig1b = (9,10,(1,(2,(6,((3,(4,5)),(7,8))))));
+	TREE delpero_etal_2000fig2b = (9,10,(2,(1,(6,(8,(7,(4,(3,5))))))));
+	TREE delpero_etal_2000fig3d = (9,10,(2,(8,(7,(6,(1,(5,(3,4))))))));
+ENDBLOCK;

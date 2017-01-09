@@ -1,0 +1,76 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Two sister subspecies of Callicebus_personatus were collapsed.
+Several changes were made following MSW:
+Aotus_azarae -> Aotus_azarai (preferred spelling)
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Callithrix_emiliae -> Callithrix_argentata (synonymous)
+Callithrix_humeralifer -> Callithrix_humeralifera (preferred spelling)
+Lagothrix_lagothricha -> Lagothrix_lagotricha (preferred spelling)]
+	DIMENSIONS NTAX = 26;
+	TAXLABELS
+		Homo_sapiens
+		Alouatta_seniculus
+		Ateles_paniscus
+		Brachyteles_arachnoides
+		Lagothrix_lagotricha
+		Callicebus_torquatus
+		Callicebus_personatus
+		Callicebus_hoffmannsi
+		Callicebus_moloch
+		Pithecia_irrorata
+		Chiropotes_satanas
+		Cacajao_melanocephalus
+		Aotus_azarai
+		Cebus_olivaceus
+		Saimiri_sciureus
+		Saimiri_ustus
+		Saimiri_boliviensis
+		Saguinus_imperator
+		Saguinus_midas
+		Leontopithecus_chrysopygus
+		Callimico_goeldii
+		Callithrix_penicillata
+		Callithrix_kuhlii
+		Callithrix_pygmaea
+		Callithrix_argentata
+		Callithrix_humeralifera
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Canavez et al. (1999a, Mol. Phylogenet. Evol.) figure 3. beta-2-microglobulin
+analysed under maximum parsimony.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Alouatta_seniculus,
+		3	Ateles_paniscus,
+		4	Brachyteles_arachnoides,
+		5	Lagothrix_lagotricha,
+		6	Callicebus_torquatus,
+		7	Callicebus_personatus,
+		8	Callicebus_hoffmannsi,
+		9	Callicebus_moloch,
+		10	Pithecia_irrorata,
+		11	Chiropotes_satanas,
+		12	Cacajao_melanocephalus,
+		13	Aotus_azarai,
+		14	Cebus_olivaceus,
+		15	Saimiri_sciureus,
+		16	Saimiri_ustus,
+		17	Saimiri_boliviensis,
+		18	Saguinus_imperator,
+		19	Saguinus_midas,
+		20	Leontopithecus_chrysopygus,
+		21	Callimico_goeldii,
+		22	Callithrix_penicillata,
+		23	Callithrix_kuhlii,
+		24	Callithrix_pygmaea,
+		25	Callithrix_argentata,
+		26	Callithrix_humeralifera
+		;
+	TREE * canavez_etal1999aFig3 = (1,(((2,(3,(4,5))),((6,(7,(8,9))),(10,(11,12)))),((13,(14,(15,16,17))),((18,19),(20,(21,((22,23),(24,(25,26)))))))));
+ENDBLOCK;

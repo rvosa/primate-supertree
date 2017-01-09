@@ -1,0 +1,49 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[H. albibarbis, H. abbotti and H. funereus are unknown to MSW, so they were pruned from the trees.]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Hylobates_hoolock
+		Hylobates_syndactylus
+		Hylobates_pileatus
+		Hylobates_klossii
+		Hylobates_muelleri
+		Hylobates_moloch
+		Hylobates_agilis
+		Hylobates_lar
+		Hylobates_gabriellae
+		Hylobates_leucogenys
+		Hylobates_concolor
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Geismann (1993):
+1. MP tree based on vocal communication data
+2. MP tree based on vocal communication data
+3. MR consensus over 4 MP trees from visual communication data
+4. MR consensus over 156 MP trees from non-communicatory data 
+Other trees described in this article because they were cited from other authors; constructed
+from the same data using UPGMA; or trees based on combined data rather than separate as shown
+here.]
+	TRANSLATE
+		1	Hylobates_hoolock,
+		2	Hylobates_syndactylus,
+		3	Hylobates_pileatus,
+		4	Hylobates_klossii,
+		5	Hylobates_muelleri,
+		6	Hylobates_moloch,
+		7	Hylobates_agilis,
+		8	Hylobates_lar,
+		9	Hylobates_gabriellae,
+		10	Hylobates_leucogenys,
+		11	Hylobates_concolor
+		;
+	TREE * geismann_1993fig6.3.2a = (1,(2,((3,(4,(5,(6,(7,8))))),(9,(10,11)))));
+	TREE geismann_1993fig6.3.2b = (1,(2,((3,(5,(4,(6,(7,8))))),(9,(10,11)))));
+	TREE geismann_1993fig6.3.4 = (8,(3,(6,7,(5,((1,(11,(9,10))),(2,4))))));
+	TREE geismann_1993fig6.3.5 = ((1,(3,(6,(8,(5,(4,7)))))),(2,(9,10,11)));
+ENDBLOCK;

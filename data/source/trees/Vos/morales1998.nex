@@ -1,0 +1,54 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Haplotypes collapsed to species level. The following taxa were removed:
+M. brunnescens (synonymous w. M. ochreata)
+M. hecki (synonymous w. M. tonkeana)
+M. nigrescens (synonymous w. M. nigra)]
+	DIMENSIONS NTAX = 17;
+	TAXLABELS
+		Lophocebus_albigena
+		Macaca_sylvanus
+		Macaca_cyclopis
+		Macaca_mulatta
+		Macaca_fuscata
+		Macaca_assamensis
+		Macaca_radiata
+		Macaca_thibetana
+		Macaca_sinica
+		Macaca_fascicularis
+		Macaca_arctoides
+		Macaca_silenus
+		Macaca_nemestrina
+		Macaca_ochreata
+		Macaca_maura
+		Macaca_nigra
+		Macaca_tonkeana
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Morales & Melnick (1998) fig 3. MP tree from mtDNA haplotypes.]
+	TRANSLATE
+		1	Lophocebus_albigena,
+		2	Macaca_sylvanus,
+		3	Macaca_cyclopis,
+		4	Macaca_mulatta,
+		5	Macaca_fuscata,
+		6	Macaca_assamensis,
+		7	Macaca_radiata,
+		8	Macaca_thibetana,
+		9	Macaca_sinica,
+		10	Macaca_fascicularis,
+		11	Macaca_arctoides,
+		12	Macaca_silenus,
+		13	Macaca_nemestrina,
+		14	Macaca_ochreata,
+		15	Macaca_maura,
+		16	Macaca_nigra,
+		17	Macaca_tonkeana
+		;
+	TREE * morales_melnick_1998fig3 = (1,(2,((((3,4,5),(6,7,8,9)),(10,11)),((12,13),(14,15,16,17)))));
+ENDBLOCK;

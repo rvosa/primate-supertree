@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed subspecies.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Eulemur_fulvus
+		Eulemur_rubriventer
+		Eulemur_mongoz
+		Eulemur_macaco
+		Eulemur_coronatus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wyner et al. (1999) fig 3. MP tree from concatenated cytochrome b, 12s rRNA and D-loop sequences.]
+	TRANSLATE
+		1	Eulemur_fulvus,
+		2	Eulemur_rubriventer,
+		3	Eulemur_mongoz,
+		4	Eulemur_macaco,
+		5	Eulemur_coronatus
+		;
+	TREE * wyner_etal_1999fig3 = (1,2,(3,(4,5)));
+ENDBLOCK;

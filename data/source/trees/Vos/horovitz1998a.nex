@@ -1,0 +1,57 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Cebuella included in Callithrix; the article only lists genus names, but through
+the accession numbers the species names could be determined.]
+	DIMENSIONS NTAX = 19;
+	TAXLABELS
+		Tarsius_syrichta
+		Callicebus_moloch
+		Aotus_trivirgatus
+		Leontopithecus_rosalia
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Saguinus_geoffroyi
+		Callimico_goeldii
+		Alouatta_palliata
+		Ateles_fusciceps
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Cebus_apella
+		Saimiri_sciureus
+		Pithecia_pithecia
+		Chiropotes_satanas
+		Macaca_mulatta
+		Homo_sapiens
+		Hylobates_lar
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Horovitz et al. (1998) fig2a. MP analysis of 12s rRNA, using gap coding 
+and successive weighting.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Callicebus_moloch,
+		3	Aotus_trivirgatus,
+		4	Leontopithecus_rosalia,
+		5	Callithrix_jacchus,
+		6	Callithrix_pygmaea,
+		7	Saguinus_geoffroyi,
+		8	Callimico_goeldii,
+		9	Alouatta_palliata,
+		10	Ateles_fusciceps,
+		11	Lagothrix_lagotricha,
+		12	Brachyteles_arachnoides,
+		13	Cebus_apella,
+		14	Saimiri_sciureus,
+		15	Pithecia_pithecia,
+		16	Chiropotes_satanas,
+		17	Macaca_mulatta,
+		18	Homo_sapiens,
+		19	Hylobates_lar
+		;
+	TREE * horovitz_etal_1998fig2a = (1,(((2,((3,(((4,(5,6)),(7,8)),(9,(10,(11,12))))),(13,14))),(15,16)),(17,(18,19))));
+ENDBLOCK;

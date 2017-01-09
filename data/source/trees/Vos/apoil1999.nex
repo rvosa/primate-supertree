@@ -1,0 +1,41 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The authors refer to Papio papio, but MSW considers P. hamadryas the preferred
+synonym, so that has been changed.]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Hylobates_lar
+		Pongo_pygmaeus
+		Papio_hamadryas
+		Macaca_mulatta
+		Callithrix_jacchus
+		Saimiri_sciureus
+		Eulemur_fulvus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Apoil and Blancher (1999). The original tree includes
+multiple, paraphyletic haplotypes for Pan, these were collapsed to create
+a polytomy for Pan, Homo and Gorilla. Tree based Rh and Rh-like sequences,
+bootstrapped NJ tree.]
+	TRANSLATE
+		1	Pan_troglodytes,
+		2	Homo_sapiens,
+		3	Gorilla_gorilla,
+		4	Hylobates_lar,
+		5	Pongo_pygmaeus,
+		6	Papio_hamadryas,
+		7	Macaca_mulatta,
+		8	Callithrix_jacchus,
+		9	Saimiri_sciureus,
+		10	Eulemur_fulvus
+		;
+	TREE * Apoil_Blancher1999Fig5 = (10,(((5,(4,(1,2,3))),(6,7)),(8,9)));
+ENDBLOCK;

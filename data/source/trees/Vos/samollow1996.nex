@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Samollow et al. (1996) fig 3. MP tree from concatenated RPS4Y, SRY and ZFY sequences.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Gorilla_gorilla,
+		3	Homo_sapiens,
+		4	Pan_troglodytes
+		;
+	TREE * samollow_etal_1996fig3 = (1,(2,(3,4)));
+ENDBLOCK;

@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Leontopithecus_chrysomelas -> Leontopithecus_chrysomela (preferred spelling)
+Cebuella_pygmaea -> Callithrix_pygmaea]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Homo_sapiens
+		Cebus_apella
+		Ateles_geoffroyi
+		Callimico_goeldii
+		Saguinus_midas
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Leontopithecus_rosalia
+		Leontopithecus_chrysomela
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Pastorini et al. (1998) fig 2c. ML tree from concatenated ND4, tRNA-HIS,
+tRNA-SER, tRNA-LEU sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Cebus_apella,
+		3	Ateles_geoffroyi,
+		4	Callimico_goeldii,
+		5	Saguinus_midas,
+		6	Callithrix_jacchus,
+		7	Callithrix_pygmaea,
+		8	Leontopithecus_rosalia,
+		9	Leontopithecus_chrysomela
+		;
+	TREE pastorini_etal_1998fig2c = (1,(3,(2,((4,(6,7)),(5,(8,9))))));
+ENDBLOCK;

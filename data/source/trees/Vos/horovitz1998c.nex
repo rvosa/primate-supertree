@@ -1,0 +1,51 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Cebuella included in Callithrix; the article only lists genus names, but through
+the accession numbers the species names could be determined.]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Leontopithecus_rosalia
+		Saguinus_geoffroyi
+		Callimico_goeldii
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Aotus_trivirgatus
+		Cebus_apella
+		Saimiri_sciureus
+		Callicebus_moloch
+		Pithecia_pithecia
+		Cacajao_calvus
+		Chiropotes_satanas
+		Alouatta_palliata
+		Ateles_fusciceps
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Horovitz et al. (1998) fig3a. MP analysis of concatenated epsilon-globin
+and IRBP, using gap coding and successive weighting.]
+	TRANSLATE
+		1	Leontopithecus_rosalia,
+		2	Saguinus_geoffroyi,
+		3	Callimico_goeldii,
+		4	Callithrix_jacchus,
+		5	Callithrix_pygmaea,
+		6	Aotus_trivirgatus,
+		7	Cebus_apella,
+		8	Saimiri_sciureus,
+		9	Callicebus_moloch,
+		10	Pithecia_pithecia,
+		11	Cacajao_calvus,
+		12	Chiropotes_satanas,
+		13	Alouatta_palliata,
+		14	Ateles_fusciceps,
+		15	Lagothrix_lagotricha,
+		16	Brachyteles_arachnoides
+		;
+	TREE * horovitz_etal_1998fig3a = (((1,(2,(3,(4,5)))),(6,(7,8))),((9,(10,(11,12))),(13,(14,(15,16)))));
+ENDBLOCK;

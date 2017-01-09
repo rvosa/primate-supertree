@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+["Marmoset" assumed to be the common marmoset Callithrix_jacchus]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Callithrix_jacchus
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Mohammad-Ali et al. (1995) fig 2. MP tree from c-myc sequences.]
+	TRANSLATE
+		1	Callithrix_jacchus,
+		2	Hylobates_lar,
+		3	Pongo_pygmaeus,
+		4	Gorilla_gorilla,
+		5	Homo_sapiens,
+		6	Pan_troglodytes
+		;
+	TREE * mohammadali_etal_1995fig2 = (1,(2,(3,(4,(5,6)))));
+ENDBLOCK;

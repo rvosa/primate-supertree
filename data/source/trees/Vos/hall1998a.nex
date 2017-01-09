@@ -1,0 +1,25 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hall et al (1998). ML tree from cytochrome b sequences.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Gorilla_gorilla,
+		3	Homo_sapiens,
+		4	Pan_troglodytes
+		;
+	TREE * hall_etal_1998fig2b = (1,(2,(3,4)));
+ENDBLOCK;

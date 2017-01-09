@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Saimiri_sciureus
+		Macaca_nemestrina
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Funkhouser et al. (1997). MP tree of T cell antigen receptor BV8 gene subfamily.]
+	TRANSLATE
+		1	Saimiri_sciureus,
+		2	Macaca_nemestrina,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes
+		;
+	TREE * funkhouser_etal1997fig3d = (1,(2,(3,(4,5))));
+ENDBLOCK;

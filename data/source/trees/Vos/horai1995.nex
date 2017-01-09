@@ -1,0 +1,28 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Horai et al. (1995). ML tree from complete mtDNA genomes. Other trees
+were excluded because they were UPGMA or MP trees from the same data.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Gorilla_gorilla,
+		3	Homo_sapiens,
+		4	Pan_paniscus,
+		5	Pan_troglodytes
+		;
+	TREE * horai_etal_1995fig2c = (1,(2,(3,(4,5))));
+ENDBLOCK;

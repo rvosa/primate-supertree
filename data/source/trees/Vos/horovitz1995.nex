@@ -1,0 +1,59 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Lagothrix_lagothricha -> Lagothrix_lagotricha (preferred spelling)
+Ateles_sp. was assumed to be Ateles_fusciceps]
+	DIMENSIONS NTAX = 17;
+	TAXLABELS
+		Tarsius_syrichta
+		Callicebus_moloch
+		Leontopithecus_rosalia
+		Saimiri_sciureus
+		Alouatta_palliata
+		Ateles_fusciceps
+		Lagothrix_lagotricha
+		Aotus_trivirgatus
+		Pithecia_pithecia
+		Cebus_apella
+		Saguinus_geoffroyi
+		Callimico_goeldii
+		Callithrix_pygmaea
+		Callithrix_jacchus
+		Nasalis_larvatus
+		Homo_sapiens
+		Hylobates_lar
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Horovitz & Meyer (1995), fig 7:
+1. MP tree from 16s rRNA; characters weighted by consistency index;
+2. MP tree from 16s rRNA; characters weighted by rescaled consistence index.
+other trees were excluded as their methodology was less sophisticated (though
+based on the same data).]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Callicebus_moloch,
+		3	Leontopithecus_rosalia,
+		4	Saimiri_sciureus,
+		5	Alouatta_palliata,
+		6	Ateles_fusciceps,
+		7	Lagothrix_lagotricha,
+		8	Aotus_trivirgatus,
+		9	Pithecia_pithecia,
+		10	Cebus_apella,
+		11	Saguinus_geoffroyi,
+		12	Callimico_goeldii,
+		13	Callithrix_pygmaea,
+		14	Callithrix_jacchus,
+		15	Nasalis_larvatus,
+		16	Homo_sapiens,
+		17	Hylobates_lar
+		;
+	TREE * horovitz_meyer_1995fig7a = (1,((2,(3,(4,((5,(6,7)),(8,((9,10),(11,(12,(13,14))))))))),(15,(16,17))));
+	TREE horovitz_meyer_1995fig7a = (1,(((8,(((2,4),(3,(11,(12,(13,14))))),(9,10))),(5,(6,7))),(15,(16,17))));
+ENDBLOCK;

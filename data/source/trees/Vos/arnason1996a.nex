@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Arnason et al. (1996) fig 1. NJ tree from complete mtDNA genomes.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus
+		;
+	TREE * arnason_etal_1996fig1 = (5,(4,(3,(1,2))));
+ENDBLOCK;

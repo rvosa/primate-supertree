@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Homo_sapiens
+		Hylobates_lar
+		Macaca_mulatta
+		Macaca_nemestrina
+		Macaca_fascicularis
+		Cercocebus_torquatus
+		Papio_hamadryas
+		Aotus_vociferans
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Zelus et al. (2000) fig 3a. NJ tree from IL-2 sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Hylobates_lar,
+		3	Macaca_mulatta,
+		4	Macaca_nemestrina,
+		5	Macaca_fascicularis,
+		6	Cercocebus_torquatus,
+		7	Papio_hamadryas,
+		8	Aotus_vociferans
+		;
+	TREE * zelus_etal_2000fig3a = (((1,2),(3,4,5,6)),(7,8));
+ENDBLOCK;

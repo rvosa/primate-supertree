@@ -1,0 +1,40 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Galago_crassicaudatus -> Otolemur_crassicaudatus (preferred genus)]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Gorilla_gorilla
+		Pongo_pygmaeus
+		Hylobates_lar
+		Macaca_mulatta
+		Cebus_apella
+		Ateles_geoffroyi
+		Tarsius_syrichta
+		Otolemur_crassicaudatus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Goodman et al. (1994) fig 5. ML tree from gamma and phi-eta regions of the beta-globin gene cluster.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_paniscus,
+		3	Pan_troglodytes,
+		4	Gorilla_gorilla,
+		5	Pongo_pygmaeus,
+		6	Hylobates_lar,
+		7	Macaca_mulatta,
+		8	Cebus_apella,
+		9	Ateles_geoffroyi,
+		10	Tarsius_syrichta,
+		11	Otolemur_crassicaudatus
+		;
+	TREE * goodman_etal_1994fig5 = (10,11,((7,(6,(5,(4,(1,(2,3)))))),(8,9)));
+ENDBLOCK;

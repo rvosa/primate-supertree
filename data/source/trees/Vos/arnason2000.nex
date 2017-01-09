@@ -1,0 +1,37 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Nycticebus_coucang
+		Cebus_albifrons
+		Macaca_sylvanus
+		Papio_hamadryas
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Arnason et al. (2000) fig 1. ML tree from eleven protein coding mt genes.]
+	TRANSLATE
+		1	Nycticebus_coucang,
+		2	Cebus_albifrons,
+		3	Macaca_sylvanus,
+		4	Papio_hamadryas,
+		5	Hylobates_lar,
+		6	Pongo_pygmaeus,
+		7	Gorilla_gorilla,
+		8	Pan_paniscus,
+		9	Pan_troglodytes,
+		10	Homo_sapiens
+		;
+	TREE * arnason_etal_2000fig1 = (1,(2,((3,4),(5,(6,(7,(10,(8,9))))))));
+ENDBLOCK;

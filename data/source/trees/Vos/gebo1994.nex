@@ -1,0 +1,57 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The authors include Miopithecus talapoin and Chlorocebus aethiops in Cercopithecus. According
+to MSW these are separate genera. C. albogularis and C. mitis are considered synonymous, and are 
+sister species in the tree; C. mitis is preferred, so C. albogularis was pruned from the tree.]
+	DIMENSIONS NTAX = 19;
+	TAXLABELS
+		Allenopithecus_nigroviridis
+		Erythrocebus_patas
+		Miopithecus_talapoin
+		Chlorocebus_aethiops
+		Cercopithecus_hamlyni
+		Cercopithecus_lhoesti
+		Cercopithecus_preussi
+		Cercopithecus_solatus
+		Cercopithecus_petaurista
+		Cercopithecus_cephus
+		Cercopithecus_ascanius
+		Cercopithecus_nictitans
+		Cercopithecus_mitis
+		Cercopithecus_neglectus
+		Cercopithecus_diana
+		Cercopithecus_wolfi
+		Cercopithecus_pogonias
+		Cercopithecus_campbelli
+		Cercopithecus_mona
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Gebo & Sargis (1994). MP tree of morphology.]
+	TRANSLATE
+		1	Allenopithecus_nigroviridis,
+		2	Erythrocebus_patas,
+		3	Miopithecus_talapoin,
+		4	Chlorocebus_aethiops,
+		5	Cercopithecus_hamlyni,
+		6	Cercopithecus_lhoesti,
+		7	Cercopithecus_preussi,
+		8	Cercopithecus_solatus,
+		9	Cercopithecus_petaurista,
+		10	Cercopithecus_cephus,
+		11	Cercopithecus_ascanius,
+		12	Cercopithecus_nictitans,
+		13	Cercopithecus_mitis,
+		14	Cercopithecus_neglectus,
+		15	Cercopithecus_diana,
+		16	Cercopithecus_wolfi,
+		17	Cercopithecus_pogonias,
+		18	Cercopithecus_campbelli,
+		19	Cercopithecus_mona
+		;
+	TREE * gebo_sargis_1994fig10 = (1,(2,((3,4),(5,((6,7,8),(((9,10,11),(12,13)),(14,(15,((16,17),(18,19))))))))));
+ENDBLOCK;

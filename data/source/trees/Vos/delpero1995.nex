@@ -1,0 +1,41 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Galago_alleni
+		Daubentonia_madagascariensis
+		Indri_indri
+		Varecia_variegata
+		Eulemur_macaco
+		Eulemur_coronatus
+		Eulemur_mongoz
+		Eulemur_fulvus
+		Eulemur_rubriventer
+		Lemur_catta
+		Hapalemur_griseus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Del Pero et al. (1995) fig 3b. The article also shows an NJ and an MP tree
+based on the same data. These have been excluded here as the methodology is considered
+inferior.]
+	TRANSLATE
+		1	Galago_alleni,
+		2	Daubentonia_madagascariensis,
+		3	Indri_indri,
+		4	Varecia_variegata,
+		5	Eulemur_macaco,
+		6	Eulemur_coronatus,
+		7	Eulemur_mongoz,
+		8	Eulemur_fulvus,
+		9	Eulemur_rubriventer,
+		10	Lemur_catta,
+		11	Hapalemur_griseus
+		;
+	TREE * delpero_etal_1995fig3b = (1,(2,(3,((4,(10,11)),(7,((5,6),(8,9)))))));
+ENDBLOCK;

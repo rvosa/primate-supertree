@@ -1,0 +1,36 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The tree contained to ambiguous branches leading to "Platyrrhini" and "Catarrhini". These were pruned.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Tarsius_syrichta
+		Otolemur_crassicaudatus
+		Perodicticus_potto
+		Nycticebus_coucang
+		Daubentonia_madagascariensis
+		Propithecus_verreauxi
+		Eulemur_fulvus
+		Cheirogaleus_medius
+		Microcebus_murinus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Goodman et al. (1998) fig 4. NJ tree from noncoding epsilon-globin sequences. The
+tree contained to ambiguous branches leading to "Platyrrhini" and "Catarrhini". These were pruned.]
+	TRANSLATE
+		1	Tarsius_syrichta,
+		2	Otolemur_crassicaudatus,
+		3	Perodicticus_potto,
+		4	Nycticebus_coucang,
+		5	Daubentonia_madagascariensis,
+		6	Propithecus_verreauxi,
+		7	Eulemur_fulvus,
+		8	Cheirogaleus_medius,
+		9	Microcebus_murinus
+		;
+	TREE * goodman_etal_1998fig4 = (1,((2,(3,4)),(5,(6,(7,(8,9))))));
+ENDBLOCK;

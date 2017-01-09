@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changed Galago_crassicaudatus to Otolemur_crassicaudatus.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Otolemur_crassicaudatus
+		Homo_sapiens
+		Tarsius_syrichta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Stanhope et al. (1996) fig 3. ML tree from IRBP exon 1 sequences.]
+	TRANSLATE
+		1	Otolemur_crassicaudatus,
+		2	Homo_sapiens,
+		3	Tarsius_syrichta
+		;
+	TREE * stanhope_etal_1996fig3 = (1,(2,3));
+ENDBLOCK;

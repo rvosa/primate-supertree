@@ -1,0 +1,67 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Haplotypes of Miopithecus_ougouensis collapsed to Miopithecus_talapoin.
+Renamed:
+Lophocebus_aterrimus -> Lophocebus_albigena
+Presbytis_cristatus -> Trachypithecus_cristatus
+Colobus_badius -> Procolobus_badius]
+	DIMENSIONS NTAX = 23;
+	TAXLABELS
+		Pan_troglodytes
+		Gorilla_gorilla
+		Pan_paniscus
+		Miopithecus_talapoin
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Mandrillus_sphinx
+		Lophocebus_albigena
+		Papio_hamadryas
+		Erythrocebus_patas
+		Cercopithecus_neglectus
+		Cercopithecus_hamlyni
+		Cercopithecus_diana
+		Cercopithecus_mona
+		Chlorocebus_aethiops
+		Cercopithecus_nictitans
+		Cercopithecus_mitis
+		Cercopithecus_petaurista
+		Cercopithecus_cephus
+		Cercopithecus_ascanius
+		Trachypithecus_cristatus
+		Colobus_guereza
+		Procolobus_badius
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kuyl et al. (2000) fig 2. MP tree from 12s rRNA.]
+	TRANSLATE
+		1	Pan_troglodytes,
+		2	Gorilla_gorilla,
+		3	Pan_paniscus,
+		4	Miopithecus_talapoin,
+		5	Cercocebus_galeritus,
+		6	Cercocebus_torquatus,
+		7	Mandrillus_sphinx,
+		8	Lophocebus_albigena,
+		9	Papio_hamadryas,
+		10	Erythrocebus_patas,
+		11	Cercopithecus_neglectus,
+		12	Cercopithecus_hamlyni,
+		13	Cercopithecus_diana,
+		14	Cercopithecus_mona,
+		15	Chlorocebus_aethiops,
+		16	Cercopithecus_nictitans,
+		17	Cercopithecus_mitis,
+		18	Cercopithecus_petaurista,
+		19	Cercopithecus_cephus,
+		20	Cercopithecus_ascanius,
+		21	Trachypithecus_cristatus,
+		22	Colobus_guereza,
+		23	Procolobus_badius
+		;
+	TREE * kuyl_etal_2000fig2 = ((1,(2,3)),((4,(5,(6,7)),(8,9),(10,11,12,13,14,15,(16,17),(18,(19,20)))),(21,(22,23))));
+ENDBLOCK;

@@ -1,0 +1,42 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Subspecies collapsed to species level.]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Callicebus_torquatus
+		Callicebus_personatus
+		Callicebus_dubius
+		Callicebus_cinerascens
+		Callicebus_moloch
+		Callicebus_hoffmannsi
+		Callicebus_brunneus
+		Callicebus_cupreus
+		Callicebus_caligatus
+		Callicebus_donacophilus
+		Callicebus_olallae
+		Callicebus_modestus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Kobayashi (1995) fig 3. Dendrogam built using the furthest neighbor method, based
+on craniometric data.]
+	TRANSLATE
+		1	Callicebus_torquatus,
+		2	Callicebus_personatus,
+		3	Callicebus_dubius,
+		4	Callicebus_cinerascens,
+		5	Callicebus_moloch,
+		6	Callicebus_hoffmannsi,
+		7	Callicebus_brunneus,
+		8	Callicebus_cupreus,
+		9	Callicebus_caligatus,
+		10	Callicebus_donacophilus,
+		11	Callicebus_olallae,
+		12	Callicebus_modestus
+		;
+	TREE * kobayashi_1995fig3 = ((1,2,3),((4,5),(6,7)),((8,9),(10,(11,12))));
+ENDBLOCK;

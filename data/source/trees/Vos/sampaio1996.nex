@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Subspecies collapsed.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Callithrix_penicillata
+		Alouatta_belzebul
+		Alouatta_seniculus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Sampaio et al. (1996) fig 2. NJ tree from concatenated sequences.]
+	TRANSLATE
+		1	Callithrix_penicillata,
+		2	Alouatta_belzebul,
+		3	Alouatta_seniculus
+		;
+	TREE * sampaio_etal_1996fig2 = (1,(2,3));
+ENDBLOCK;

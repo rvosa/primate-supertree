@@ -1,0 +1,41 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article recognises the two sister sub species for Pongo pygmaeus, these were
+collapsed here.]
+	DIMENSIONS NTAX = 11;
+	TAXLABELS
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Saguinus_oedipus
+		Ateles_paniscus
+		Cebus_apella
+		Nycticebus_coucang
+		Lemur_catta
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Cao et al. (1998) Fig 3. ProtML analysis of ND1. Other trees 
+in this article are described in cao1998{a-c, and e}.nex.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_troglodytes,
+		6	Pan_paniscus,
+		7	Saguinus_oedipus,
+		8	Ateles_paniscus,
+		9	Cebus_apella,
+		10	Nycticebus_coucang,
+		11	Lemur_catta
+		;
+	TREE * cao_etal1998Fig3 = (((1,(2,(3,(4,(5,6))))),(7,(8,9))),(10,11));
+ENDBLOCK;

@@ -1,0 +1,66 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Cebus_nigrivittatus -> Cebus_olivaceus (preferred synonym)
+Pruned Cebus_kaapori (unknown to MSW)
+Spelling changes:
+Aotus_azarae -> Aotus_azarai
+Aotus_nancymai -> Aotus_nancymaae
+Callimico_goeldi -> Callimico_goeldii]
+	DIMENSIONS NTAX = 21;
+	TAXLABELS
+		Homo_sapiens
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Callimico_goeldii
+		Leontopithecus_rosalia
+		Saguinus_bicolor
+		Saguinus_midas
+		Cebus_olivaceus
+		Saimiri_sciureus
+		Saimiri_boliviensis
+		Aotus_azarai
+		Aotus_nancymaae
+		Callicebus_torquatus
+		Callicebus_moloch
+		Pithecia_irrorata
+		Cacajao_calvus
+		Chiropotes_satanas
+		Alouatta_belzebul
+		Ateles_belzebuth
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Schneider et al. (1996) fig 3. MP tree from IRBP intron 1 sequences.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Callithrix_jacchus,
+		3	Callithrix_pygmaea,
+		4	Callimico_goeldii,
+		5	Leontopithecus_rosalia,
+		6	Saguinus_bicolor,
+		7	Saguinus_midas,
+		8	Cebus_olivaceus,
+		9	Saimiri_sciureus,
+		10	Saimiri_boliviensis,
+		11	Aotus_azarai,
+		12	Aotus_nancymaae,
+		13	Callicebus_torquatus,
+		14	Callicebus_moloch,
+		15	Pithecia_irrorata,
+		16	Cacajao_calvus,
+		17	Chiropotes_satanas,
+		18	Alouatta_belzebul,
+		19	Ateles_belzebuth,
+		20	Lagothrix_lagotricha,
+		21	Brachyteles_arachnoides
+		;
+	TREE * schneider_etal_1996fig3 = (1,(((((((2,3),(4,5)),(6,7)),(8,(9,10))),(11,12)),((13,14),(15,(16,17)))),(18,(19,(20,21)))));
+ENDBLOCK;

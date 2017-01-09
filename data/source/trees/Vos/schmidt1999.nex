@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Presbytis_cristata changed to Trachypithecus_cristatus (preferred genus).]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Trachypithecus_cristatus
+		Hylobates_agilis
+		Pongo_pygmaeus
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Schmidt et al. (1999) fig 2. ML tree from COX7A sequences.]
+	TRANSLATE
+		1	Trachypithecus_cristatus,
+		2	Hylobates_agilis,
+		3	Pongo_pygmaeus,
+		4	Homo_sapiens,
+		5	Pan_troglodytes
+		;
+	TREE * schmidt_etal_1999fig2 = (1,(2,(3,(4,5))));
+ENDBLOCK;

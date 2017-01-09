@@ -1,0 +1,61 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Several changes were made following MSW:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus name)
+Aotus_azarae -> Aotus_azarai (preferred spelling)
+Changed C. emiliae to C. argentata (preferred synonym).]
+	DIMENSIONS NTAX = 20;
+	TAXLABELS
+		Chiropotes_satanas
+		Cacajao_melanocephalus
+		Pithecia_irrorata
+		Cebus_apella
+		Saimiri_boliviensis
+		Alouatta_seniculus
+		Ateles_paniscus
+		Lagothrix_lagotricha
+		Brachyteles_arachnoides
+		Saguinus_midas
+		Callimico_goeldii
+		Leontopithecus_chrysopygus
+		Callithrix_pygmaea
+		Callithrix_argentata
+		Aotus_azarai
+		Callicebus_personatus
+		Pongo_pygmaeus
+		Pan_troglodytes
+		Gorilla_gorilla
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Canavez et al. (1998), beta-2-microglobulin nucleotide
+sequences analysed under NJ.]
+	TRANSLATE
+		1	Chiropotes_satanas,
+		2	Cacajao_melanocephalus,
+		3	Pithecia_irrorata,
+		4	Cebus_apella,
+		5	Saimiri_boliviensis,
+		6	Alouatta_seniculus,
+		7	Ateles_paniscus,
+		8	Lagothrix_lagotricha,
+		9	Brachyteles_arachnoides,
+		10	Saguinus_midas,
+		11	Callimico_goeldii,
+		12	Leontopithecus_chrysopygus,
+		13	Callithrix_pygmaea,
+		14	Callithrix_argentata,
+		15	Aotus_azarai,
+		16	Callicebus_personatus,
+		17	Pongo_pygmaeus,
+		18	Pan_troglodytes,
+		19	Gorilla_gorilla,
+		20	Homo_sapiens
+		;
+	TREE * canavez_etal1998Fig3 = ((15,16,(5,6,7,(1,2,3,4),(8,9)),(10,(11,12,(13,14)))),(17,(18,19,20)));
+ENDBLOCK;

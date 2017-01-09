@@ -1,0 +1,40 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cercopithecus_aethiops -> Chlorocebus_aethiops (preferred genus)
+Papio_anubis -> Papio_hamadryas (preferred synonym)
+Lophocebus aterrimus was pruned (unknown to MSW).]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Chlorocebus_aethiops
+		Cercopithecus_mitis
+		Macaca_mulatta
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Mandrillus_sphinx
+		Mandrillus_leucophaeus
+		Theropithecus_gelada
+		Papio_hamadryas
+		Lophocebus_albigena
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Harris (2000) fig 2d. MP tree from psi-beta-delta-globin intergenic region sequences.]
+	TRANSLATE
+		1	Chlorocebus_aethiops,
+		2	Cercopithecus_mitis,
+		3	Macaca_mulatta,
+		4	Cercocebus_galeritus,
+		5	Cercocebus_torquatus,
+		6	Mandrillus_sphinx,
+		7	Mandrillus_leucophaeus,
+		8	Theropithecus_gelada,
+		9	Papio_hamadryas,
+		10	Lophocebus_albigena
+		;
+	TREE * harris_2000fig2c = (1,(2,(3,((4,5,(6,7)),(8,(9,10))))));
+ENDBLOCK;

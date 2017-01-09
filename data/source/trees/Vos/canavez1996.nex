@@ -1,0 +1,34 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[A number of changes were made following MSW:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+Callithrix_emiliae -> Callithrix_argentata (preferred synonym)
+Callithrix_jacchus_penicillata -> Callithrix_penicillata (elevated to species)]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Callithrix_pygmaea
+		Callithrix_argentata
+		Callimico_goeldii
+		Callithrix_penicillata
+		Leontopithecus_rosalia
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Canavez et al. (1996) fig 6a&b. Karylogical data
+analysed under maximum parsimony, equally parsimonious trees. The
+article describes a third tree (fig 6c), but that's a consensus
+tree over the two shown here.]
+	TRANSLATE
+		1	Callithrix_pygmaea,
+		2	Callithrix_argentata,
+		3	Callimico_goeldii,
+		4	Callithrix_penicillata,
+		5	Leontopithecus_rosalia
+		;
+	TREE * canavez_etal1996Fig6a = (5,(4,(3,(1,2))));
+	TREE canavez_etal1996Fig6b = (5,(3,(4,(1,2))));
+ENDBLOCK;

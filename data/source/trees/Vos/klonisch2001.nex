@@ -1,0 +1,23 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Galago_crassicaudatus renamed to the preferred Otolemur_crassicaudatus.]
+	DIMENSIONS NTAX = 3;
+	TAXLABELS
+		Otolemur_crassicaudatus
+		Homo_sapiens
+		Callithrix_jacchus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Klonisch et al. (2001) fig 5a. Quartet puzzling tree of RLF sequences.]
+	TRANSLATE
+		1	Otolemur_crassicaudatus,
+		2	Homo_sapiens,
+		3	Callithrix_jacchus
+		;
+	TREE * klonisch_etal_2001fig5a = (1,(2,3));
+ENDBLOCK;

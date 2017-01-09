@@ -1,0 +1,46 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed subspecies;
+Changed Mirza_coquereli to Microcebus_coquereli (preferred genus) and Galago_crassicaudatus to
+Otolemur_crassicaudatus (preferred genus)]
+	DIMENSIONS NTAX = 13;
+	TAXLABELS
+		Saimiri_sciureus
+		Otolemur_crassicaudatus
+		Daubentonia_madagascariensis
+		Propithecus_verreauxi
+		Hapalemur_griseus
+		Lemur_catta
+		Eulemur_fulvus
+		Varecia_variegata
+		Microcebus_murinus
+		Cheirogaleus_major
+		Microcebus_coquereli
+		Nycticebus_coucang
+		Loris_tardigradus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder et al. (1996a, Proc. Natl. Acad. Sci.) fig 1b. MP tree from morphological
+data. Excluded fig 1c as it is the result of a combined analysis of 1a & 1b.]
+	TRANSLATE
+		1	Saimiri_sciureus,
+		2	Otolemur_crassicaudatus,
+		3	Daubentonia_madagascariensis,
+		4	Propithecus_verreauxi,
+		5	Hapalemur_griseus,
+		6	Lemur_catta,
+		7	Eulemur_fulvus,
+		8	Varecia_variegata,
+		9	Microcebus_murinus,
+		10	Cheirogaleus_major,
+		11	Microcebus_coquereli,
+		12	Nycticebus_coucang,
+		13	Loris_tardigradus
+		;
+	TREE * yoder_etal_1996afig1b = (1,((2,((3,(4,(5,(6,(7,8))))),(9,(10,11)))),(12,13)));
+ENDBLOCK;

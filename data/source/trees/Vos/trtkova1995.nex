@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Callithrix_jacchus
+		Saguinus_oedipus
+		Cebus_apella
+		Callicebus_moloch
+		Aotus_trivirgatus
+		Saimiri_sciureus
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Trtkova et al. (1995) fig 4. NJ tree of DRB intron 2.]
+	TRANSLATE
+		1	Callithrix_jacchus,
+		2	Saguinus_oedipus,
+		3	Cebus_apella,
+		4	Callicebus_moloch,
+		5	Aotus_trivirgatus,
+		6	Saimiri_sciureus,
+		7	Homo_sapiens,
+		8	Pan_troglodytes
+		;
+	TREE * trtkova_etal_1995fig4= ((1,2,(3,4),(5,6)),(7,8));
+ENDBLOCK;

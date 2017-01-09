@@ -1,0 +1,43 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Propithecus assumed to refer to Propithecus_tattersalli.]
+	DIMENSIONS NTAX = 13;
+	TAXLABELS
+		Indri_indri
+		Daubentonia_madagascariensis
+		Propithecus_tattersalli
+		Varecia_variegata
+		Hapalemur_simus
+		Lemur_catta
+		Hapalemur_griseus
+		Hapalemur_aureus
+		Eulemur_mongoz
+		Eulemur_coronatus
+		Eulemur_rubriventer
+		Eulemur_fulvus
+		Eulemur_macaco
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Macedonia and Stanger (1994) fig 21a. MP tree from communication signal data.]
+	TRANSLATE
+		1	Indri_indri,
+		2	Daubentonia_madagascariensis,
+		3	Propithecus_tattersalli,
+		4	Varecia_variegata,
+		5	Hapalemur_simus,
+		6	Lemur_catta,
+		7	Hapalemur_griseus,
+		8	Hapalemur_aureus,
+		9	Eulemur_mongoz,
+		10	Eulemur_coronatus,
+		11	Eulemur_rubriventer,
+		12	Eulemur_fulvus,
+		13	Eulemur_macaco
+		;
+	TREE * macedonia_stanger_1994fig21a = (1,(2,((3,4),((5,(6,(7,8))),(9,((10,11),(12,13)))))));
+ENDBLOCK;

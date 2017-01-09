@@ -1,0 +1,35 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Names translated from common names.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Lemur_catta
+		Tarsius_bancanus
+		Saimiri_sciureus
+		Macaca_mulatta
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Suchard et al. (2001) fig 3. MAP/MCMC/ML tree from mtDNA.]
+	TRANSLATE
+		1	Lemur_catta,
+		2	Tarsius_bancanus,
+		3	Saimiri_sciureus,
+		4	Macaca_mulatta,
+		5	Hylobates_lar,
+		6	Pongo_pygmaeus,
+		7	Gorilla_gorilla,
+		8	Homo_sapiens,
+		9	Pan_troglodytes
+		;
+	TREE * suchard_etal_2001fig3 = (1,(2,(3,(4,(5,(6,(7,(8,9))))))));
+ENDBLOCK;

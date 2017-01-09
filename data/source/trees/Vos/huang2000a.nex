@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Pongo_pygmaeus
+		Hylobates_lar
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Macaca_mulatta
+		Papio_hamadryas
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Huang et al. (2000) fig 7a. NJ tree from Rh50 introns 4, 8, 9.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Hylobates_lar,
+		3	Pan_troglodytes,
+		4	Homo_sapiens,
+		5	Gorilla_gorilla,
+		6	Macaca_mulatta,
+		7	Papio_hamadryas
+		;
+	TREE * huang_etal_2000fig7b = ((1,(2,(3,(4,5)))),(6,7));
+ENDBLOCK;

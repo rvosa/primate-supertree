@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Haplotypes were collapsed to species level.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Hylobates_syndactylus
+		Hylobates_hoolock
+		Hylobates_muelleri
+		Hylobates_lar
+		Hylobates_leucogenys
+		Hylobates_gabriellae
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Hall et al (1998). ML tree from cytochrome b sequences.]
+	TRANSLATE
+		1	Hylobates_syndactylus,
+		2	Hylobates_hoolock,
+		3	Hylobates_muelleri,
+		4	Hylobates_lar,
+		5	Hylobates_leucogenys,
+		6	Hylobates_gabriellae
+		;
+	TREE * hall_etal_1998fig2a = (1,((2,(3,4)),(5,6)));
+ENDBLOCK;

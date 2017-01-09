@@ -1,0 +1,37 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed haplotypes.]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Homo_sapiens
+		Pan_troglodytes
+		Gorilla_gorilla
+		Macaca_nemestrina
+		Saguinus_oedipus
+		Callithrix_jacchus
+		Saimiri_sciureus
+		Aotus_trivirgatus
+		Callicebus_moloch
+		Cebus_apella
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Trtkova et al. (1995) fig 8. NJ tree from DRB exon 6.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pan_troglodytes,
+		3	Gorilla_gorilla,
+		4	Macaca_nemestrina,
+		5	Saguinus_oedipus,
+		6	Callithrix_jacchus,
+		7	Saimiri_sciureus,
+		8	Aotus_trivirgatus,
+		9	Callicebus_moloch,
+		10	Cebus_apella
+		;
+	TREE * trtkova_etal_1995fig8 = ((1,2,3,4),(5,6,7,8,9,10));
+ENDBLOCK;

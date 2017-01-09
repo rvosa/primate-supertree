@@ -1,0 +1,47 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Galago_crassicaudatus -> Otolemur_crassicaudatus (preferred genus)
+Aotus_azarae -> Aotus_azarai (preferred spelling)
+Pruned non-primate outgroups.]
+	DIMENSIONS NTAX = 13;
+	TAXLABELS
+		Hylobates_lar
+		Homo_sapiens
+		Pongo_pygmaeus
+		Callithrix_jacchus
+		Aotus_azarai
+		Cebus_albifrons
+		Saimiri_sciureus
+		Ateles_belzebuth
+		Cacajao_calvus
+		Otolemur_crassicaudatus
+		Daubentonia_madagascariensis
+		Propithecus_verreauxi
+		Cheirogaleus_medius
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Porter et al. (1997, Int. J. Primatol.) fig5. NJ tree from noncoding regions
+associated with the epsilon-globin locus.]
+	TRANSLATE
+		1	Hylobates_lar,
+		2	Homo_sapiens,
+		3	Pongo_pygmaeus,
+		4	Callithrix_jacchus,
+		5	Aotus_azarai,
+		6	Cebus_albifrons,
+		7	Saimiri_sciureus,
+		8	Ateles_belzebuth,
+		9	Cacajao_calvus,
+		10	Otolemur_crassicaudatus,
+		11	Daubentonia_madagascariensis,
+		12	Propithecus_verreauxi,
+		13	Cheirogaleus_medius
+		;
+	TREE * porter_etal_1997fig5 = (((1,(2,3)),(((4,5),(6,7)),(8,9))),(10,(11,(12,13))));
+ENDBLOCK;

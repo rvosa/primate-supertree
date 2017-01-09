@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[P. cynocephalus was changed to the preferred synonym P. hamadryas]
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Homo_sapiens
+		Pongo_pygmaeus
+		Papio_hamadryas
+		Colobus_angolensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Casane et al. (1997), NJ analysis of:
+1. Psi AS A1 pseudogene
+2. Psi AS A3 pseudogene
+3. Psi AS3 pseudogene]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Pongo_pygmaeus,
+		3	Papio_hamadryas,
+		4	Colobus_angolensis
+		;
+	TREE * casane_etal1997fig7a = ((1,2),(3,4));
+	TREE casane_etal1997fig7b= ((1,2),(3,4));
+	TREE casane_etal1997fig7c= ((1,2),(3,4));
+ENDBLOCK;

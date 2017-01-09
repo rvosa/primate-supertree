@@ -1,0 +1,42 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Galago crassicaudatus renamed to the preferred Otolemur crassicaudatus.]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Saimiri_sciureus
+		Hylobates_lar
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Cheirogaleus_major
+		Hapalemur_griseus
+		Lemur_catta
+		Otolemur_crassicaudatus
+		Nycticebus_coucang
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Cao et al. (1998), Fig 4, ProtML tree of CytB. Other trees in this article
+are described in cao1998{a, and c-e}.nex.]
+	TRANSLATE
+		1	Saimiri_sciureus,
+		2	Hylobates_lar,
+		3	Pongo_pygmaeus,
+		4	Gorilla_gorilla,
+		5	Homo_sapiens,
+		6	Pan_troglodytes,
+		7	Pan_paniscus,
+		8	Cheirogaleus_major,
+		9	Hapalemur_griseus,
+		10	Lemur_catta,
+		11	Otolemur_crassicaudatus,
+		12	Nycticebus_coucang
+		;
+	TREE * cao_etal1998Fig4 = ((1,(2,(3,(4,(5,(6,7)))))),((8,(9,10)),(11,12)));
+ENDBLOCK;

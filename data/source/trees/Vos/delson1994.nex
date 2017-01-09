@@ -1,0 +1,63 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Genera expanded to include all taxa for which separate data is available. Taxon names adapted to conform to MSW.]
+	DIMENSIONS NTAX = 22;
+	TAXLABELS
+		Nasalis_larvatus
+		Nasalis_concolor
+		Presbytis_comata
+		Presbytis_frontata
+		Presbytis_melalophos
+		Presbytis_potenziani
+		Presbytis_rubicunda
+		Semnopithecus_entellus
+		Trachypithecus_auratus
+		Trachypithecus_cristatus
+		Trachypithecus_francoisi
+		Trachypithecus_geei
+		Trachypithecus_johnii
+		Trachypithecus_obscurus
+		Trachypithecus_phayrei
+		Trachypithecus_pileatus
+		Trachypithecus_vetulus
+		Pygathrix_nemaeus
+		Pygathrix_avunculus
+		Pygathrix_bieti
+		Pygathrix_brelichi
+		Pygathrix_roxellana
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Delson (1994) The diversity of living colobines in: 
+Colobine monkeys : their ecology, behaviour, and evolution / edited by A. Glyn Davies, John F. Oates.
+Phylogeny presented without further evidence.] 
+	TRANSLATE
+		1	Nasalis_larvatus,
+		2	Nasalis_concolor,
+		3	Presbytis_comata,
+		4	Presbytis_frontata,
+		5	Presbytis_melalophos,
+		6	Presbytis_potenziani,
+		7	Presbytis_rubicunda,
+		8	Semnopithecus_entellus,
+		9	Trachypithecus_auratus,
+		10	Trachypithecus_cristatus,
+		11	Trachypithecus_francoisi,
+		12	Trachypithecus_geei,
+		13	Trachypithecus_johnii,
+		14	Trachypithecus_obscurus,
+		15	Trachypithecus_phayrei,
+		16	Trachypithecus_pileatus,
+		17	Trachypithecus_vetulus,
+		18	Pygathrix_nemaeus,
+		19	Pygathrix_avunculus,
+		20	Pygathrix_bieti,
+		21	Pygathrix_brelichi,
+		22	Pygathrix_roxellana
+		;
+	TREE * delson1994 = ((1,2),((3,4,5,6,7),(8,(9,10,11,12,13,14,15,16,17))),(18,(19,20,21,22)));
+ENDBLOCK;

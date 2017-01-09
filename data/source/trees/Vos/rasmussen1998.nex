@@ -1,0 +1,27 @@
+#NEXUS
+
+
+BEGIN TAXA;
+["Nycticebus" assumed to be Nycticebus_coucang; "Galago" assumed to be Galago_senegalensis.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Galago_senegalensis
+		Arctocebus_calabarensis
+		Perodicticus_potto
+		Nycticebus_coucang
+		Loris_tardigradus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Rasmussen & Nekaris (1998) fig 9. MP tree from morphological data.]
+	TRANSLATE
+		1	Galago_senegalensis,
+		2	Arctocebus_calabarensis,
+		3	Perodicticus_potto,
+		4	Nycticebus_coucang,
+		5	Loris_tardigradus
+		;
+	TREE * rasmussen_nekaris_1998fig9 = (1,((2,3),(4,5)));
+ENDBLOCK;

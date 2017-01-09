@@ -1,0 +1,35 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Macaca_fuscata
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Hylobates_syndactylus
+		Hylobates_lar
+		Hylobates_agilis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Suzuki et al. (1994) fig 3c. MP tree from a distance matrix.]
+	TRANSLATE
+		1	Macaca_fuscata,
+		2	Pongo_pygmaeus,
+		3	Gorilla_gorilla,
+		4	Homo_sapiens,
+		5	Pan_paniscus,
+		6	Pan_troglodytes,
+		7	Hylobates_syndactylus,
+		8	Hylobates_lar,
+		9	Hylobates_agilis
+		;
+	TREE * suzuki_etal_1994fig3c = (1,((2,(3,(4,(5,6)))),(7,(8,9))));
+ENDBLOCK;

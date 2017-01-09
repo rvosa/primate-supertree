@@ -1,0 +1,32 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The article includes Macaca mulatta, Ateles geoffroyi & Cebus albifrons as
+outgroups in the analysis. They were pruned here as there position is constrained
+and therefore not phylogenetically informative.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Pan_paniscus
+		Pan_troglodytes
+		Homo_sapiens
+		Gorilla_gorilla
+		Hylobates_lar
+		Pongo_pygmaeus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Barriel (1997), fig 2a. pseudo-eta-globin sequences analysed
+under maximum parsimony.]
+	TRANSLATE
+		1	Pan_paniscus,
+		2	Pan_troglodytes,
+		3	Homo_sapiens,
+		4	Gorilla_gorilla,
+		5	Hylobates_lar,
+		6	Pongo_pygmaeus
+		;
+	TREE * barriel_1997fig2a = (5,(6,(4,(3,(1,2)))));
+ENDBLOCK;

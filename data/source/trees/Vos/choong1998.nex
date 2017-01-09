@@ -1,0 +1,28 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Subspecies Eulemur_fulvus_collaris elevated to Eulemur_fulvus.]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Eulemur_fulvus
+		Homo_sapiens
+		Pan_troglodytes
+		Papio_hamadryas
+		Macaca_fascicularis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Choon et al. (1998) fig 4. Parsimony analysis 
+of androgen receptor nucleotide sequences.]
+	TRANSLATE
+		1	Eulemur_fulvus,
+		2	Homo_sapiens,
+		3	Pan_troglodytes,
+		4	Papio_hamadryas,
+		5	Macaca_fascicularis
+		;
+	TREE * choon_etal1998fig4 = (1,((2,3),(4,5)));
+ENDBLOCK;

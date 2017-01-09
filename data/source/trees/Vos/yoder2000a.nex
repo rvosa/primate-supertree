@@ -1,0 +1,30 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+collapsed subspecies, pruned Microcebus species that are unknown to MSW.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Microcebus_murinus
+		Microcebus_rufus
+		Eulemur_macaco
+		Eulemur_rubriventer
+		Eulemur_fulvus
+		Eulemur_mongoz
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder et al. (2000) fig 3. QP/ML tree from mtDNA.]
+	TRANSLATE
+		1	Microcebus_murinus,
+		2	Microcebus_rufus,
+		3	Eulemur_macaco,
+		4	Eulemur_rubriventer,
+		5	Eulemur_fulvus,
+		6	Eulemur_mongoz
+		;
+	TREE * yoder_etal_2000fig3 = ((1,2),(3,(4,(5,6))));
+ENDBLOCK;

@@ -1,0 +1,45 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Cebuella_pygmaea -> Callithrix_pygmaea (preferred genus)
+subspecies of S. fuscicollis collapsed.]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Callimico_goeldii
+		Callithrix_jacchus
+		Callithrix_pygmaea
+		Leontopithecus_rosalia
+		Saguinus_fuscicollis
+		Saguinus_nigricollis
+		Saguinus_mystax
+		Saguinus_labiatus
+		Saguinus_imperator
+		Saguinus_midas
+		Saguinus_geoffroyi
+		Saguinus_oedipus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on Jacobs et al. (1995), fig3a-b. Two equally parsimonious trees from D-loop
+and cytb sequences.]
+	TRANSLATE
+		1	Callimico_goeldii,
+		2	Callithrix_jacchus,
+		3	Callithrix_pygmaea,
+		4	Leontopithecus_rosalia,
+		5	Saguinus_fuscicollis,
+		6	Saguinus_nigricollis,
+		7	Saguinus_mystax,
+		8	Saguinus_labiatus,
+		9	Saguinus_imperator,
+		10	Saguinus_midas,
+		11	Saguinus_geoffroyi,
+		12	Saguinus_oedipus
+		;
+	TREE * jacobs_etal_1995fig3a = (1,((2,3),(4,((5,6),(7,((8,9),(10,(11,12))))))));
+	TREE jacobs_etal_1995fig3b = (1,((2,3),(4,((5,6),(7,(8,(9,(10,(11,12)))))))));
+ENDBLOCK;

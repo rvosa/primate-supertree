@@ -1,0 +1,64 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changed Cebus_nigrivittatus to the preferred synonym Cebus_olivaceus.
+Pruned Cacajao rubicundus (synonymous w. C. calvus).]
+	DIMENSIONS NTAX = 22;
+	TAXLABELS
+		Homo_sapiens
+		Callicebus_moloch
+		Pithecia_pithecia
+		Cacajao_calvus
+		Chiropotes_satanas
+		Alouatta_caraya
+		Alouatta_seniculus
+		Ateles_fusciceps
+		Brachyteles_arachnoides
+		Lagothrix_lagotricha
+		Aotus_trivirgatus
+		Cebus_albifrons
+		Cebus_capucinus
+		Cebus_olivaceus
+		Cebus_apella
+		Saimiri_oerstedii
+		Saimiri_boliviensis
+		Saimiri_sciureus
+		Saguinus_fuscicollis
+		Leontopithecus_rosalia
+		Callimico_goeldii
+		Callithrix_jacchus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Trees based on von Dornum & Ruvolo (1999) fig 6. Three equally parsimonious trees from G6PD intron D and E.]
+	TRANSLATE
+		1	Homo_sapiens,
+		2	Callicebus_moloch,
+		3	Pithecia_pithecia,
+		4	Cacajao_calvus,
+		5	Chiropotes_satanas,
+		6	Alouatta_caraya,
+		7	Alouatta_seniculus,
+		8	Ateles_fusciceps,
+		9	Brachyteles_arachnoides,
+		10	Lagothrix_lagotricha,
+		11	Aotus_trivirgatus,
+		12	Cebus_albifrons,
+		13	Cebus_capucinus,
+		14	Cebus_olivaceus,
+		15	Cebus_apella,
+		16	Saimiri_oerstedii,
+		17	Saimiri_boliviensis,
+		18	Saimiri_sciureus,
+		19	Saguinus_fuscicollis,
+		20	Leontopithecus_rosalia,
+		21	Callimico_goeldii,
+		22	Callithrix_jacchus
+		;
+	TREE * dornum_ruvolo_1999fig6a = (1,((2,(3,(4,5))),(((6,7),(8,(9,10))),(11,((((12,13),(14,15)),(16,(17,18))),(19,(20,(21,22))))))));
+	TREE dornum_ruvolo_1999fig6b = (1,((2,(3,(4,5))),(((6,7),(8,(9,10))),((11,(((12,13),(14,15)),(16,(17,18)))),(19,(20,(21,22)))))));
+	TREE dornum_ruvolo_1999fig6c = (1,((2,(3,(4,5))),(((6,7),(8,(9,10))),((11,(19,(20,(21,22)))),(((12,13),(14,15)),(16,(17,18)))))));
+ENDBLOCK;

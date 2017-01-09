@@ -1,0 +1,33 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Papio_cynocephalus changed to the preferred Papio_hamadryas.]
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		Pongo_pygmaeus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_troglodytes
+		Pan_paniscus
+		Papio_hamadryas
+		Macaca_mulatta
+		Macaca_silenus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Martinez et al. (2001) fig 5. MP tree from Alu repeats.]
+	TRANSLATE
+		1	Pongo_pygmaeus,
+		2	Gorilla_gorilla,
+		3	Homo_sapiens,
+		4	Pan_troglodytes,
+		5	Pan_paniscus,
+		6	Papio_hamadryas,
+		7	Macaca_mulatta,
+		8	Macaca_silenus
+		;
+	TREE * martinez_etal_2001fig5 = ((1,(2,(3,(4,5)))),(6,(7,8)));
+ENDBLOCK;

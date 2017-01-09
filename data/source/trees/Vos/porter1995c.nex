@@ -1,0 +1,31 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Galago_crassicaudatus changed to Otolemur_crassicaudatus (preferred genus).]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		Cebus_albifrons
+		Hylobates_lar
+		Pongo_pygmaeus
+		Homo_sapiens
+		Otolemur_crassicaudatus
+		Daubentonia_madagascariensis
+		Cheirogaleus_medius
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Porter et al. (1995) fig 4. NJ tree from noncoding regions around epsilon globin gene.]
+	TRANSLATE
+		1	Cebus_albifrons,
+		2	Hylobates_lar,
+		3	Pongo_pygmaeus,
+		4	Homo_sapiens,
+		5	Otolemur_crassicaudatus,
+		6	Daubentonia_madagascariensis,
+		7	Cheirogaleus_medius
+		;
+	TREE * porter_etal_1995fig5 = ((1,(2,(3,4))),(5,(6,7)));
+ENDBLOCK;

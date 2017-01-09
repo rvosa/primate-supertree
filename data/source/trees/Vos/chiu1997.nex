@@ -1,0 +1,42 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonmic issues.]
+	DIMENSIONS NTAX = 12;
+	TAXLABELS
+		Ateles_geoffroyi
+		Callithrix_jacchus
+		Cebus_albifrons
+		Cebus_apella
+		Saimiri_sciureus
+		Saimiri_ustus
+		Aotus_azarai
+		Aotus_nancymaae
+		Callicebus_moloch
+		Chiropotes_satanas
+		Macaca_mulatta
+		Homo_sapiens
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Chiu et al (1997) fig 2. Parsimony analysis of unconverted gamma-globin sequences.
+The article describes a second tree in fig 3, which is coded in chiu1997a.nex.]
+	TRANSLATE
+		1	Ateles_geoffroyi,
+		2	Callithrix_jacchus,
+		3	Cebus_albifrons,
+		4	Cebus_apella,
+		5	Saimiri_sciureus,
+		6	Saimiri_ustus,
+		7	Aotus_azarai,
+		8	Aotus_nancymaae,
+		9	Callicebus_moloch,
+		10	Chiropotes_satanas,
+		11	Macaca_mulatta,
+		12	Homo_sapiens
+		;
+	TREE * chiu_etal1997Fig2 = (((1,((2,(3,4)),((5,6),(7,8)))),(9,10)),(11,12));
+ENDBLOCK;

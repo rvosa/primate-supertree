@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Collapsed subspecies.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Ateles_chamek
+		Ateles_marginatus
+		Ateles_belzebuth
+		Ateles_fusciceps
+		Ateles_paniscus
+		Ateles_geoffroyi
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Medeiros et al. (1997) fig 5. MP tree from cytogenetic and biogeographical data.]
+	TRANSLATE
+		1	Ateles_chamek,
+		2	Ateles_marginatus,
+		3	Ateles_belzebuth,
+		4	Ateles_fusciceps,
+		5	Ateles_paniscus,
+		6	Ateles_geoffroyi
+		;
+	TREE * medeiros_etal_1997fig5 = (1,(2,(3,(4,(5,6)))));
+ENDBLOCK;
