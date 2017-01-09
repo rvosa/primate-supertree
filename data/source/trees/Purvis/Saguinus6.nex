@@ -1,0 +1,29 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 6;
+	TAXLABELS
+		Saguinus_fuscicollis
+		Saguinus_leucopus
+		Saguinus_mystax
+		Saguinus_nigricollis
+		Saguinus_oedipus
+		purvis_mrp_outgroup
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Cronin and Sarich (1978), given in Sarich and Cronin (1980). Immunological distance.]
+	TRANSLATE
+		1	Saguinus_fuscicollis,
+		2	Saguinus_leucopus,
+		3	Saguinus_mystax,
+		4	Saguinus_nigricollis,
+		5	Saguinus_oedipus,
+		6	purvis_mrp_outgroup
+		;
+	TREE * Saguinus6 = (2,5,6,(3,(1,4)));
+ENDBLOCK;

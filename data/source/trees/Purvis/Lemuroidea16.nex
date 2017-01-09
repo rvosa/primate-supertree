@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 7;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Lemur_catta
+		Hapalemur_griseus
+		Eulemur_rubriventer
+		Eulemur_macaco
+		Eulemur_coronatus
+		Eulemur_fulvus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Jung et al. (1993). Cladistic, DNA restriction sites.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Lemur_catta,
+		3	Hapalemur_griseus,
+		4	Eulemur_rubriventer,
+		5	Eulemur_macaco,
+		6	Eulemur_coronatus,
+		7	Eulemur_fulvus
+		;
+	TREE * Lemuroidea16 = (1,(2,3),(4,(5,(6,7))));
+ENDBLOCK;

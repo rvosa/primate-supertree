@@ -1,0 +1,43 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 13;
+	TAXLABELS
+		Saguinus_bicolor
+		Saguinus_fuscicollis
+		Saguinus_imperator
+		Saguinus_inustus
+		Saguinus_labiatus
+		Saguinus_leucopus
+		Saguinus_midas
+		Saguinus_mystax
+		Saguinus_nigricollis
+		Saguinus_oedipus
+		Saguinus_tripartitus
+		Saguinus_geoffroyi
+		purvis_mrp_outgroup
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape meant "just to define the outgroup."]
+	TRANSLATE
+		1	Saguinus_bicolor,
+		2	Saguinus_fuscicollis,
+		3	Saguinus_imperator,
+		4	Saguinus_inustus,
+		5	Saguinus_labiatus,
+		6	Saguinus_leucopus,
+		7	Saguinus_midas,
+		8	Saguinus_mystax,
+		9	Saguinus_nigricollis,
+		10	Saguinus_oedipus,
+		11	Saguinus_tripartitus,
+		12	Saguinus_geoffroyi,
+		13	purvis_mrp_outgroup
+		;
+	TREE * Saguinus1 = (13,(1,2,3,4,5,6,7,8,9,10,11,12));
+ENDBLOCK;

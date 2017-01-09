@@ -1,0 +1,56 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Lepilemur_mustelinus
+		Lepilemur_septentrionalis
+		Lepilemur_ruficaudatus
+		Lepilemur_leucopus
+		Lepilemur_dorsalis
+		Lepilemur_edwardsi
+		purvis_mrp_outgroup
+		Varecia_variegata
+		Lemur_catta
+		Eulemur_coronatus
+		Eulemur_mongoz
+		Eulemur_rubriventer
+		Eulemur_fulvus
+		Eulemur_macaco
+		Hapalemur_griseus
+		Hapalemur_simus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Eaglen (1983). Cladistic morphological, 30 characters.]
+	TRANSLATE
+		1	Lepilemur_mustelinus,
+		2	Lepilemur_septentrionalis,
+		3	Lepilemur_ruficaudatus,
+		4	Lepilemur_leucopus,
+		5	Lepilemur_dorsalis,
+		6	Lepilemur_edwardsi,
+		7	purvis_mrp_outgroup,
+		8	Varecia_variegata,
+		9	Lemur_catta,
+		10	Eulemur_coronatus,
+		11	Eulemur_mongoz,
+		12	Eulemur_rubriventer,
+		13	Eulemur_fulvus,
+		14	Eulemur_macaco,
+		15	Hapalemur_griseus,
+		16	Hapalemur_simus
+		;
+	TREE * Lemuroidea20 = (1,2,3,4,5,6,7,((8,(9,((10,11),(12,(13,14))))),(15,16)));
+ENDBLOCK;

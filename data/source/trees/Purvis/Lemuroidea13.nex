@@ -1,0 +1,70 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 23;
+	TAXLABELS
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Euoticus_elegantulus
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		purvis_mrp_outgroup
+		Eulemur_coronatus
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_mongoz
+		Eulemur_rubriventer
+		Microcebus_murinus
+		Microcebus_rufus
+		Microcebus_coquereli
+		Cheirogaleus_major
+		Cheirogaleus_medius
+		Allocebus_trichotis
+		Phaner_furcifer
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Miyamoto and Goodman (1990). Semistrict consensus of cladistic analyses of 6 globin gene sequences.]
+	TRANSLATE
+		1	Galago_alleni,
+		2	Galago_gallarum,
+		3	Galago_matschiei,
+		4	Galago_moholi,
+		5	Galago_senegalensis,
+		6	Otolemur_crassicaudatus,
+		7	Otolemur_garnettii,
+		8	Euoticus_elegantulus,
+		9	Galagoides_demidoff,
+		10	Galagoides_zanzibaricus,
+		11	purvis_mrp_outgroup,
+		12	Eulemur_coronatus,
+		13	Eulemur_fulvus,
+		14	Eulemur_macaco,
+		15	Eulemur_mongoz,
+		16	Eulemur_rubriventer,
+		17	Microcebus_murinus,
+		18	Microcebus_rufus,
+		19	Microcebus_coquereli,
+		20	Cheirogaleus_major,
+		21	Cheirogaleus_medius,
+		22	Allocebus_trichotis,
+		23	Phaner_furcifer
+		;
+	TREE * Lemuroidea13 = (1,2,3,4,5,6,7,8,9,10,11,(12,13,14,15,16,17,18,19,20,21,22,23));
+ENDBLOCK;

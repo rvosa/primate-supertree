@@ -1,0 +1,36 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[No taxonomic issues.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Saguinus_fuscicollis
+		Saguinus_imperator
+		Saguinus_labiatus
+		Saguinus_midas
+		Saguinus_mystax
+		Saguinus_nigricollis
+		Saguinus_oedipus
+		Saguinus_geoffroyi
+		purvis_mrp_outgroup
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Jacobs (1993 Snowbird poster). 550 bases of mtDNA. Bootstrap. 
+(2,(3,5)) not strong - 48% and 57%.]
+	TRANSLATE
+		1	Saguinus_fuscicollis,
+		2	Saguinus_imperator,
+		3	Saguinus_labiatus,
+		4	Saguinus_midas,
+		5	Saguinus_mystax,
+		6	Saguinus_nigricollis,
+		7	Saguinus_oedipus,
+		8	Saguinus_geoffroyi,
+		9	purvis_mrp_outgroup
+		;
+	TREE * Saguinus3 = (9,(1,6),((2,(3,5)),(4,(7,8))));
+ENDBLOCK;

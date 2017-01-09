@@ -1,0 +1,56 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Daubentonia_madagascariensis
+		purvis_mrp_outgroup
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Euoticus_elegantulus
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Eulemur_fulvus
+		Propithecus_verreauxi
+		Propithecus_diadema
+		Propithecus_tattersalli
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Porter (1993 Snowbird talk). 1.8kb segment of gene expressed in embryo. MP and bootstrap.]
+	TRANSLATE
+		1	Daubentonia_madagascariensis,
+		2	purvis_mrp_outgroup,
+		3	Galago_alleni,
+		4	Galago_gallarum,
+		5	Galago_matschiei,
+		6	Galago_moholi,
+		7	Galago_senegalensis,
+		8	Otolemur_crassicaudatus,
+		9	Otolemur_garnettii,
+		10	Euoticus_elegantulus,
+		11	Galagoides_demidoff,
+		12	Galagoides_zanzibaricus,
+		13	Eulemur_fulvus,
+		14	Propithecus_verreauxi,
+		15	Propithecus_diadema,
+		16	Propithecus_tattersalli
+		;
+	TREE * Lemuroidea6 = (1,2,(3,4,5,6,7,8,9,10,11,12,(13,14,15,16)));
+ENDBLOCK;

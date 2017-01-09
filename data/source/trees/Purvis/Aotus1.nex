@@ -1,0 +1,38 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Original data also contains A. griseimembra, however 
+MSW considers this a synonym to A. lemurinus, so this 
+has been dropped. Changed A. azarae to A. azarai. 
+Changed A. nancymai to A. nancymaae.]
+	DIMENSIONS NTAX = 9;
+	TAXLABELS
+		Aotus_lemurinus
+		Aotus_brumbacki
+		Aotus_vociferans
+		Aotus_nancymaae
+		Aotus_infulatus
+		Aotus_nigriceps
+		Aotus_azarai
+		Aotus_miconax
+		purvis_mrp_outgroup
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on a single-column MRP matrix "just to indicate outgroup. Also Galbreath (1983) gives 2 synapomorphies."]
+	TRANSLATE
+		1	Aotus_lemurinus,
+		2	Aotus_brumbacki,
+		3	Aotus_vociferans,
+		4	Aotus_nancymaae,
+		5	Aotus_infulatus,
+		6	Aotus_nigriceps,
+		7	Aotus_azarai,
+		8	Aotus_miconax,
+		9	purvis_mrp_outgroup
+		;
+	TREE * Aotus1 = (9,(1,2,3,4,5,6,7,8));
+ENDBLOCK;

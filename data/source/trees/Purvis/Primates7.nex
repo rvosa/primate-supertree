@@ -1,0 +1,143 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Taxa referenced by Purvis were expanded to include all species for which 
+separate data is available. For instance, where Purvis uses "Colobinae" this
+was expanded to include all colobine monkeys for which source trees have been found.]
+	DIMENSIONS NTAX = 62;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Allenopithecus_nigroviridis
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Cercopithecus_ascanius
+		Cercopithecus_campbelli
+		Cercopithecus_cephus
+		Cercopithecus_diana
+		Cercopithecus_dryas
+		Cercopithecus_erythrogaster
+		Cercopithecus_erythrotis
+		Cercopithecus_hamlyni
+		Cercopithecus_lhoesti
+		Cercopithecus_mitis
+		Cercopithecus_mona
+		Cercopithecus_neglectus
+		Cercopithecus_nictitans
+		Cercopithecus_petaurista
+		Cercopithecus_pogonias
+		Cercopithecus_preussi
+		Cercopithecus_solatus
+		Cercopithecus_wolfi
+		Chlorocebus_aethiops
+		Erythrocebus_patas
+		Lophocebus_albigena
+		Macaca_arctoides
+		Macaca_assamensis
+		Macaca_cyclopis
+		Macaca_fascicularis
+		Macaca_fuscata
+		Macaca_maura
+		Macaca_mulatta
+		Macaca_nemestrina
+		Macaca_nigra
+		Macaca_ochreata
+		Macaca_radiata
+		Macaca_silenus
+		Macaca_sinica
+		Macaca_sylvanus
+		Macaca_thibetana
+		Macaca_tonkeana
+		Mandrillus_leucophaeus
+		Mandrillus_sphinx
+		Miopithecus_talapoin
+		Papio_hamadryas
+		Theropithecus_gelada
+		Hylobates_agilis
+		Hylobates_concolor
+		Hylobates_gabriellae
+		Hylobates_hoolock
+		Hylobates_klossii
+		Hylobates_lar
+		Hylobates_leucogenys
+		Hylobates_moloch
+		Hylobates_muelleri
+		Hylobates_pileatus
+		Hylobates_syndactylus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Pongo_pygmaeus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Wayne et al. (1991). DNA-DNA hybridization.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Allenopithecus_nigroviridis,
+		3	Cercocebus_galeritus,
+		4	Cercocebus_torquatus,
+		5	Cercopithecus_ascanius,
+		6	Cercopithecus_campbelli,
+		7	Cercopithecus_cephus,
+		8	Cercopithecus_diana,
+		9	Cercopithecus_dryas,
+		10	Cercopithecus_erythrogaster,
+		11	Cercopithecus_erythrotis,
+		12	Cercopithecus_hamlyni,
+		13	Cercopithecus_lhoesti,
+		14	Cercopithecus_mitis,
+		15	Cercopithecus_mona,
+		16	Cercopithecus_neglectus,
+		17	Cercopithecus_nictitans,
+		18	Cercopithecus_petaurista,
+		19	Cercopithecus_pogonias,
+		20	Cercopithecus_preussi,
+		21	Cercopithecus_solatus,
+		22	Cercopithecus_wolfi,
+		23	Chlorocebus_aethiops,
+		24	Erythrocebus_patas,
+		25	Lophocebus_albigena,
+		26	Macaca_arctoides,
+		27	Macaca_assamensis,
+		28	Macaca_cyclopis,
+		29	Macaca_fascicularis,
+		30	Macaca_fuscata,
+		31	Macaca_maura,
+		32	Macaca_mulatta,
+		33	Macaca_nemestrina,
+		34	Macaca_nigra,
+		35	Macaca_ochreata,
+		36	Macaca_radiata,
+		37	Macaca_silenus,
+		38	Macaca_sinica,
+		39	Macaca_sylvanus,
+		40	Macaca_thibetana,
+		41	Macaca_tonkeana,
+		42	Mandrillus_leucophaeus,
+		43	Mandrillus_sphinx,
+		44	Miopithecus_talapoin,
+		45	Papio_hamadryas,
+		46	Theropithecus_gelada,
+		47	Hylobates_agilis,
+		48	Hylobates_concolor,
+		49	Hylobates_gabriellae,
+		50	Hylobates_hoolock,
+		51	Hylobates_klossii,
+		52	Hylobates_lar,
+		53	Hylobates_leucogenys,
+		54	Hylobates_moloch,
+		55	Hylobates_muelleri,
+		56	Hylobates_pileatus,
+		57	Hylobates_syndactylus,
+		58	Gorilla_gorilla,
+		59	Homo_sapiens,
+		60	Pan_paniscus,
+		61	Pan_troglodytes,
+		62	Pongo_pygmaeus
+		;
+	TREE * Primates7 = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,(47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62));
+ENDBLOCK;

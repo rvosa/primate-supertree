@@ -1,0 +1,201 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Taxa referenced by Purvis were expanded to include all species for which 
+separate data is available. For instance, where Purvis uses "Colobinae" this
+was expanded to include all colobine monkeys for which source trees have been found.]
+	DIMENSIONS NTAX = 91;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Allenopithecus_nigroviridis
+		Cercocebus_galeritus
+		Cercocebus_torquatus
+		Cercopithecus_ascanius
+		Cercopithecus_campbelli
+		Cercopithecus_cephus
+		Cercopithecus_diana
+		Cercopithecus_dryas
+		Cercopithecus_erythrogaster
+		Cercopithecus_erythrotis
+		Cercopithecus_hamlyni
+		Cercopithecus_lhoesti
+		Cercopithecus_mitis
+		Cercopithecus_mona
+		Cercopithecus_neglectus
+		Cercopithecus_nictitans
+		Cercopithecus_petaurista
+		Cercopithecus_pogonias
+		Cercopithecus_preussi
+		Cercopithecus_solatus
+		Cercopithecus_wolfi
+		Chlorocebus_aethiops
+		Erythrocebus_patas
+		Lophocebus_albigena
+		Macaca_arctoides
+		Macaca_assamensis
+		Macaca_cyclopis
+		Macaca_fascicularis
+		Macaca_fuscata
+		Macaca_maura
+		Macaca_mulatta
+		Macaca_nemestrina
+		Macaca_nigra
+		Macaca_ochreata
+		Macaca_radiata
+		Macaca_silenus
+		Macaca_sinica
+		Macaca_sylvanus
+		Macaca_thibetana
+		Macaca_tonkeana
+		Mandrillus_leucophaeus
+		Mandrillus_sphinx
+		Miopithecus_talapoin
+		Papio_hamadryas
+		Theropithecus_gelada
+		Colobus_angolensis
+		Colobus_guereza
+		Colobus_polykomos
+		Colobus_satanas
+		Nasalis_concolor
+		Nasalis_larvatus
+		Presbytis_comata
+		Presbytis_frontata
+		Presbytis_melalophos
+		Presbytis_potenziani
+		Presbytis_rubicunda
+		Procolobus_badius
+		Procolobus_pennantii
+		Procolobus_verus
+		Pygathrix_avunculus
+		Pygathrix_bieti
+		Pygathrix_brelichi
+		Pygathrix_nemaeus
+		Pygathrix_roxellana
+		Semnopithecus_entellus
+		Trachypithecus_auratus
+		Trachypithecus_cristatus
+		Trachypithecus_francoisi
+		Trachypithecus_geei
+		Trachypithecus_johnii
+		Trachypithecus_obscurus
+		Trachypithecus_phayrei
+		Trachypithecus_pileatus
+		Trachypithecus_vetulus
+		Hylobates_agilis
+		Hylobates_concolor
+		Hylobates_gabriellae
+		Hylobates_hoolock
+		Hylobates_klossii
+		Hylobates_lar
+		Hylobates_leucogenys
+		Hylobates_moloch
+		Hylobates_muelleri
+		Hylobates_pileatus
+		Hylobates_syndactylus
+		Gorilla_gorilla
+		Homo_sapiens
+		Pan_paniscus
+		Pan_troglodytes
+		Pongo_pygmaeus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Strasser and Delson (1987). Cladistic morphology.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Allenopithecus_nigroviridis,
+		3	Cercocebus_galeritus,
+		4	Cercocebus_torquatus,
+		5	Cercopithecus_ascanius,
+		6	Cercopithecus_campbelli,
+		7	Cercopithecus_cephus,
+		8	Cercopithecus_diana,
+		9	Cercopithecus_dryas,
+		10	Cercopithecus_erythrogaster,
+		11	Cercopithecus_erythrotis,
+		12	Cercopithecus_hamlyni,
+		13	Cercopithecus_lhoesti,
+		14	Cercopithecus_mitis,
+		15	Cercopithecus_mona,
+		16	Cercopithecus_neglectus,
+		17	Cercopithecus_nictitans,
+		18	Cercopithecus_petaurista,
+		19	Cercopithecus_pogonias,
+		20	Cercopithecus_preussi,
+		21	Cercopithecus_solatus,
+		22	Cercopithecus_wolfi,
+		23	Chlorocebus_aethiops,
+		24	Erythrocebus_patas,
+		25	Lophocebus_albigena,
+		26	Macaca_arctoides,
+		27	Macaca_assamensis,
+		28	Macaca_cyclopis,
+		29	Macaca_fascicularis,
+		30	Macaca_fuscata,
+		31	Macaca_maura,
+		32	Macaca_mulatta,
+		33	Macaca_nemestrina,
+		34	Macaca_nigra,
+		35	Macaca_ochreata,
+		36	Macaca_radiata,
+		37	Macaca_silenus,
+		38	Macaca_sinica,
+		39	Macaca_sylvanus,
+		40	Macaca_thibetana,
+		41	Macaca_tonkeana,
+		42	Mandrillus_leucophaeus,
+		43	Mandrillus_sphinx,
+		44	Miopithecus_talapoin,
+		45	Papio_hamadryas,
+		46	Theropithecus_gelada,
+		47	Colobus_angolensis,
+		48	Colobus_guereza,
+		49	Colobus_polykomos,
+		50	Colobus_satanas,
+		51	Nasalis_concolor,
+		52	Nasalis_larvatus,
+		53	Presbytis_comata,
+		54	Presbytis_frontata,
+		55	Presbytis_melalophos,
+		56	Presbytis_potenziani,
+		57	Presbytis_rubicunda,
+		58	Procolobus_badius,
+		59	Procolobus_pennantii,
+		60	Procolobus_verus,
+		61	Pygathrix_avunculus,
+		62	Pygathrix_bieti,
+		63	Pygathrix_brelichi,
+		64	Pygathrix_nemaeus,
+		65	Pygathrix_roxellana,
+		66	Semnopithecus_entellus,
+		67	Trachypithecus_auratus,
+		68	Trachypithecus_cristatus,
+		69	Trachypithecus_francoisi,
+		70	Trachypithecus_geei,
+		71	Trachypithecus_johnii,
+		72	Trachypithecus_obscurus,
+		73	Trachypithecus_phayrei,
+		74	Trachypithecus_pileatus,
+		75	Trachypithecus_vetulus,
+		76	Hylobates_agilis,
+		77	Hylobates_concolor,
+		78	Hylobates_gabriellae,
+		79	Hylobates_hoolock,
+		80	Hylobates_klossii,
+		81	Hylobates_lar,
+		82	Hylobates_leucogenys,
+		83	Hylobates_moloch,
+		84	Hylobates_muelleri,
+		85	Hylobates_pileatus,
+		86	Hylobates_syndactylus,
+		87	Gorilla_gorilla,
+		88	Homo_sapiens,
+		89	Pan_paniscus,
+		90	Pan_troglodytes,
+		91	Pongo_pygmaeus
+		;
+	TREE * Primates8 = (1,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,(2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75));
+ENDBLOCK;

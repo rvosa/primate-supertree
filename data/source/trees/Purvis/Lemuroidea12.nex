@@ -1,0 +1,44 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 10;
+	TAXLABELS
+		Loris_tardigradus
+		Nycticebus_coucang
+		Nycticebus_pygmaeus
+		Perodicticus_potto
+		Arctocebus_calabarensis
+		purvis_mrp_outgroup
+		Lemur_catta
+		Varecia_variegata
+		Eulemur_fulvus
+		Hapalemur_griseus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Coppenhaver et al. (). Cladistic analysis of beta-globin gene sequences.]
+	TRANSLATE
+		1	Loris_tardigradus,
+		2	Nycticebus_coucang,
+		3	Nycticebus_pygmaeus,
+		4	Perodicticus_potto,
+		5	Arctocebus_calabarensis,
+		6	purvis_mrp_outgroup,
+		7	Lemur_catta,
+		8	Varecia_variegata,
+		9	Eulemur_fulvus,
+		10	Hapalemur_griseus
+		;
+	TREE * Lemuroidea12 = (1,2,3,4,5,6,((7,8),(9,10)));
+ENDBLOCK;

@@ -1,0 +1,59 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The original data for the files Cebidae{1-16}.nex uses the genera Callithricinae, Cebus, Aotus, 
+Callicebus, Saimiri, Pithecia, Alouatta, Ateles. Here, these were expanded to mean all those species
+for which separate data is available from the respective genera. To which genus each belongs was 
+decided on the basis of the MSW taxonomy. Changed A. azarae to A. azarai. Changed A. nancymai to 
+A. nancymaae. Pruned Cebus_kaapori.]
+	DIMENSIONS NTAX = 19;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Aotus_azarai
+		Aotus_brumbacki
+		Aotus_infulatus
+		Aotus_lemurinus
+		Aotus_miconax
+		Aotus_nancymaae
+		Aotus_nigriceps
+		Aotus_trivirgatus
+		Aotus_vociferans
+		Cebus_albifrons
+		Cebus_apella
+		Cebus_capucinus
+		Cebus_olivaceus
+		Saimiri_boliviensis
+		Saimiri_oerstedii
+		Saimiri_sciureus
+		Saimiri_ustus
+		Saimiri_vanzolinii
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Schmitt et al (1990). Genetic distance from 43 electrophoretic loci.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Aotus_azarai,
+		3	Aotus_brumbacki,
+		4	Aotus_infulatus,
+		5	Aotus_lemurinus,
+		6	Aotus_miconax,
+		7	Aotus_nancymaae,
+		8	Aotus_nigriceps,
+		9	Aotus_trivirgatus,
+		10	Aotus_vociferans,
+		11	Cebus_albifrons,
+		12	Cebus_apella,
+		13	Cebus_capucinus,
+		14	Cebus_olivaceus,
+		15	Saimiri_boliviensis,
+		16	Saimiri_oerstedii,
+		17	Saimiri_sciureus,
+		18	Saimiri_ustus,
+		19	Saimiri_vanzolinii
+		;
+	TREE * Cebidae6 = (1,(2,3,4,5,6,7,8,9,10,(11,12,13,14,15,16,17,18,19)));
+ENDBLOCK;

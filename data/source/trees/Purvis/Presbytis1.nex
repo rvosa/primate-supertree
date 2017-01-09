@@ -1,0 +1,51 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Introduced genera Trachypithecus and Semnopithecus. Purvis
+refers to all these taxa as "Presbytis".]
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Trachypithecus_auratus
+		Presbytis_comata
+		Trachypithecus_cristatus
+		Semnopithecus_entellus
+		Trachypithecus_francoisi
+		Presbytis_frontata
+		Trachypithecus_geei
+		Trachypithecus_johnii
+		Presbytis_melalophos
+		Trachypithecus_obscurus
+		Trachypithecus_phayrei
+		Trachypithecus_pileatus
+		Presbytis_potenziani
+		Presbytis_rubicunda
+		Trachypithecus_vetulus
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape meant "just to define outgroup."]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Trachypithecus_auratus,
+		3	Presbytis_comata,
+		4	Trachypithecus_cristatus,
+		5	Semnopithecus_entellus,
+		6	Trachypithecus_francoisi,
+		7	Presbytis_frontata,
+		8	Trachypithecus_geei,
+		9	Trachypithecus_johnii,
+		10	Presbytis_melalophos,
+		11	Trachypithecus_obscurus,
+		12	Trachypithecus_phayrei,
+		13	Trachypithecus_pileatus,
+		14	Presbytis_potenziani,
+		15	Presbytis_rubicunda,
+		16	Trachypithecus_vetulus
+		;
+	TREE * Presbytis1 = (1,(2,3,4,5,6,7,8,9,10,11,12,13,14,15,16));
+ENDBLOCK;

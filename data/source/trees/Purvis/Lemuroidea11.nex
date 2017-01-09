@@ -1,0 +1,110 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 43;
+	TAXLABELS
+		Daubentonia_madagascariensis
+		purvis_mrp_outgroup
+		Lepilemur_mustelinus
+		Lepilemur_septentrionalis
+		Lepilemur_ruficaudatus
+		Lepilemur_leucopus
+		Lepilemur_dorsalis
+		Lepilemur_edwardsi
+		Microcebus_murinus
+		Microcebus_rufus
+		Microcebus_coquereli
+		Cheirogaleus_major
+		Cheirogaleus_medius
+		Allocebus_trichotis
+		Phaner_furcifer
+		Varecia_variegata
+		Lemur_catta
+		Hapalemur_griseus
+		Hapalemur_simus
+		Eulemur_coronatus
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_mongoz
+		Eulemur_rubriventer
+		Avahi_laniger
+		Propithecus_verreauxi
+		Propithecus_diadema
+		Indri_indri
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Euoticus_elegantulus
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Loris_tardigradus
+		Nycticebus_coucang
+		Nycticebus_pygmaeus
+		Perodicticus_potto
+		Arctocebus_calabarensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Dutrillaux (1988). Cladistic karyological.]
+	TRANSLATE
+		1	Daubentonia_madagascariensis,
+		2	purvis_mrp_outgroup,
+		3	Lepilemur_mustelinus,
+		4	Lepilemur_septentrionalis,
+		5	Lepilemur_ruficaudatus,
+		6	Lepilemur_leucopus,
+		7	Lepilemur_dorsalis,
+		8	Lepilemur_edwardsi,
+		9	Microcebus_murinus,
+		10	Microcebus_rufus,
+		11	Microcebus_coquereli,
+		12	Cheirogaleus_major,
+		13	Cheirogaleus_medius,
+		14	Allocebus_trichotis,
+		15	Phaner_furcifer,
+		16	Varecia_variegata,
+		17	Lemur_catta,
+		18	Hapalemur_griseus,
+		19	Hapalemur_simus,
+		20	Eulemur_coronatus,
+		21	Eulemur_fulvus,
+		22	Eulemur_macaco,
+		23	Eulemur_mongoz,
+		24	Eulemur_rubriventer,
+		25	Avahi_laniger,
+		26	Propithecus_verreauxi,
+		27	Propithecus_diadema,
+		28	Indri_indri,
+		29	Galago_alleni,
+		30	Galago_gallarum,
+		31	Galago_matschiei,
+		32	Galago_moholi,
+		33	Galago_senegalensis,
+		34	Otolemur_crassicaudatus,
+		35	Otolemur_garnettii,
+		36	Euoticus_elegantulus,
+		37	Galagoides_demidoff,
+		38	Galagoides_zanzibaricus,
+		39	Loris_tardigradus,
+		40	Nycticebus_coucang,
+		41	Nycticebus_pygmaeus,
+		42	Perodicticus_potto,
+		43	Arctocebus_calabarensis
+		;
+	TREE * Lemuroidea11 = (1,2,(3,4,5,6,7,8,(9,10,11,12,13,14,15,(16,((17,(18,19)),(20,21,22,23,24)))),(25,(26,27,28))),(29,30,31,32,33,34,35,36,37,38,39,40,41,42,43));
+ENDBLOCK;

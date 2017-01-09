@@ -1,0 +1,189 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The original data for the files Cebidae{1-16}.nex uses the genera Callithricinae, Cebus, Aotus, 
+Callicebus, Saimiri, Pithecia, Alouatta, Ateles. Here, these were expanded to mean all those species
+for which separate data is available from the respective genera. To which genus each belongs was 
+decided on the basis of the MSW taxonomy. Changed A. azarae to A. azarai. Changed A. nancymai to 
+A. nancymaae. Changed Cacajo to Cacajao. Changed C. humeralifer to C. humeralifera (preferred 
+spelling). Changed Cebuella pygmaea to Callithrix pygmaea. Changed L. chrysomelas to L. chrysomela.
+Pruned:
+Cebus_kaapori
+Callithrix_emiliae
+Callithrix_mausi
+Cacajao_rubicundus]
+	DIMENSIONS NTAX = 81;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Callicebus_brunneus
+		Callicebus_caligatus
+		Callicebus_cinerascens
+		Callicebus_cupreus
+		Callicebus_donacophilus
+		Callicebus_dubius
+		Callicebus_hoffmannsi
+		Callicebus_modestus
+		Callicebus_moloch
+		Callicebus_oenanthe
+		Callicebus_olallae
+		Callicebus_personatus
+		Callicebus_torquatus
+		Cebus_albifrons
+		Cebus_apella
+		Cebus_capucinus
+		Cebus_olivaceus
+		Pithecia_aequatorialis
+		Pithecia_albicans
+		Pithecia_irrorata
+		Pithecia_monachus
+		Pithecia_pithecia
+		Cacajao_calvus
+		Cacajao_melanocephalus
+		Chiropotes_albinasus
+		Chiropotes_satanas
+		Aotus_azarai
+		Aotus_brumbacki
+		Aotus_infulatus
+		Aotus_lemurinus
+		Aotus_miconax
+		Aotus_nancymaae
+		Aotus_nigriceps
+		Aotus_trivirgatus
+		Aotus_vociferans
+		Callithrix_argentata
+		Callithrix_aurita
+		Callithrix_flaviceps
+		Callithrix_geoffroyi
+		Callithrix_humeralifera
+		Callithrix_jacchus
+		Callithrix_kuhlii
+		Callithrix_penicillata
+		Callimico_goeldii
+		Callithrix_pygmaea
+		Leontopithecus_chrysomela
+		Leontopithecus_chrysopygus
+		Leontopithecus_rosalia
+		Saguinus_bicolor
+		Saguinus_fuscicollis
+		Saguinus_geoffroyi
+		Saguinus_imperator
+		Saguinus_inustus
+		Saguinus_labiatus
+		Saguinus_leucopus
+		Saguinus_midas
+		Saguinus_mystax
+		Saguinus_nigricollis
+		Saguinus_oedipus
+		Saguinus_tripartitus
+		Saimiri_boliviensis
+		Saimiri_oerstedii
+		Saimiri_sciureus
+		Saimiri_ustus
+		Saimiri_vanzolinii
+		Alouatta_belzebul
+		Alouatta_caraya
+		Alouatta_fusca
+		Alouatta_palliata
+		Alouatta_pigra
+		Alouatta_seniculus
+		Brachyteles_arachnoides
+		Ateles_belzebuth
+		Ateles_chamek
+		Ateles_fusciceps
+		Ateles_geoffroyi
+		Ateles_marginatus
+		Ateles_paniscus
+		Lagothrix_flavicauda
+		Lagothrix_lagotricha
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Kay (1990), given in Ford and Davis (1992). Dental, cranial and postcranial. Cladistic.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Callicebus_brunneus,
+		3	Callicebus_caligatus,
+		4	Callicebus_cinerascens,
+		5	Callicebus_cupreus,
+		6	Callicebus_donacophilus,
+		7	Callicebus_dubius,
+		8	Callicebus_hoffmannsi,
+		9	Callicebus_modestus,
+		10	Callicebus_moloch,
+		11	Callicebus_oenanthe,
+		12	Callicebus_olallae,
+		13	Callicebus_personatus,
+		14	Callicebus_torquatus,
+		15	Cebus_albifrons,
+		16	Cebus_apella,
+		17	Cebus_capucinus,
+		18	Cebus_olivaceus,
+		19	Pithecia_aequatorialis,
+		20	Pithecia_albicans,
+		21	Pithecia_irrorata,
+		22	Pithecia_monachus,
+		23	Pithecia_pithecia,
+		24	Cacajao_calvus,
+		25	Cacajao_melanocephalus,
+		26	Chiropotes_albinasus,
+		27	Chiropotes_satanas,
+		28	Aotus_azarai,
+		29	Aotus_brumbacki,
+		30	Aotus_infulatus,
+		31	Aotus_lemurinus,
+		32	Aotus_miconax,
+		33	Aotus_nancymaae,
+		34	Aotus_nigriceps,
+		35	Aotus_trivirgatus,
+		36	Aotus_vociferans,
+		37	Callithrix_argentata,
+		38	Callithrix_aurita,
+		39	Callithrix_flaviceps,
+		40	Callithrix_geoffroyi,
+		41	Callithrix_humeralifera,
+		42	Callithrix_jacchus,
+		43	Callithrix_kuhlii,
+		44	Callithrix_penicillata,
+		45	Callimico_goeldii,
+		46	Callithrix_pygmaea,
+		47	Leontopithecus_chrysomela,
+		48	Leontopithecus_chrysopygus,
+		49	Leontopithecus_rosalia,
+		50	Saguinus_bicolor,
+		51	Saguinus_fuscicollis,
+		52	Saguinus_geoffroyi,
+		53	Saguinus_imperator,
+		54	Saguinus_inustus,
+		55	Saguinus_labiatus,
+		56	Saguinus_leucopus,
+		57	Saguinus_midas,
+		58	Saguinus_mystax,
+		59	Saguinus_nigricollis,
+		60	Saguinus_oedipus,
+		61	Saguinus_tripartitus,
+		62	Saimiri_boliviensis,
+		63	Saimiri_oerstedii,
+		64	Saimiri_sciureus,
+		65	Saimiri_ustus,
+		66	Saimiri_vanzolinii,
+		67	Alouatta_belzebul,
+		68	Alouatta_caraya,
+		69	Alouatta_fusca,
+		70	Alouatta_palliata,
+		71	Alouatta_pigra,
+		72	Alouatta_seniculus,
+		73	Brachyteles_arachnoides,
+		74	Ateles_belzebuth,
+		75	Ateles_chamek,
+		76	Ateles_fusciceps,
+		77	Ateles_geoffroyi,
+		78	Ateles_marginatus,
+		79	Ateles_paniscus,
+		80	Lagothrix_flavicauda,
+		81	Lagothrix_lagotricha
+		;
+	TREE * Cebidae9 = (1,(2,3,4,5,6,7,8,9,10,11,12,13,14,(15,16,17,18,((19,20,21,22,23,(24,25,26,27)),(28,29,30,31,32,33,34,35,36,(37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66),((67,68,69,70,71,72,73),(74,75,76,77,78,79,80,81)))))));
+ENDBLOCK;

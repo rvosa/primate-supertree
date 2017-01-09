@@ -1,0 +1,102 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 39;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Daubentonia_madagascariensis
+		Microcebus_murinus
+		Microcebus_rufus
+		Microcebus_coquereli
+		Cheirogaleus_major
+		Cheirogaleus_medius
+		Allocebus_trichotis
+		Phaner_furcifer
+		Avahi_laniger
+		Propithecus_verreauxi
+		Propithecus_diadema
+		Propithecus_tattersalli
+		Indri_indri
+		Varecia_variegata
+		Lemur_catta
+		Eulemur_coronatus
+		Eulemur_fulvus
+		Eulemur_macaco
+		Eulemur_mongoz
+		Eulemur_rubriventer
+		Hapalemur_aureus
+		Hapalemur_griseus
+		Hapalemur_simus
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Euoticus_elegantulus
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Loris_tardigradus
+		Nycticebus_coucang
+		Nycticebus_pygmaeus
+		Perodicticus_potto
+		Arctocebus_calabarensis
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Yoder (1993 Snowbird talk). 720b of cyt b gene, cladistic, bootstrap. 94% for 18.]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Daubentonia_madagascariensis,
+		3	Microcebus_murinus,
+		4	Microcebus_rufus,
+		5	Microcebus_coquereli,
+		6	Cheirogaleus_major,
+		7	Cheirogaleus_medius,
+		8	Allocebus_trichotis,
+		9	Phaner_furcifer,
+		10	Avahi_laniger,
+		11	Propithecus_verreauxi,
+		12	Propithecus_diadema,
+		13	Propithecus_tattersalli,
+		14	Indri_indri,
+		15	Varecia_variegata,
+		16	Lemur_catta,
+		17	Eulemur_coronatus,
+		18	Eulemur_fulvus,
+		19	Eulemur_macaco,
+		20	Eulemur_mongoz,
+		21	Eulemur_rubriventer,
+		22	Hapalemur_aureus,
+		23	Hapalemur_griseus,
+		24	Hapalemur_simus,
+		25	Galago_alleni,
+		26	Galago_gallarum,
+		27	Galago_matschiei,
+		28	Galago_moholi,
+		29	Galago_senegalensis,
+		30	Otolemur_crassicaudatus,
+		31	Otolemur_garnettii,
+		32	Euoticus_elegantulus,
+		33	Galagoides_demidoff,
+		34	Galagoides_zanzibaricus,
+		35	Loris_tardigradus,
+		36	Nycticebus_coucang,
+		37	Nycticebus_pygmaeus,
+		38	Perodicticus_potto,
+		39	Arctocebus_calabarensis
+		;
+	TREE * Lemuroidea5 = (1,(2,(3,4,5,6,7,8,9,(10,11,12,13,14,(15,(16,17,18,19,20,21,22,23,24))))),(25,26,27,28,29,30,31,32,33,34,35,36,37,38,39));
+ENDBLOCK;

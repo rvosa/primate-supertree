@@ -1,0 +1,35 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[The original data for the files Cercopithecinae{1-10}.nex uses the genera Macaca and Papio and the
+family Cercopithecini. Here, these were expanded to mean all those species for which separate data 
+is available from the respective genera. To which genus each belongs was decided on the basis of 
+the MSW taxonomy. Lophocebus albigena and L. aterrimus were originally referred to by the synonymous 
+Cercocebus. Pruned:
+Papio_anubis
+Papio_cynocephalus
+Papio_papio
+Papio_ursinus]
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		Mandrillus_leucophaeus
+		Mandrillus_sphinx
+		Papio_hamadryas
+		Theropithecus_gelada
+		purvis_mrp_outgroup
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on Cronin and Meikle (1989). Immunological phenetic comparison. Also gives ages of lineages.]
+	TRANSLATE
+		1	Mandrillus_leucophaeus,
+		2	Mandrillus_sphinx,
+		3	Papio_hamadryas,
+		4	Theropithecus_gelada,
+		5	purvis_mrp_outgroup
+		;
+	TREE * Cercopithecinae4 = (5,(1,2,(3,4)));
+ENDBLOCK;

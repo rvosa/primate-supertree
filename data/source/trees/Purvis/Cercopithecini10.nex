@@ -1,0 +1,63 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Chlorocebus aethiops originally referred to as Cercopithecus aethiops.]
+	DIMENSIONS NTAX = 23;
+	TAXLABELS
+		purvis_mrp_outgroup
+		Allenopithecus_nigroviridis
+		Miopithecus_talapoin
+		Chlorocebus_aethiops
+		Cercopithecus_ascanius
+		Cercopithecus_campbelli
+		Cercopithecus_cephus
+		Cercopithecus_diana
+		Cercopithecus_dryas
+		Cercopithecus_erythrogaster
+		Cercopithecus_erythrotis
+		Cercopithecus_hamlyni
+		Cercopithecus_lhoesti
+		Cercopithecus_mitis
+		Cercopithecus_mona
+		Cercopithecus_neglectus
+		Cercopithecus_nictitans
+		Cercopithecus_petaurista
+		Cercopithecus_pogonias
+		Cercopithecus_preussi
+		Cercopithecus_solatus
+		Cercopithecus_wolfi
+		Erythrocebus_patas
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree shape based on "Damn! I can't remember which paper it was - C. dryas and C. salongo are thought to be the same species: the holotype of one is thought to be a juvenile of the other."]
+	TRANSLATE
+		1	purvis_mrp_outgroup,
+		2	Allenopithecus_nigroviridis,
+		3	Miopithecus_talapoin,
+		4	Chlorocebus_aethiops,
+		5	Cercopithecus_ascanius,
+		6	Cercopithecus_campbelli,
+		7	Cercopithecus_cephus,
+		8	Cercopithecus_diana,
+		9	Cercopithecus_dryas,
+		10	Cercopithecus_erythrogaster,
+		11	Cercopithecus_erythrotis,
+		12	Cercopithecus_hamlyni,
+		13	Cercopithecus_lhoesti,
+		14	Cercopithecus_mitis,
+		15	Cercopithecus_mona,
+		16	Cercopithecus_neglectus,
+		17	Cercopithecus_nictitans,
+		18	Cercopithecus_petaurista,
+		19	Cercopithecus_pogonias,
+		20	Cercopithecus_preussi,
+		21	Cercopithecus_solatus,
+		22	Cercopithecus_wolfi,
+		23	Erythrocebus_patas
+		;
+	TREE * Cercopithecini10 = (1,(2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23));
+ENDBLOCK;

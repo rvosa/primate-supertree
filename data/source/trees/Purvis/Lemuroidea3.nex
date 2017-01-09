@@ -1,0 +1,88 @@
+#NEXUS
+
+
+BEGIN TAXA;
+[Changes:
+Petterus_coronatus -> Eulemur_coronatus (preferred genus)
+Petterus_fulvus -> Eulemur_fulvus (preferred genus)
+Petterus_macaco -> Eulemur_macaco (preferred genus)
+Petterus_mongoz -> Eulemur_mongoz (preferred genus)
+Petterus_rubriventer -> Eulemur_rubriventer (preferred genus)
+expanded Lepilemur, Galagidae, Lorisidae and Cheirogaleidae 
+to include all taxa for which separate data is available]
+	DIMENSIONS NTAX = 32;
+	TAXLABELS
+		Daubentonia_madagascariensis
+		Avahi_laniger
+		Propithecus_verreauxi
+		Propithecus_diadema
+		Propithecus_tattersalli
+		Indri_indri
+		Galago_alleni
+		Galago_gallarum
+		Galago_matschiei
+		Galago_moholi
+		Galago_senegalensis
+		Otolemur_crassicaudatus
+		Otolemur_garnettii
+		Euoticus_elegantulus
+		Galagoides_demidoff
+		Galagoides_zanzibaricus
+		Loris_tardigradus
+		Nycticebus_coucang
+		Nycticebus_pygmaeus
+		Perodicticus_potto
+		Arctocebus_calabarensis
+		Microcebus_murinus
+		Microcebus_rufus
+		Microcebus_coquereli
+		Cheirogaleus_major
+		Cheirogaleus_medius
+		Allocebus_trichotis
+		Phaner_furcifer
+		purvis_mrp_outgroup
+		Eulemur_fulvus
+		Lemur_catta
+		Varecia_variegata
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+[Tree based on Absher (1993 Snowbird talk). Molecular cladistic. 400b mtDNA -> 7 informative characters.]
+	TRANSLATE
+		1	Daubentonia_madagascariensis,
+		2	Avahi_laniger,
+		3	Propithecus_verreauxi,
+		4	Propithecus_diadema,
+		5	Propithecus_tattersalli,
+		6	Indri_indri,
+		7	Galago_alleni,
+		8	Galago_gallarum,
+		9	Galago_matschiei,
+		10	Galago_moholi,
+		11	Galago_senegalensis,
+		12	Otolemur_crassicaudatus,
+		13	Otolemur_garnettii,
+		14	Euoticus_elegantulus,
+		15	Galagoides_demidoff,
+		16	Galagoides_zanzibaricus,
+		17	Loris_tardigradus,
+		18	Nycticebus_coucang,
+		19	Nycticebus_pygmaeus,
+		20	Perodicticus_potto,
+		21	Arctocebus_calabarensis,
+		22	Microcebus_murinus,
+		23	Microcebus_rufus,
+		24	Microcebus_coquereli,
+		25	Cheirogaleus_major,
+		26	Cheirogaleus_medius,
+		27	Allocebus_trichotis,
+		28	Phaner_furcifer,
+		29	purvis_mrp_outgroup,
+		30	Eulemur_fulvus,
+		31	Lemur_catta,
+		32	Varecia_variegata
+		;
+	TREE * Lemuroidea3 = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,(30,(31,32)));
+ENDBLOCK;
